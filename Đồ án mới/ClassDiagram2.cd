@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Doan.CAuthor">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAIAAAAAAIAAABIAAAAAAAACIAA=</HashCode>
+      <FileName>Data\CAuthor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Doan.CBook">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EEQAQAAAAAAAgAAEiAoAAAQAAAAAABAAAAAEgAAAQAA=</HashCode>
+      <FileName>Data\CBook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Doan.CBorrowing_Return">
+    <Position X="10.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAACAAAAgQBYAAAAAAAICAAgAAAAABAFAAAAAAA=</HashCode>
+      <FileName>Data\CBorrowing-Return.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Doan.CEmployee">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAAAAEAAAAAAABAAAAAAAAAAAAAAACIAA=</HashCode>
+      <FileName>Data\CEmployee.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Doan.CPerson">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACQAAAAAAgAAAAAAEAAkEAAAAAAAAAAAEAAAABAI=</HashCode>
+      <FileName>Data\CPerson.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Doan.CPublisher">
+    <Position X="7" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\CPublisher.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Doan.CReader">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgAAAAAAgAAAAAAAAAAAAAAACIAA=</HashCode>
+      <FileName>Data\CReader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

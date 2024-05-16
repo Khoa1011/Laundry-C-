@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{300D1DFA-30B2-404E-BCC1-1227F5212356}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Đồ_án_mới</RootNamespace>
+    <AssemblyName>Đồ án mới</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.5, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.5\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Business\CTruyCapDuLieu.cs" />
+    <Compile Include="Business\CXuLyAuthor.cs" />
+    <Compile Include="Business\CXuLyBook.cs" />
+    <Compile Include="Business\CXuLyBorrowingReturn.cs" />
+    <Compile Include="Business\CXuLyEmployee.cs" />
+    <Compile Include="Business\CXuLyPublisher.cs" />
+    <Compile Include="Business\CXuLyReader.cs" />
+    <Compile Include="Data\CBook.cs" />
+    <Compile Include="Data\CBorrowing-Return.cs" />
+    <Compile Include="Data\CReader.cs" />
+    <Compile Include="Data\CEmployee.cs" />
+    <Compile Include="Data\CPublisher.cs" />
+    <Compile Include="Data\CAuthor.cs" />
+    <Compile Include="Business\IXuLy.cs" />
+    <Compile Include="Presentation\DocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\DocGia.Designer.cs">
+      <DependentUpon>DocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\HeThong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\HeThong.Designer.cs">
+      <DependentUpon>HeThong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\NhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\NhanVien.Designer.cs">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\NhaXuatBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\NhaXuatBan.Designer.cs">
+      <DependentUpon>NhaXuatBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Data\CPerson.cs" />
+    <Compile Include="Presentation\PhieuThuVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\PhieuThuVien.Designer.cs">
+      <DependentUpon>PhieuThuVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\ThongTinThuVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\ThongTinThuVien.Designer.cs">
+      <DependentUpon>ThongTinThuVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Presentation\QuanLySach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\QuanLySach.Designer.cs">
+      <DependentUpon>QuanLySach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\TacGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\TacGia.Designer.cs">
+      <DependentUpon>TacGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <EmbeddedResource Include="Presentation\DocGia.resx">
+      <DependentUpon>DocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\HeThong.resx">
+      <DependentUpon>HeThong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\NhanVien.resx">
+      <DependentUpon>NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\NhaXuatBan.resx">
+      <DependentUpon>NhaXuatBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\PhieuThuVien.resx">
+      <DependentUpon>PhieuThuVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\ThongTinThuVien.resx">
+      <DependentUpon>ThongTinThuVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Presentation\QuanLySach.resx">
+      <DependentUpon>QuanLySach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\TacGia.resx">
+      <DependentUpon>TacGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="ClassDiagram2.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Illustration International Literacy Day Poster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colorful Illustration International Literacy Day Poster1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-library-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-library-64 %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-user.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-password.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-page-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-page-24 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-page-24 %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-category-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-category-64 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-book-51.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-book-51 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-search-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-work-report-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-work-report-50 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-category-64 %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thiết kế chưa có tên.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Thiết kế chưa có tên1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-library-64 %283%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-100 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-91.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-remove-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-find-400.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-male-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-male-961.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-employee-80.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-u-turn-to-left-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-u-turn-to-left-1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-reader-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reader.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\female.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-u-turn-to-left-1002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\company.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\company 50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\company 60.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-find-4001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-641.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-remove-481.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-u-turn-to-left-1003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Author.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Author 20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-find-4002.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-642.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-remove-482.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-find-4003.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-u-turn-to-left-1004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book 20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book 15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\book 30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-find-4004.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-643.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-remove-483.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-check-book-96.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\borrwing 45.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-u-turn-to-left-1005.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-edit-644.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-remove-484.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-find-4005.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return 40.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
