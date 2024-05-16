@@ -44,6 +44,9 @@
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
+            this.guna2ContextMenuStrip1 = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -56,7 +59,9 @@
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.BlueViolet;
+            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(236)))), ((int)(((byte)(249)))));
+            this.guna2Panel2.Controls.Add(this.label4);
+            this.guna2Panel2.Controls.Add(this.label3);
             this.guna2Panel2.Controls.Add(this.bt_exit);
             this.guna2Panel2.Controls.Add(this.bt_login);
             this.guna2Panel2.Controls.Add(this.txt_user);
@@ -66,7 +71,7 @@
             this.guna2Panel2.Controls.Add(this.sw_remember);
             this.guna2Panel2.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.guna2Panel2.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Panel2.Font = new System.Drawing.Font("Segoe UI", 7.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(395, 794);
@@ -84,14 +89,14 @@
             this.bt_exit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.bt_exit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.bt_exit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bt_exit.FillColor = System.Drawing.Color.BlueViolet;
+            this.bt_exit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(64)))), ((int)(((byte)(111)))));
             this.bt_exit.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.bt_exit.ForeColor = System.Drawing.Color.Yellow;
             this.bt_exit.Location = new System.Drawing.Point(228, 517);
             this.bt_exit.Name = "bt_exit";
             this.bt_exit.Size = new System.Drawing.Size(129, 67);
             this.bt_exit.TabIndex = 13;
-            this.bt_exit.Text = "Exit";
+            this.bt_exit.Text = "Thoát";
             this.bt_exit.Click += new System.EventHandler(this.bt_exit_Click);
             // 
             // bt_login
@@ -105,14 +110,14 @@
             this.bt_login.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.bt_login.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.bt_login.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bt_login.FillColor = System.Drawing.Color.BlueViolet;
+            this.bt_login.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(64)))), ((int)(((byte)(111)))));
             this.bt_login.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
             this.bt_login.ForeColor = System.Drawing.Color.Yellow;
             this.bt_login.Location = new System.Drawing.Point(42, 517);
             this.bt_login.Name = "bt_login";
-            this.bt_login.Size = new System.Drawing.Size(129, 67);
+            this.bt_login.Size = new System.Drawing.Size(142, 67);
             this.bt_login.TabIndex = 12;
-            this.bt_login.Text = "Login";
+            this.bt_login.Text = "Đăng nhập";
             this.bt_login.Click += new System.EventHandler(this.bt_login_Click);
             // 
             // txt_user
@@ -167,19 +172,19 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Yellow;
-            this.label2.Location = new System.Drawing.Point(25, 171);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
+            this.label2.Location = new System.Drawing.Point(93, 182);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(352, 35);
+            this.label2.Size = new System.Drawing.Size(217, 35);
             this.label2.TabIndex = 8;
-            this.label2.Text = "Library Management System";
+            this.label2.Text = "Quản lý tiệm giặt";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Yellow;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
             this.label1.Location = new System.Drawing.Point(110, 441);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 20);
@@ -189,29 +194,36 @@
             // sw_remember
             // 
             this.sw_remember.Animated = true;
+            this.sw_remember.AutoRoundedCorners = true;
+            this.sw_remember.Checked = true;
             this.sw_remember.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.sw_remember.CheckedState.BorderRadius = 11;
             this.sw_remember.CheckedState.BorderThickness = 2;
             this.sw_remember.CheckedState.FillColor = System.Drawing.Color.Aqua;
             this.sw_remember.CheckedState.InnerBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.sw_remember.CheckedState.InnerColor = System.Drawing.Color.Yellow;
+            this.sw_remember.CheckedState.InnerBorderRadius = 7;
+            this.sw_remember.CheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(251)))));
             this.sw_remember.Location = new System.Drawing.Point(56, 440);
             this.sw_remember.Name = "sw_remember";
             this.sw_remember.Size = new System.Drawing.Size(45, 24);
             this.sw_remember.TabIndex = 4;
             this.sw_remember.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
+            this.sw_remember.UncheckedState.BorderRadius = 11;
             this.sw_remember.UncheckedState.BorderThickness = 2;
-            this.sw_remember.UncheckedState.FillColor = System.Drawing.Color.BlueViolet;
+            this.sw_remember.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(41)))), ((int)(((byte)(68)))));
             this.sw_remember.UncheckedState.InnerBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(213)))), ((int)(((byte)(218)))), ((int)(((byte)(223)))));
-            this.sw_remember.UncheckedState.InnerColor = System.Drawing.Color.Yellow;
+            this.sw_remember.UncheckedState.InnerBorderRadius = 7;
+            this.sw_remember.UncheckedState.InnerColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(234)))), ((int)(((byte)(251)))));
             this.sw_remember.CheckedChanged += new System.EventHandler(this.sw_remember_CheckedChanged);
             // 
             // guna2PictureBox2
             // 
-            this.guna2PictureBox2.Image = global::Đồ_án_mới.Properties.Resources.icons8_library_64__3_1;
+            this.guna2PictureBox2.Image = global::Đồ_án_mới.Properties.Resources.bang_gia_giat_say_1;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(162, 97);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(71, 30);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(88, 71);
+            this.guna2PictureBox2.Size = new System.Drawing.Size(267, 149);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox2.TabIndex = 1;
             this.guna2PictureBox2.TabStop = false;
             // 
@@ -230,7 +242,7 @@
             // 
             this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(90)))), ((int)(((byte)(98)))));
             this.guna2ControlBox2.IconColor = System.Drawing.Color.Red;
             this.guna2ControlBox2.Location = new System.Drawing.Point(520, 3);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
@@ -240,7 +252,7 @@
             // guna2ControlBox1
             // 
             this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(88)))), ((int)(((byte)(90)))), ((int)(((byte)(98)))));
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Red;
             this.guna2ControlBox1.Location = new System.Drawing.Point(563, 3);
@@ -252,7 +264,7 @@
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.FillColor = System.Drawing.Color.Yellow;
-            this.guna2PictureBox1.Image = global::Đồ_án_mới.Properties.Resources.Colorful_Illustration_International_Literacy_Day_Poster;
+            this.guna2PictureBox1.Image = global::Đồ_án_mới.Properties.Resources.Logo;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(-341, -56);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
@@ -266,6 +278,42 @@
             this.guna2ShadowForm1.BorderRadius = 6;
             this.guna2ShadowForm1.ShadowColor = System.Drawing.Color.Cyan;
             this.guna2ShadowForm1.TargetForm = this;
+            // 
+            // guna2ContextMenuStrip1
+            // 
+            this.guna2ContextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.guna2ContextMenuStrip1.Name = "guna2ContextMenuStrip1";
+            this.guna2ContextMenuStrip1.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.ColorTable = null;
+            this.guna2ContextMenuStrip1.RenderStyle.RoundedEdges = true;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.guna2ContextMenuStrip1.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStrip1.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStrip1.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.guna2ContextMenuStrip1.Size = new System.Drawing.Size(61, 4);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(160)))), ((int)(((byte)(246)))));
+            this.label3.Location = new System.Drawing.Point(233, 636);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(77, 23);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Đăng ký";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(52, 636);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(164, 23);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Chưa có tài khoản?";
             // 
             // DangNhap
             // 
@@ -304,6 +352,9 @@
         private Guna.UI2.WinForms.Guna2TextBox txt_user;
         private Guna.UI2.WinForms.Guna2Button bt_exit;
         private Guna.UI2.WinForms.Guna2Button bt_login;
+        private Guna.UI2.WinForms.Guna2ContextMenuStrip guna2ContextMenuStrip1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
     }
 }
 

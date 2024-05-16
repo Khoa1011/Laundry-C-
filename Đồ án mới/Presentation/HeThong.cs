@@ -29,51 +29,33 @@ namespace Doan
             Application.Exit();
         }
 
-        private void menu_docgia_Click(object sender, EventArgs e)
-        {
-            DocGia dg= new DocGia();
-            dg.Show();
-            this.Hide();
-        }
-
-        private void menu_nhanvien_Click(object sender, EventArgs e)
-        {
-            NhanVien nv = new NhanVien();
-            nv.Show();
-            this.Hide();
-        }
-
-        private void menu_qlsach_Click(object sender, EventArgs e)
-        {
-            QuanLySach qls = new QuanLySach();
-            qls.Show();
-            this.Hide();
-        }
-
-        private void menu_tacgia_Click(object sender, EventArgs e)
-        {
-            TacGia tg= new TacGia();
-            tg.Show();
-            this.Hide();
-        }
-
-        private void menu_nxb_Click(object sender, EventArgs e)
-        {
-            NhaXuatBan nhaXB = new NhaXuatBan();
-            nhaXB.Show();
-            this.Hide();
-        }
-
-        private void menu_muontra_Click(object sender, EventArgs e)
-        {
-           PhieuThuVien tv = new PhieuThuVien();
-            tv.Show();
-            this.Hide();
-        }
 
         private void HeThong_Load(object sender, EventArgs e)
         {
             
+        }
+        private Form currentFormChild;
+
+        private void OpenChildForm (Form childForm)
+        {
+            if(currentFormChild != null)
+            {
+                currentFormChild.Close();
+            }
+            currentFormChild = childForm;
+            childForm.TopLevel = false;
+            childForm.FormBorderStyle = FormBorderStyle.None;
+            childForm.Dock = DockStyle.Fill;
+            panelBody.Controls.Add(childForm);
+            panelBody.Tag = childForm;
+            childForm.BringToFront();
+            childForm.Show(); 
+        }
+
+        private void btn_donhang_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new DocGia());
+            lbl_title.Text = btn_donhang.Text;
         }
     }
 }
