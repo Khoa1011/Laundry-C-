@@ -71,6 +71,7 @@ namespace Doan
         private void bt_exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+            MessageBox.Show("vaiii");
         }
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
