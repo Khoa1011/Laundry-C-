@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Main_Project.Properties {
+namespace Đồ_án_mới.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

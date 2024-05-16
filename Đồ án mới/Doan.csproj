@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{300D1DFA-30B2-404E-BCC1-1227F5212356}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Main_Project</RootNamespace>
-    <AssemblyName>Main_Project</AssemblyName>
+    <RootNamespace>Đồ_án_mới</RootNamespace>
+    <AssemblyName>Đồ án mới</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

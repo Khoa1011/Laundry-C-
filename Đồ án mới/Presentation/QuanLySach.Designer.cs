@@ -99,7 +99,7 @@
             this.bt_tim_QLS.AutoRoundedCorners = true;
             this.bt_tim_QLS.BorderRadius = 20;
             this.bt_tim_QLS.BorderThickness = 2;
-            this.bt_tim_QLS.CustomImages.Image = global::Main_Project.Properties.Resources.icons8_find_4004;
+            this.bt_tim_QLS.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.icons8_find_4004;
             this.bt_tim_QLS.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_tim_QLS.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.bt_tim_QLS.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -350,7 +350,7 @@
             this.bt_xoa_QLS.AutoRoundedCorners = true;
             this.bt_xoa_QLS.BorderRadius = 20;
             this.bt_xoa_QLS.BorderThickness = 2;
-            this.bt_xoa_QLS.CustomImages.Image = global::Main_Project.Properties.Resources.icons8_remove_483;
+            this.bt_xoa_QLS.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.icons8_remove_483;
             this.bt_xoa_QLS.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_xoa_QLS.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.bt_xoa_QLS.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -373,7 +373,7 @@
             this.bt_sua_QLS.AutoRoundedCorners = true;
             this.bt_sua_QLS.BorderRadius = 20;
             this.bt_sua_QLS.BorderThickness = 2;
-            this.bt_sua_QLS.CustomImages.Image = global::Main_Project.Properties.Resources.icons8_edit_643;
+            this.bt_sua_QLS.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.icons8_edit_643;
             this.bt_sua_QLS.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_sua_QLS.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.bt_sua_QLS.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -396,7 +396,7 @@
             this.bt_them_QLS.AutoRoundedCorners = true;
             this.bt_them_QLS.BorderRadius = 20;
             this.bt_them_QLS.BorderThickness = 2;
-            this.bt_them_QLS.CustomImages.Image = global::Main_Project.Properties.Resources.add3;
+            this.bt_them_QLS.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.add3;
             this.bt_them_QLS.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_them_QLS.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
             this.bt_them_QLS.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -596,7 +596,7 @@
             this.bt_back_QLS.AutoRoundedCorners = true;
             this.bt_back_QLS.BorderRadius = 20;
             this.bt_back_QLS.BorderThickness = 2;
-            this.bt_back_QLS.CustomImages.Image = global::Main_Project.Properties.Resources.icons8_u_turn_to_left_1004;
+            this.bt_back_QLS.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.icons8_u_turn_to_left_1004;
             this.bt_back_QLS.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_back_QLS.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
             this.bt_back_QLS.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -619,7 +619,7 @@
             this.label8.BackColor = System.Drawing.Color.Gainsboro;
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Image = global::Main_Project.Properties.Resources.book_30;
+            this.label8.Image = global::Đồ_án_mới.Properties.Resources.book_30;
             this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label8.Location = new System.Drawing.Point(402, 19);
             this.label8.Name = "label8";

@@ -277,7 +277,7 @@
             this.bt_xoa_lapphieu.BackColor = System.Drawing.Color.White;
             this.bt_xoa_lapphieu.BorderRadius = 20;
             this.bt_xoa_lapphieu.BorderThickness = 2;
-            this.bt_xoa_lapphieu.CustomImages.Image = global::Main_Project.Properties.Resources.icons8_remove_484;
+            this.bt_xoa_lapphieu.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.icons8_remove_484;
             this.bt_xoa_lapphieu.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_xoa_lapphieu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.bt_xoa_lapphieu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -319,7 +319,7 @@
             this.bt_sua_lapphieu.BackColor = System.Drawing.Color.White;
             this.bt_sua_lapphieu.BorderRadius = 20;
             this.bt_sua_lapphieu.BorderThickness = 2;
-            this.bt_sua_lapphieu.CustomImages.Image = global::Main_Project.Properties.Resources.icons8_edit_644;
+            this.bt_sua_lapphieu.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.icons8_edit_644;
             this.bt_sua_lapphieu.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_sua_lapphieu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.bt_sua_lapphieu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -343,7 +343,7 @@
             this.bt_them_lapphieu.BackColor = System.Drawing.Color.White;
             this.bt_them_lapphieu.BorderRadius = 20;
             this.bt_them_lapphieu.BorderThickness = 2;
-            this.bt_them_lapphieu.CustomImages.Image = global::Main_Project.Properties.Resources.add4;
+            this.bt_them_lapphieu.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.add4;
             this.bt_them_lapphieu.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_them_lapphieu.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
             this.bt_them_lapphieu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -387,7 +387,7 @@
             this.bt_trasach.AutoRoundedCorners = true;
             this.bt_trasach.BorderRadius = 20;
             this.bt_trasach.BorderThickness = 2;
-            this.bt_trasach.CustomImages.Image = global::Main_Project.Properties.Resources.return_40;
+            this.bt_trasach.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.return_40;
             this.bt_trasach.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_trasach.CustomImages.ImageSize = new System.Drawing.Size(50, 50);
             this.bt_trasach.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -442,7 +442,7 @@
             this.bt_timkiem.BackColor = System.Drawing.Color.White;
             this.bt_timkiem.BorderRadius = 20;
             this.bt_timkiem.BorderThickness = 2;
-            this.bt_timkiem.CustomImages.Image = global::Main_Project.Properties.Resources.icons8_find_4005;
+            this.bt_timkiem.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.icons8_find_4005;
             this.bt_timkiem.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_timkiem.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
             this.bt_timkiem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -554,7 +554,7 @@
             this.bt_back_QLMTS.AutoRoundedCorners = true;
             this.bt_back_QLMTS.BorderRadius = 20;
             this.bt_back_QLMTS.BorderThickness = 2;
-            this.bt_back_QLMTS.CustomImages.Image = global::Main_Project.Properties.Resources.icons8_u_turn_to_left_1005;
+            this.bt_back_QLMTS.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.icons8_u_turn_to_left_1005;
             this.bt_back_QLMTS.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_back_QLMTS.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
             this.bt_back_QLMTS.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -687,7 +687,7 @@
             // 
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Image = global::Main_Project.Properties.Resources.borrwing_45;
+            this.label8.Image = global::Đồ_án_mới.Properties.Resources.borrwing_45;
             this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label8.Location = new System.Drawing.Point(473, 12);
             this.label8.Name = "label8";
@@ -703,7 +703,7 @@
             this.bt_timkiem_taophieu.BackColor = System.Drawing.Color.White;
             this.bt_timkiem_taophieu.BorderRadius = 20;
             this.bt_timkiem_taophieu.BorderThickness = 2;
-            this.bt_timkiem_taophieu.CustomImages.Image = global::Main_Project.Properties.Resources.icons8_find_4005;
+            this.bt_timkiem_taophieu.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.icons8_find_4005;
             this.bt_timkiem_taophieu.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_timkiem_taophieu.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
             this.bt_timkiem_taophieu.DisabledState.BorderColor = System.Drawing.Color.DarkGray;

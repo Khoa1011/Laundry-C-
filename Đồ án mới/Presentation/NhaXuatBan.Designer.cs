@@ -101,7 +101,7 @@
             this.bt_back_NXB.AutoRoundedCorners = true;
             this.bt_back_NXB.BorderRadius = 20;
             this.bt_back_NXB.BorderThickness = 2;
-            this.bt_back_NXB.CustomImages.Image = global::Main_Project.Properties.Resources.icons8_u_turn_to_left_1002;
+            this.bt_back_NXB.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.icons8_u_turn_to_left_1002;
             this.bt_back_NXB.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_back_NXB.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
             this.bt_back_NXB.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -199,7 +199,7 @@
             this.bt_timkiem.AutoRoundedCorners = true;
             this.bt_timkiem.BorderRadius = 20;
             this.bt_timkiem.BorderThickness = 2;
-            this.bt_timkiem.CustomImages.Image = global::Main_Project.Properties.Resources.icons8_find_4001;
+            this.bt_timkiem.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.icons8_find_4001;
             this.bt_timkiem.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_timkiem.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.bt_timkiem.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -354,7 +354,7 @@
             this.bt_xoa_NXB.AutoRoundedCorners = true;
             this.bt_xoa_NXB.BorderRadius = 20;
             this.bt_xoa_NXB.BorderThickness = 2;
-            this.bt_xoa_NXB.CustomImages.Image = global::Main_Project.Properties.Resources.icons8_remove_481;
+            this.bt_xoa_NXB.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.icons8_remove_481;
             this.bt_xoa_NXB.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_xoa_NXB.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.bt_xoa_NXB.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -377,7 +377,7 @@
             this.bt_sua_NXB.AutoRoundedCorners = true;
             this.bt_sua_NXB.BorderRadius = 20;
             this.bt_sua_NXB.BorderThickness = 2;
-            this.bt_sua_NXB.CustomImages.Image = global::Main_Project.Properties.Resources.icons8_edit_641;
+            this.bt_sua_NXB.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.icons8_edit_641;
             this.bt_sua_NXB.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_sua_NXB.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.bt_sua_NXB.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -400,7 +400,7 @@
             this.bt_them_NXB.AutoRoundedCorners = true;
             this.bt_them_NXB.BorderRadius = 20;
             this.bt_them_NXB.BorderThickness = 2;
-            this.bt_them_NXB.CustomImages.Image = global::Main_Project.Properties.Resources.add1;
+            this.bt_them_NXB.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.add1;
             this.bt_them_NXB.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_them_NXB.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
             this.bt_them_NXB.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -539,7 +539,7 @@
             this.label8.BackColor = System.Drawing.Color.Gainsboro;
             this.label8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Image = global::Main_Project.Properties.Resources.company_60;
+            this.label8.Image = global::Đồ_án_mới.Properties.Resources.company_60;
             this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label8.Location = new System.Drawing.Point(305, 15);
             this.label8.Name = "label8";

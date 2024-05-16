@@ -207,7 +207,7 @@
             // 
             // guna2PictureBox2
             // 
-            this.guna2PictureBox2.Image = global::Main_Project.Properties.Resources.icons8_library_64__3_1;
+            this.guna2PictureBox2.Image = global::Đồ_án_mới.Properties.Resources.icons8_library_64__3_1;
             this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.Location = new System.Drawing.Point(162, 97);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
@@ -252,7 +252,7 @@
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.FillColor = System.Drawing.Color.Yellow;
-            this.guna2PictureBox1.Image = global::Main_Project.Properties.Resources.Colorful_Illustration_International_Literacy_Day_Poster;
+            this.guna2PictureBox1.Image = global::Đồ_án_mới.Properties.Resources.Colorful_Illustration_International_Literacy_Day_Poster;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(-341, -56);
             this.guna2PictureBox1.Name = "guna2PictureBox1";

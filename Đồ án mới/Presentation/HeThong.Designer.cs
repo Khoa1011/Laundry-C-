@@ -101,7 +101,7 @@
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox1.Image = global::Main_Project.Properties.Resources.icons8_library_64__1_;
+            this.guna2PictureBox1.Image = global::Đồ_án_mới.Properties.Resources.icons8_library_64__1_;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(14, 12);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
@@ -263,7 +263,7 @@
             // 
             // guna2PictureBox2
             // 
-            this.guna2PictureBox2.Image = global::Main_Project.Properties.Resources.Thiết_kế_chưa_có_tên1;
+            this.guna2PictureBox2.Image = global::Đồ_án_mới.Properties.Resources.Thiết_kế_chưa_có_tên1;
             this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.Location = new System.Drawing.Point(0, 137);
             this.guna2PictureBox2.Name = "guna2PictureBox2";

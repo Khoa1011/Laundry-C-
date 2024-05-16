@@ -163,7 +163,7 @@
             this.bt_timkiemĐgia.AutoRoundedCorners = true;
             this.bt_timkiemĐgia.BorderRadius = 20;
             this.bt_timkiemĐgia.BorderThickness = 2;
-            this.bt_timkiemĐgia.CustomImages.Image = global::Main_Project.Properties.Resources.icons8_find_400;
+            this.bt_timkiemĐgia.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.icons8_find_400;
             this.bt_timkiemĐgia.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_timkiemĐgia.CustomImages.ImageSize = new System.Drawing.Size(25, 25);
             this.bt_timkiemĐgia.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -289,7 +289,7 @@
             // 
             // guna2PictureBox2
             // 
-            this.guna2PictureBox2.Image = global::Main_Project.Properties.Resources.female;
+            this.guna2PictureBox2.Image = global::Đồ_án_mới.Properties.Resources.female;
             this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.Location = new System.Drawing.Point(79, 73);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
@@ -300,7 +300,7 @@
             // 
             // guna2PictureBox1
             // 
-            this.guna2PictureBox1.Image = global::Main_Project.Properties.Resources.male;
+            this.guna2PictureBox1.Image = global::Đồ_án_mới.Properties.Resources.male;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(85, 33);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
@@ -369,7 +369,7 @@
             this.bt_xoa_Đgia.AutoRoundedCorners = true;
             this.bt_xoa_Đgia.BorderRadius = 20;
             this.bt_xoa_Đgia.BorderThickness = 2;
-            this.bt_xoa_Đgia.CustomImages.Image = global::Main_Project.Properties.Resources.icons8_remove_48;
+            this.bt_xoa_Đgia.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.icons8_remove_48;
             this.bt_xoa_Đgia.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_xoa_Đgia.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.bt_xoa_Đgia.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -392,7 +392,7 @@
             this.bt_sua_Đgia.AutoRoundedCorners = true;
             this.bt_sua_Đgia.BorderRadius = 20;
             this.bt_sua_Đgia.BorderThickness = 2;
-            this.bt_sua_Đgia.CustomImages.Image = global::Main_Project.Properties.Resources.icons8_edit_64;
+            this.bt_sua_Đgia.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.icons8_edit_64;
             this.bt_sua_Đgia.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_sua_Đgia.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.bt_sua_Đgia.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -415,7 +415,7 @@
             this.bt_them_Đgia.AutoRoundedCorners = true;
             this.bt_them_Đgia.BorderRadius = 20;
             this.bt_them_Đgia.BorderThickness = 2;
-            this.bt_them_Đgia.CustomImages.Image = global::Main_Project.Properties.Resources.add;
+            this.bt_them_Đgia.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.add;
             this.bt_them_Đgia.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_them_Đgia.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
             this.bt_them_Đgia.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -567,7 +567,7 @@
             this.bt_back_Đgia.AutoRoundedCorners = true;
             this.bt_back_Đgia.BorderRadius = 20;
             this.bt_back_Đgia.BorderThickness = 2;
-            this.bt_back_Đgia.CustomImages.Image = global::Main_Project.Properties.Resources.icons8_u_turn_to_left_1001;
+            this.bt_back_Đgia.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.icons8_u_turn_to_left_1001;
             this.bt_back_Đgia.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.bt_back_Đgia.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
             this.bt_back_Đgia.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -653,7 +653,7 @@
             this.label1.BackColor = System.Drawing.Color.Gainsboro;
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Image = global::Main_Project.Properties.Resources.Reader;
+            this.label1.Image = global::Đồ_án_mới.Properties.Resources.Reader;
             this.label1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label1.Location = new System.Drawing.Point(278, 25);
             this.label1.Name = "label1";
