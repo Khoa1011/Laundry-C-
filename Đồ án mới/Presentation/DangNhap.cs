@@ -37,7 +37,7 @@ namespace Doan
                 f.Show();
                 if (CTruyCapDuLieu.ReadFile() != true)
                 {
-                    MessageBox.Show("Hiển thị dữ liệu không thành công!");
+                    MessageBox.Show("Hiển thị dữ liệu không thành công! Nhập lại!");
                 }
                 this.Hide();
                 
