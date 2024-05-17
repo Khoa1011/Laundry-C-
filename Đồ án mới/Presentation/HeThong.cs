@@ -54,7 +54,7 @@ namespace Doan
 
         private void btn_donhang_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new DocGia());
+            OpenChildForm(new KhachHang());
             lbl_title.Text = btn_donhang.Text;
         }
     }

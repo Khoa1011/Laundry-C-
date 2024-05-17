@@ -763,6 +763,7 @@ namespace Đồ_án_mới.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+<<<<<<< HEAD
         internal static System.Drawing.Bitmap Logo {
             get {
                 object obj = ResourceManager.GetObject("Logo", resourceCulture);
@@ -776,6 +777,11 @@ namespace Đồ_án_mới.Properties {
         internal static System.Drawing.Bitmap Logo_giatsay {
             get {
                 object obj = ResourceManager.GetObject("Logo_giatsay", resourceCulture);
+=======
+        internal static System.Drawing.Bitmap laundry {
+            get {
+                object obj = ResourceManager.GetObject("laundry", resourceCulture);
+>>>>>>> b62db1f (add form)
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -806,6 +812,16 @@ namespace Đồ_án_mới.Properties {
         internal static System.Drawing.Bitmap return_40 {
             get {
                 object obj = ResourceManager.GetObject("return 40", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap signup {
+            get {
+                object obj = ResourceManager.GetObject("signup", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

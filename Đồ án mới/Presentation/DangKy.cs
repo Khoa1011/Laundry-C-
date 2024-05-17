@@ -10,11 +10,21 @@ using System.Windows.Forms;
 
 namespace Đồ_án_mới.Presentation
 {
-    public partial class ThongTinThuVien : Form
+    public partial class DangKy : Form
     {
-        public ThongTinThuVien()
+        public DangKy()
         {
             InitializeComponent();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_register_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

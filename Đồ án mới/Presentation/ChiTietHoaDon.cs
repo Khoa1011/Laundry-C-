@@ -12,10 +12,10 @@ using System.Windows.Forms;
 
 namespace Đồ_án_mới.Presentation
 {
-    public partial class PhieuThuVien : Form
+    public partial class ChiTietHoaDon : Form
     {
         private CXuLyBorrowingReturn xuly;
-        public PhieuThuVien()
+        public ChiTietHoaDon()
         {
             InitializeComponent();
         }

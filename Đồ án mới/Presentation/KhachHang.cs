@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace Doan
 {
-    public partial class DocGia : Form
+    public partial class KhachHang : Form
     {
         private CXuLyReader xuly;
 
-        public DocGia()
+        public KhachHang()
         {
             InitializeComponent();
         }

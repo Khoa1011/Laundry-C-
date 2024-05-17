@@ -81,11 +81,17 @@
     <Compile Include="Data\CPublisher.cs" />
     <Compile Include="Data\CAuthor.cs" />
     <Compile Include="Business\IXuLy.cs" />
-    <Compile Include="Presentation\DocGia.cs">
+    <Compile Include="Presentation\DangKy.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\DocGia.Designer.cs">
-      <DependentUpon>DocGia.cs</DependentUpon>
+    <Compile Include="Presentation\DangKy.Designer.cs">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\KhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\KhachHang.Designer.cs">
+      <DependentUpon>KhachHang.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\DangNhap.cs">
       <SubType>Form</SubType>
@@ -99,48 +105,39 @@
     <Compile Include="Presentation\HeThong.Designer.cs">
       <DependentUpon>HeThong.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\LichLam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\LichLam.Designer.cs">
+      <DependentUpon>LichLam.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\NhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentation\NhanVien.Designer.cs">
       <DependentUpon>NhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\NhaXuatBan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentation\NhaXuatBan.Designer.cs">
-      <DependentUpon>NhaXuatBan.cs</DependentUpon>
-    </Compile>
     <Compile Include="Data\CPerson.cs" />
-    <Compile Include="Presentation\PhieuThuVien.cs">
+    <Compile Include="Presentation\ChiTietHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\PhieuThuVien.Designer.cs">
-      <DependentUpon>PhieuThuVien.cs</DependentUpon>
+    <Compile Include="Presentation\ChiTietHoaDon.Designer.cs">
+      <DependentUpon>ChiTietHoaDon.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\ThongTinThuVien.cs">
+    <Compile Include="Presentation\TaiKhoan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\ThongTinThuVien.Designer.cs">
-      <DependentUpon>ThongTinThuVien.cs</DependentUpon>
+    <Compile Include="Presentation\TaiKhoan.Designer.cs">
+      <DependentUpon>TaiKhoan.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Presentation\QuanLySach.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentation\QuanLySach.Designer.cs">
-      <DependentUpon>QuanLySach.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Presentation\TacGia.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentation\TacGia.Designer.cs">
-      <DependentUpon>TacGia.cs</DependentUpon>
-    </Compile>
     <Compile Include="Settings.cs" />
-    <EmbeddedResource Include="Presentation\DocGia.resx">
-      <DependentUpon>DocGia.cs</DependentUpon>
+    <EmbeddedResource Include="Presentation\DangKy.resx">
+      <DependentUpon>DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\KhachHang.resx">
+      <DependentUpon>KhachHang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
@@ -148,17 +145,17 @@
     <EmbeddedResource Include="Presentation\HeThong.resx">
       <DependentUpon>HeThong.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\LichLam.resx">
+      <DependentUpon>LichLam.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\NhanVien.resx">
       <DependentUpon>NhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\NhaXuatBan.resx">
-      <DependentUpon>NhaXuatBan.cs</DependentUpon>
+    <EmbeddedResource Include="Presentation\ChiTietHoaDon.resx">
+      <DependentUpon>ChiTietHoaDon.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\PhieuThuVien.resx">
-      <DependentUpon>PhieuThuVien.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\ThongTinThuVien.resx">
-      <DependentUpon>ThongTinThuVien.cs</DependentUpon>
+    <EmbeddedResource Include="Presentation\TaiKhoan.resx">
+      <DependentUpon>TaiKhoan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -170,12 +167,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Presentation\QuanLySach.resx">
-      <DependentUpon>QuanLySach.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\TacGia.resx">
-      <DependentUpon>TacGia.cs</DependentUpon>
-    </EmbeddedResource>
     <None Include="ClassDiagram2.cd" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
