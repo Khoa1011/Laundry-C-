@@ -21,5 +21,15 @@ namespace Đồ_án_mới.Presentation
         {
 
         }
+
+        private void bt_timkiem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bt_xoa_lapphieu_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

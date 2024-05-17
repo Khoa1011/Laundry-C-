@@ -41,6 +41,8 @@
             this.bt_xoa_lapphieu = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.dtp_ngayMuon_lapphieu = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.bt_sua_lapphieu = new Guna.UI2.WinForms.Guna2Button();
             this.bt_them_lapphieu = new Guna.UI2.WinForms.Guna2Button();
@@ -52,8 +54,6 @@
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.dgv_taophieu = new System.Windows.Forms.DataGridView();
-            this.dtp_ngayMuon_lapphieu = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.MaDocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,12 +69,12 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Image = global::Đồ_án_mới.Properties.Resources.borrwing_45;
             this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label8.Location = new System.Drawing.Point(355, 10);
+            this.label8.Location = new System.Drawing.Point(384, 10);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(342, 40);
+            this.label8.Size = new System.Drawing.Size(272, 40);
             this.label8.TabIndex = 76;
-            this.label8.Text = "CHI TIẾT HÓA ĐƠN";
+            this.label8.Text = "LỊCH LÀM VIỆC";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2TextBox2
@@ -89,7 +89,7 @@
             this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(148, 51);
+            this.guna2TextBox2.Location = new System.Drawing.Point(152, 69);
             this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
@@ -104,7 +104,7 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(21, 108);
+            this.label1.Location = new System.Drawing.Point(25, 126);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 20);
@@ -143,7 +143,7 @@
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(21, 161);
+            this.label6.Location = new System.Drawing.Point(25, 179);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(89, 20);
@@ -210,13 +210,40 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tạo tài khoản";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(148, 168);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(188, 31);
+            this.comboBox1.TabIndex = 89;
+            // 
+            // dtp_ngayMuon_lapphieu
+            // 
+            this.dtp_ngayMuon_lapphieu.Animated = true;
+            this.dtp_ngayMuon_lapphieu.BackColor = System.Drawing.Color.Transparent;
+            this.dtp_ngayMuon_lapphieu.Checked = true;
+            this.dtp_ngayMuon_lapphieu.Cursor = System.Windows.Forms.Cursors.Default;
+            this.dtp_ngayMuon_lapphieu.CustomFormat = "dd/MM/yyyy";
+            this.dtp_ngayMuon_lapphieu.FillColor = System.Drawing.Color.White;
+            this.dtp_ngayMuon_lapphieu.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dtp_ngayMuon_lapphieu.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtp_ngayMuon_lapphieu.Location = new System.Drawing.Point(152, 119);
+            this.dtp_ngayMuon_lapphieu.Margin = new System.Windows.Forms.Padding(2);
+            this.dtp_ngayMuon_lapphieu.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.dtp_ngayMuon_lapphieu.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.dtp_ngayMuon_lapphieu.Name = "dtp_ngayMuon_lapphieu";
+            this.dtp_ngayMuon_lapphieu.Size = new System.Drawing.Size(185, 27);
+            this.dtp_ngayMuon_lapphieu.TabIndex = 88;
+            this.dtp_ngayMuon_lapphieu.Value = new System.DateTime(2023, 11, 18, 0, 0, 0, 0);
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(21, 58);
+            this.label5.Location = new System.Drawing.Point(25, 76);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(115, 20);
@@ -417,33 +444,6 @@
             this.dgv_taophieu.RowTemplate.Height = 24;
             this.dgv_taophieu.Size = new System.Drawing.Size(640, 581);
             this.dgv_taophieu.TabIndex = 81;
-            // 
-            // dtp_ngayMuon_lapphieu
-            // 
-            this.dtp_ngayMuon_lapphieu.Animated = true;
-            this.dtp_ngayMuon_lapphieu.BackColor = System.Drawing.Color.Transparent;
-            this.dtp_ngayMuon_lapphieu.Checked = true;
-            this.dtp_ngayMuon_lapphieu.Cursor = System.Windows.Forms.Cursors.Default;
-            this.dtp_ngayMuon_lapphieu.CustomFormat = "dd/MM/yyyy";
-            this.dtp_ngayMuon_lapphieu.FillColor = System.Drawing.Color.White;
-            this.dtp_ngayMuon_lapphieu.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtp_ngayMuon_lapphieu.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_ngayMuon_lapphieu.Location = new System.Drawing.Point(148, 101);
-            this.dtp_ngayMuon_lapphieu.Margin = new System.Windows.Forms.Padding(2);
-            this.dtp_ngayMuon_lapphieu.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtp_ngayMuon_lapphieu.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtp_ngayMuon_lapphieu.Name = "dtp_ngayMuon_lapphieu";
-            this.dtp_ngayMuon_lapphieu.Size = new System.Drawing.Size(185, 27);
-            this.dtp_ngayMuon_lapphieu.TabIndex = 88;
-            this.dtp_ngayMuon_lapphieu.Value = new System.DateTime(2023, 11, 18, 0, 0, 0, 0);
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(144, 150);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(188, 31);
-            this.comboBox1.TabIndex = 89;
             // 
             // MaDocGia
             // 
