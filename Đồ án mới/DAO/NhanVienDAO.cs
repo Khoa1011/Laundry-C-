@@ -113,7 +113,7 @@ namespace Đồ_án_mới.DAO
             SqlTransaction transaction = con.BeginTransaction();
             try
             {         
-                String sqlUpdate = "Update nhanvien set SET Ten = @Name,GioiTinh = @Gender,Tuoi = @Age,DiaChi = @Address,SoDienThoai = @Phone WHERE ID = @EmployeeID;";
+                String sqlUpdate = "Update nhanvien SET Ten = @Name,GioiTinh = @Gender,Tuoi = @Age,DiaChi = @Address,SoDienThoai = @Phone WHERE ID = @EmployeeID";
                 using (SqlCommand cmd = new SqlCommand(@sqlUpdate, con, transaction))
                 {
                     cmd.Parameters.AddWithValue("@Name", nv.TenNhanVien);
@@ -123,6 +123,7 @@ namespace Đồ_án_mới.DAO
                     cmd.Parameters.AddWithValue("@Phone", nv.SdtNhanVien);
                     cmd.Parameters.AddWithValue("@EmployeeID", id);
                     transaction.Commit();
+                    con.Close();
                     return true;
                 }
             }

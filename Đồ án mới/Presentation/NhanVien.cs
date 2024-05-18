@@ -72,13 +72,43 @@ namespace Đồ_án_mới.Presentation
 
         private void bt_sua_NV_Click(object sender, EventArgs e)
         {
-
+            NHANVIEN nv = new NHANVIEN();
+            TAIKHOAN tk = new TAIKHOAN();
+            nv.TenNhanVien = txt_nameNV.Text;
+            nv.TuoiNhanVien = txt_ageNV.Text;
+            nv.DiaChiNhanVien = txt_addressNV.Text;
+            nv.SdtNhanVien = txt_sdtNV.Text;
+            tk.TenTaiKhoan = txt_userName.Text;
+            tk.MatKhau = txt_passWord.Text;
+            nv.Taikhoan = tk;
+            if (rdo_namNV.Checked)
+            {
+                nv.GioiTinhNhanVien = "Nam";
+            }
+            if (rdo_nuNV.Checked)
+            {
+                nv.GioiTinhNhanVien = "Nu";
+            }
+            string idString = dgv_NV[0, dgv_NV.CurrentRow.Index].Value.ToString();
+            int.TryParse(idString, out int id);
+            if (nvDAO.Update(id, nv))
+            {
+                nvDAO.Update(id, nv);
+                MessageBox.Show("Sửa thành công!!!" + id);
+            }
+            else
+            {
+                nvDAO.Update(id, nv);
+                MessageBox.Show("Sửa thất bại!!!" + id);
+            }
+            load();
         }
 
         private void dgv_NV_CellClick(object sender, DataGridViewCellEventArgs e)
         {
            if(dgv_NV.RowCount > 0 )
             {
+
                 txt_nameNV.Text = dgv_NV[1,dgv_NV.CurrentRow.Index].Value.ToString();
                 txt_ageNV.Text = dgv_NV[3, dgv_NV.CurrentRow.Index].Value.ToString();
                 txt_addressNV.Text = dgv_NV[4, dgv_NV.CurrentRow.Index].Value.ToString();
