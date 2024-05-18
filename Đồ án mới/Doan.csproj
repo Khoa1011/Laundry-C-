@@ -67,25 +67,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Business\CTruyCapDuLieu.cs" />
-    <Compile Include="Business\CXuLyAuthor.cs" />
-    <Compile Include="Business\CXuLyBook.cs" />
-    <Compile Include="Business\CXuLyBorrowingReturn.cs" />
-    <Compile Include="Business\CXuLyEmployee.cs" />
-    <Compile Include="Business\CXuLyPublisher.cs" />
-    <Compile Include="Business\CXuLyReader.cs" />
-    <Compile Include="Data\CBook.cs" />
-    <Compile Include="Data\CBorrowing-Return.cs" />
-    <Compile Include="Data\CReader.cs" />
-    <Compile Include="Data\CEmployee.cs" />
-    <Compile Include="Data\CPublisher.cs" />
-    <Compile Include="Data\CAuthor.cs" />
-    <Compile Include="Business\IXuLy.cs" />
+    <Compile Include="DAO\ConnectionTool.cs" />
+    <Compile Include="DAO\NhanVienDAO.cs" />
+    <Compile Include="DTO\CHITIETHOADON.cs" />
+    <Compile Include="DTO\DICHVU.cs" />
+    <Compile Include="DTO\KHACHHANG.cs" />
+    <Compile Include="DTO\LICHLAMVIEC.cs" />
+    <Compile Include="DTO\NHANVIEN.cs" />
+    <Compile Include="DTO\TAIKHOAN.cs" />
     <Compile Include="Presentation\DangKy.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentation\DangKy.Designer.cs">
       <DependentUpon>DangKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DichVu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\DichVu.Designer.cs">
+      <DependentUpon>DichVu.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\KhachHang.cs">
       <SubType>Form</SubType>
@@ -117,7 +117,6 @@
     <Compile Include="Presentation\NhanVien.Designer.cs">
       <DependentUpon>NhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="Data\CPerson.cs" />
     <Compile Include="Presentation\ChiTietHoaDon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +134,9 @@
     <Compile Include="Settings.cs" />
     <EmbeddedResource Include="Presentation\DangKy.resx">
       <DependentUpon>DangKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\DichVu.resx">
+      <DependentUpon>DichVu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\KhachHang.resx">
       <DependentUpon>KhachHang.cs</DependentUpon>
@@ -425,5 +427,6 @@
   <ItemGroup>
     <None Include="Resources\bill1.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
