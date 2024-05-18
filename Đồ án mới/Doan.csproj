@@ -76,11 +76,13 @@
     <Compile Include="Business\CXuLyReader.cs" />
     <Compile Include="Data\CBook.cs" />
     <Compile Include="Data\CBorrowing-Return.cs" />
+    <Compile Include="Data\Class1.cs" />
     <Compile Include="Data\CReader.cs" />
     <Compile Include="Data\CEmployee.cs" />
     <Compile Include="Data\CPublisher.cs" />
     <Compile Include="Data\CAuthor.cs" />
     <Compile Include="Business\IXuLy.cs" />
+    <Compile Include="Data\nhanvien.cs" />
     <Compile Include="Presentation\DocGia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +141,7 @@
       <DependentUpon>TacGia.cs</DependentUpon>
     </Compile>
     <Compile Include="Settings.cs" />
+    <Compile Include="Until\ConnectionToolKit.cs" />
     <EmbeddedResource Include="Presentation\DocGia.resx">
       <DependentUpon>DocGia.cs</DependentUpon>
     </EmbeddedResource>
