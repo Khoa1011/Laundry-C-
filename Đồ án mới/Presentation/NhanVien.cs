@@ -93,31 +93,54 @@ namespace Đồ_án_mới.Presentation
             int.TryParse(idString, out int id);
             if (nvDAO.Update(id, nv))
             {
-                nvDAO.Update(id, nv);
-                MessageBox.Show("Sửa thành công!!!" + id);
+         
+                MessageBox.Show("Sửa thành công!!!" );
             }
             else
             {
-                nvDAO.Update(id, nv);
-                MessageBox.Show("Sửa thất bại!!!" + id);
+        
+                MessageBox.Show("Sửa thất bại!!!" );
             }
             load();
         }
 
         private void dgv_NV_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-           if(dgv_NV.RowCount > 0 )
+            if (dgv_NV.RowCount > 0)
             {
 
-                txt_nameNV.Text = dgv_NV[1,dgv_NV.CurrentRow.Index].Value.ToString();
+                txt_nameNV.Text = dgv_NV[1, dgv_NV.CurrentRow.Index].Value.ToString();
                 txt_ageNV.Text = dgv_NV[3, dgv_NV.CurrentRow.Index].Value.ToString();
                 txt_addressNV.Text = dgv_NV[4, dgv_NV.CurrentRow.Index].Value.ToString();
                 txt_sdtNV.Text = dgv_NV[5, dgv_NV.CurrentRow.Index].Value.ToString();
                 txt_userName.Text = dgv_NV[6, dgv_NV.CurrentRow.Index].Value.ToString();
-                rdo_namNV.Checked = true;
-                rdo_nuNV.Checked = true;
+                if (dgv_NV[2, dgv_NV.CurrentRow.Index].Value.ToString().Equals("Nam") || dgv_NV[2, dgv_NV.CurrentRow.Index].Value.ToString().Equals("nam"))
+                {
+                    rdo_namNV.Checked = true;
+                  
+                }else if (dgv_NV[2, dgv_NV.CurrentRow.Index].Value.ToString().Equals("Nu") || dgv_NV[2, dgv_NV.CurrentRow.Index].Value.ToString().Equals("nu"))
+                    rdo_nuNV.Checked = true;
+
 
             }
+        }
+
+        private void bt_xoa_NV_Click(object sender, EventArgs e)
+        {
+             string idString = dgv_NV[0, dgv_NV.CurrentRow.Index].Value.ToString();
+            ////string username = dgv_NV[6, dgv_NV.CurrentRow.Index].Value.ToString();
+            int.TryParse(idString, out int id);
+            if (nvDAO.Delete(id))
+            {
+               
+                MessageBox.Show("Xóa thành công!!!" );
+            }
+            else
+            {
+                
+                MessageBox.Show("Xóa thất bại!!!" );
+            }
+            load();
         }
     }
 }
