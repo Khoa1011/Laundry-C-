@@ -146,6 +146,7 @@
             this.bt_xoa_NV.TabIndex = 16;
             this.bt_xoa_NV.Text = "Xóa";
             this.bt_xoa_NV.TextOffset = new System.Drawing.Point(12, 0);
+            this.bt_xoa_NV.Click += new System.EventHandler(this.bt_xoa_NV_Click);
             // 
             // bt_sua_NV
             // 

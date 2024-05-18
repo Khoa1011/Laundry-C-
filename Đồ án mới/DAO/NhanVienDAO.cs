@@ -113,7 +113,7 @@ namespace Đồ_án_mới.DAO
             SqlTransaction transaction = con.BeginTransaction();
             try
             {         
-                String sqlUpdate = "Update nhanvien set SET Ten = @Name,GioiTinh = @Gender,Tuoi = @Age,DiaChi = @Address,SoDienThoai = @Phone WHERE ID = @EmployeeID;";
+                String sqlUpdate = "Update nhanvien SET Ten = @Name,GioiTinh = @Gender,Tuoi = @Age,DiaChi = @Address,SoDienThoai = @Phone WHERE ID = @EmployeeID";
                 using (SqlCommand cmd = new SqlCommand(@sqlUpdate, con, transaction))
                 {
                     cmd.Parameters.AddWithValue("@Name", nv.TenNhanVien);
@@ -122,7 +122,9 @@ namespace Đồ_án_mới.DAO
                     cmd.Parameters.AddWithValue("@Address", nv.DiaChiNhanVien);
                     cmd.Parameters.AddWithValue("@Phone", nv.SdtNhanVien);
                     cmd.Parameters.AddWithValue("@EmployeeID", id);
+                    cmd.ExecuteNonQuery();
                     transaction.Commit();
+                    con.Close();
                     return true;
                 }
             }
@@ -135,6 +137,40 @@ namespace Đồ_án_mới.DAO
                 con.Close();
                 return false;
             }
+        }
+        public Boolean Delete(int id)
+        {
+            con.Open();
+            SqlTransaction transaction = con.BeginTransaction();
+            try
+            {
+                string sqlDeleteTaiKhoan = "DELETE FROM taikhoan WHERE IDNhanVien = @EmployeeID";
+                using (SqlCommand cmd = new SqlCommand(sqlDeleteTaiKhoan, con, transaction))
+                {
+                    cmd.Parameters.AddWithValue("@EmployeeID", id);
+                    cmd.ExecuteNonQuery();        
+                }
+                string sqlDeleteNhanVien = "DELETE FROM nhanvien WHERE ID = @EmployeeID";
+                using (SqlCommand cmd = new SqlCommand(sqlDeleteNhanVien, con, transaction))
+                {
+                    cmd.Parameters.AddWithValue("@EmployeeID", id);
+                    cmd.ExecuteNonQuery();
+                    
+                }
+                transaction.Commit();
+                con.Close();
+                return true;
+            }
+            catch (Exception ex)
+            {
+                // Rollback transaction nếu có lỗi
+                transaction.Rollback();
+                Console.WriteLine("Lỗi: " + ex.Message);
+                Console.WriteLine("Lỗi: " + ex.Message);
+                con.Close();
+                return false;
+            }
+
         }
     }
 }
