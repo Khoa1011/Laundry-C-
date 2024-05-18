@@ -1,4 +1,4 @@
-﻿using Đồ_án_mới.Business;
+﻿using Đồ_án_mới.DAO;
 using Đồ_án_mới.Presentation;
 using System;
 using System.CodeDom;
@@ -21,7 +21,7 @@ namespace Doan
         }
         private void HeThong_FormClosing(object sender, FormClosingEventArgs e)
         {
-            CTruyCapDuLieu.WriteFile();
+
         }
 
         private void guna2ControlBox1_Click(object sender, EventArgs e)
@@ -54,7 +54,7 @@ namespace Doan
 
         private void btn_donhang_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new DocGia());
+            OpenChildForm(new KhachHang());
             lbl_title.Text = btn_donhang.Text;
         }
     }

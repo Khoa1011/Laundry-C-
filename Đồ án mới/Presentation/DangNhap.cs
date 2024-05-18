@@ -1,4 +1,4 @@
-﻿using Đồ_án_mới.Business;
+﻿using Đồ_án_mới.DAO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -28,24 +28,7 @@ namespace Doan
         }
         private void bt_login_Click(object sender, EventArgs e)
         {
-            string enteredUsername = txt_user.Text;
-            string enteredPassword = txt_password.Text;
-
-            if (Kiemtradangnhap(enteredUsername, enteredPassword))
-            {        
-                HeThong f = new HeThong();
-                f.Show();
-                if (CTruyCapDuLieu.ReadFile() != true)
-                {
-                    MessageBox.Show("Hiển thị dữ liệu không thành công! Nhập lại!");
-                }
-                this.Hide();
-                
-            }
-            else
-            {
-                MessageBox.Show("Tài khoản hoặc mật khẩu không đúng! Vui lòng kiểm tra lại.");
-            }
+           
         }
         bool Kiemtradangnhap (string tentaikhoan,string matkhau)
         {

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Đồ_án_mới.Presentation;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace Doan
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new HeThong());
+            Application.Run(new NhanVien());
         }
     }
 }
