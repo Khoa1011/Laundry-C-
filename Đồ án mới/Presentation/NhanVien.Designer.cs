@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.bt_back_NV = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -63,8 +63,8 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.rdo_nuNV = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.rdo_namNV = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.rdo_nuKH = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.rdo_namKH = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.bt_them_NV = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.dgv_NV = new System.Windows.Forms.DataGridView();
@@ -565,8 +565,8 @@
             this.groupBox2.Controls.Add(this.guna2PictureBox1);
             this.groupBox2.Controls.Add(this.label7);
             this.groupBox2.Controls.Add(this.label4);
-            this.groupBox2.Controls.Add(this.rdo_nuNV);
-            this.groupBox2.Controls.Add(this.rdo_namNV);
+            this.groupBox2.Controls.Add(this.rdo_nuKH);
+            this.groupBox2.Controls.Add(this.rdo_namKH);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(378, 247);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
@@ -623,41 +623,41 @@
             this.label4.TabIndex = 24;
             this.label4.Text = "Nam";
             // 
-            // rdo_nuNV
+            // rdo_nuKH
             // 
-            this.rdo_nuNV.Animated = true;
-            this.rdo_nuNV.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdo_nuNV.CheckedState.BorderThickness = 0;
-            this.rdo_nuNV.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdo_nuNV.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdo_nuNV.Location = new System.Drawing.Point(4, 60);
-            this.rdo_nuNV.Margin = new System.Windows.Forms.Padding(2);
-            this.rdo_nuNV.Name = "rdo_nuNV";
-            this.rdo_nuNV.Size = new System.Drawing.Size(15, 16);
-            this.rdo_nuNV.TabIndex = 23;
-            this.rdo_nuNV.Text = "guna2CustomRadioButton2";
-            this.rdo_nuNV.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rdo_nuNV.UncheckedState.BorderThickness = 2;
-            this.rdo_nuNV.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rdo_nuNV.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rdo_nuKH.Animated = true;
+            this.rdo_nuKH.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdo_nuKH.CheckedState.BorderThickness = 0;
+            this.rdo_nuKH.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdo_nuKH.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdo_nuKH.Location = new System.Drawing.Point(4, 60);
+            this.rdo_nuKH.Margin = new System.Windows.Forms.Padding(2);
+            this.rdo_nuKH.Name = "rdo_nuKH";
+            this.rdo_nuKH.Size = new System.Drawing.Size(15, 16);
+            this.rdo_nuKH.TabIndex = 23;
+            this.rdo_nuKH.Text = "guna2CustomRadioButton2";
+            this.rdo_nuKH.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rdo_nuKH.UncheckedState.BorderThickness = 2;
+            this.rdo_nuKH.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdo_nuKH.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
-            // rdo_namNV
+            // rdo_namKH
             // 
-            this.rdo_namNV.Animated = true;
-            this.rdo_namNV.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdo_namNV.CheckedState.BorderThickness = 0;
-            this.rdo_namNV.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rdo_namNV.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdo_namNV.Location = new System.Drawing.Point(4, 30);
-            this.rdo_namNV.Margin = new System.Windows.Forms.Padding(2);
-            this.rdo_namNV.Name = "rdo_namNV";
-            this.rdo_namNV.Size = new System.Drawing.Size(15, 16);
-            this.rdo_namNV.TabIndex = 22;
-            this.rdo_namNV.Text = "guna2CustomRadioButton1";
-            this.rdo_namNV.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rdo_namNV.UncheckedState.BorderThickness = 2;
-            this.rdo_namNV.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rdo_namNV.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rdo_namKH.Animated = true;
+            this.rdo_namKH.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdo_namKH.CheckedState.BorderThickness = 0;
+            this.rdo_namKH.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rdo_namKH.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rdo_namKH.Location = new System.Drawing.Point(4, 30);
+            this.rdo_namKH.Margin = new System.Windows.Forms.Padding(2);
+            this.rdo_namKH.Name = "rdo_namKH";
+            this.rdo_namKH.Size = new System.Drawing.Size(15, 16);
+            this.rdo_namKH.TabIndex = 22;
+            this.rdo_namKH.Text = "guna2CustomRadioButton1";
+            this.rdo_namKH.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rdo_namKH.UncheckedState.BorderThickness = 2;
+            this.rdo_namKH.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rdo_namKH.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
             // 
             // bt_them_NV
             // 
@@ -711,8 +711,8 @@
             // Manv
             // 
             this.Manv.DataPropertyName = "ID";
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Manv.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Manv.DefaultCellStyle = dataGridViewCellStyle1;
             this.Manv.HeaderText = "Mã nhân viên";
             this.Manv.MinimumWidth = 6;
             this.Manv.Name = "Manv";
@@ -839,8 +839,8 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label4;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton rdo_nuNV;
-        private Guna.UI2.WinForms.Guna2CustomRadioButton rdo_namNV;
+        private Guna.UI2.WinForms.Guna2CustomRadioButton rdo_nuKH;
+        private Guna.UI2.WinForms.Guna2CustomRadioButton rdo_namKH;
         private Guna.UI2.WinForms.Guna2CustomRadioButton rdo_All;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.DataGridViewTextBoxColumn Manv;

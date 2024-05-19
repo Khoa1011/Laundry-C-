@@ -68,7 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\ConnectionTool.cs" />
+    <Compile Include="DAO\KhachHangDAO.cs" />
+    <Compile Include="DAO\LichLamDAO.cs" />
     <Compile Include="DAO\NhanVienDAO.cs" />
+    <Compile Include="DAO\PasswordHelper.cs" />
+    <Compile Include="DAO\TaiKhoanDAO.cs" />
     <Compile Include="DTO\CHITIETHOADON.cs" />
     <Compile Include="DTO\DICHVU.cs" />
     <Compile Include="DTO\KHACHHANG.cs" />

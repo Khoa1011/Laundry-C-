@@ -10,21 +10,21 @@ namespace Đồ_án_mới.DTO
     {
         private DateTime lichLamViec;
         private string khungGio;
-        private NHANVIEN nhanvien;
+        //private NHANVIEN nhanvien;
 
         public LICHLAMVIEC()
         {
         }
 
-        public LICHLAMVIEC(DateTime lichLamViec, string khungGio, NHANVIEN nhanvien)
+        public LICHLAMVIEC(DateTime lichLamViec, string khungGio/*, NHANVIEN nhanvien*/)
         {
             this.lichLamViec = lichLamViec;
             this.khungGio = khungGio;
-            this.Nhanvien = nhanvien;
+           // this.Nhanvien = nhanvien;
         }
 
         public DateTime LichLamViec { get => lichLamViec; set => lichLamViec = value; }
         public string KhungGio { get => khungGio; set => khungGio = value; }
-        public NHANVIEN Nhanvien { get => nhanvien; set => nhanvien = value; }
+       // public NHANVIEN Nhanvien { get => nhanvien; set => nhanvien = value; }
     }
 }

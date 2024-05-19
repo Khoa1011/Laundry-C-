@@ -45,17 +45,17 @@ namespace Đồ_án_mới.Presentation
             NHANVIEN nv = new NHANVIEN();
             TAIKHOAN tk = new TAIKHOAN();
             nv.TenNhanVien = txt_nameNV.Text;
-            nv.TuoiNhanVien = txt_ageNV.Text;
+            nv.TuoiNhanVien = int.Parse(txt_ageNV.Text);
             nv.DiaChiNhanVien = txt_addressNV.Text;
             nv.SdtNhanVien = txt_sdtNV.Text;
             tk.TenTaiKhoan = txt_userName.Text;
-            tk.MatKhau = txt_passWord.Text;
+            tk.MatKhau = PasswordHelper.HashString(txt_passWord.Text);
             nv.Taikhoan = tk;
-            if (rdo_namNV.Checked)
+            if (rdo_namKH.Checked)
             {
                 nv.GioiTinhNhanVien = "Nam";
             }
-            if (rdo_nuNV.Checked)
+            if (rdo_nuKH.Checked)
             {
                 nv.GioiTinhNhanVien = "Nu";
             }
@@ -75,17 +75,17 @@ namespace Đồ_án_mới.Presentation
             NHANVIEN nv = new NHANVIEN();
             TAIKHOAN tk = new TAIKHOAN();
             nv.TenNhanVien = txt_nameNV.Text;
-            nv.TuoiNhanVien = txt_ageNV.Text;
+            nv.TuoiNhanVien = int.Parse(txt_ageNV.Text);
             nv.DiaChiNhanVien = txt_addressNV.Text;
             nv.SdtNhanVien = txt_sdtNV.Text;
             tk.TenTaiKhoan = txt_userName.Text;
             tk.MatKhau = txt_passWord.Text;
             nv.Taikhoan = tk;
-            if (rdo_namNV.Checked)
+            if (rdo_namKH.Checked)
             {
                 nv.GioiTinhNhanVien = "Nam";
             }
-            if (rdo_nuNV.Checked)
+            if (rdo_nuKH.Checked)
             {
                 nv.GioiTinhNhanVien = "Nu";
             }
@@ -116,10 +116,10 @@ namespace Đồ_án_mới.Presentation
                 txt_userName.Text = dgv_NV[6, dgv_NV.CurrentRow.Index].Value.ToString();
                 if (dgv_NV[2, dgv_NV.CurrentRow.Index].Value.ToString().Equals("Nam") || dgv_NV[2, dgv_NV.CurrentRow.Index].Value.ToString().Equals("nam"))
                 {
-                    rdo_namNV.Checked = true;
+                    rdo_namKH.Checked = true;
                   
                 }else if (dgv_NV[2, dgv_NV.CurrentRow.Index].Value.ToString().Equals("Nu") || dgv_NV[2, dgv_NV.CurrentRow.Index].Value.ToString().Equals("nu"))
-                    rdo_nuNV.Checked = true;
+                    rdo_nuKH.Checked = true;
 
 
             }

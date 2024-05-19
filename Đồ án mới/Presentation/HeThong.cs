@@ -57,5 +57,31 @@ namespace Doan
             OpenChildForm(new KhachHang());
             lbl_title.Text = btn_donhang.Text;
         }
+
+        private void btn_nhanvien_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new NhanVien());
+
+        }
+
+        private void btn_schedule_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new LichLam());
+        }
+
+        private void btn_account_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new TaiKhoan());
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_khachhang_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new KhachHang());
+        }
     }
 }
