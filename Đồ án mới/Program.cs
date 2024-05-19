@@ -18,9 +18,10 @@ namespace Doan
             
           Application.EnableVisualStyles();
            Application.SetCompatibleTextRenderingDefault(false);
-           //Application.Run(new NhanVien());
+            //Application.Run(new NhanVien());
             // Application.Run(new TaiKhoan());
-            Application.Run(new LichLam());
+            //Application.Run(new LichLam());
+            Application.Run(new HeThong());
         }
     }
 }

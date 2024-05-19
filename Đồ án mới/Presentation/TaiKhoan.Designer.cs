@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.bt_back_QLMTS = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -74,7 +74,7 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(13, 73);
+            this.label1.Location = new System.Drawing.Point(30, 41);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 20);
@@ -111,7 +111,7 @@
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
             this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.Red;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1467, 15);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(1161, 15);
             this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(28, 23);
@@ -124,7 +124,7 @@
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Red;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1435, 15);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1129, 15);
             this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(28, 23);
@@ -136,7 +136,7 @@
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(16, 187);
+            this.label6.Location = new System.Drawing.Point(425, 41);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(116, 20);
@@ -159,7 +159,7 @@
             this.btn_changePass.FillColor = System.Drawing.Color.White;
             this.btn_changePass.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btn_changePass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_changePass.Location = new System.Drawing.Point(436, 107);
+            this.btn_changePass.Location = new System.Drawing.Point(318, 146);
             this.btn_changePass.Margin = new System.Windows.Forms.Padding(2);
             this.btn_changePass.Name = "btn_changePass";
             this.btn_changePass.Size = new System.Drawing.Size(133, 34);
@@ -182,11 +182,11 @@
             this.groupBox1.Controls.Add(this.btn_changePass);
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 13F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))));
-            this.groupBox1.Location = new System.Drawing.Point(2, 197);
+            this.groupBox1.Location = new System.Drawing.Point(20, 236);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(573, 382);
+            this.groupBox1.Size = new System.Drawing.Size(802, 192);
             this.groupBox1.TabIndex = 76;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tài khoản";
@@ -203,13 +203,13 @@
             this.txt_oldPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_oldPass.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_oldPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_oldPass.Location = new System.Drawing.Point(184, 124);
+            this.txt_oldPass.Location = new System.Drawing.Point(201, 92);
             this.txt_oldPass.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_oldPass.Name = "txt_oldPass";
             this.txt_oldPass.PasswordChar = '\0';
             this.txt_oldPass.PlaceholderText = "Nhập";
             this.txt_oldPass.SelectedText = "";
-            this.txt_oldPass.Size = new System.Drawing.Size(229, 27);
+            this.txt_oldPass.Size = new System.Drawing.Size(189, 27);
             this.txt_oldPass.TabIndex = 93;
             // 
             // label3
@@ -218,7 +218,7 @@
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(16, 131);
+            this.label3.Location = new System.Drawing.Point(33, 99);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 20);
@@ -237,13 +237,13 @@
             this.txt_confirmPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_confirmPass.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_confirmPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_confirmPass.Location = new System.Drawing.Point(184, 234);
+            this.txt_confirmPass.Location = new System.Drawing.Point(593, 92);
             this.txt_confirmPass.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_confirmPass.Name = "txt_confirmPass";
             this.txt_confirmPass.PasswordChar = '\0';
             this.txt_confirmPass.PlaceholderText = "Nhập";
             this.txt_confirmPass.SelectedText = "";
-            this.txt_confirmPass.Size = new System.Drawing.Size(229, 27);
+            this.txt_confirmPass.Size = new System.Drawing.Size(189, 27);
             this.txt_confirmPass.TabIndex = 91;
             // 
             // label2
@@ -252,7 +252,7 @@
             this.label2.BackColor = System.Drawing.Color.White;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(16, 241);
+            this.label2.Location = new System.Drawing.Point(425, 99);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(164, 20);
@@ -271,13 +271,13 @@
             this.txt_nameTK.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_nameTK.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_nameTK.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_nameTK.Location = new System.Drawing.Point(184, 66);
+            this.txt_nameTK.Location = new System.Drawing.Point(201, 34);
             this.txt_nameTK.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_nameTK.Name = "txt_nameTK";
             this.txt_nameTK.PasswordChar = '\0';
             this.txt_nameTK.PlaceholderText = "Nhập";
             this.txt_nameTK.SelectedText = "";
-            this.txt_nameTK.Size = new System.Drawing.Size(229, 27);
+            this.txt_nameTK.Size = new System.Drawing.Size(189, 27);
             this.txt_nameTK.TabIndex = 89;
             // 
             // txt_newPass
@@ -292,25 +292,24 @@
             this.txt_newPass.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_newPass.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_newPass.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_newPass.Location = new System.Drawing.Point(184, 180);
+            this.txt_newPass.Location = new System.Drawing.Point(593, 34);
             this.txt_newPass.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_newPass.Name = "txt_newPass";
             this.txt_newPass.PasswordChar = '\0';
             this.txt_newPass.PlaceholderText = "Nhập";
             this.txt_newPass.SelectedText = "";
-            this.txt_newPass.Size = new System.Drawing.Size(229, 27);
+            this.txt_newPass.Size = new System.Drawing.Size(189, 27);
             this.txt_newPass.TabIndex = 88;
             // 
             // guna2GroupBox1
             // 
             this.guna2GroupBox1.Controls.Add(this.groupBox3);
-            this.guna2GroupBox1.Controls.Add(this.groupBox1);
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2GroupBox1.Location = new System.Drawing.Point(20, 66);
+            this.guna2GroupBox1.Location = new System.Drawing.Point(11, 60);
             this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(577, 581);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(828, 378);
             this.guna2GroupBox1.TabIndex = 69;
             this.guna2GroupBox1.Text = "Thông tin";
             // 
@@ -325,11 +324,11 @@
             this.groupBox3.Controls.Add(this.label10);
             this.groupBox3.Controls.Add(this.txt_findTK);
             this.groupBox3.Controls.Add(this.label11);
-            this.groupBox3.Location = new System.Drawing.Point(2, 53);
+            this.groupBox3.Location = new System.Drawing.Point(122, 54);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(573, 140);
+            this.groupBox3.Size = new System.Drawing.Size(567, 118);
             this.groupBox3.TabIndex = 90;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tìm kiếm ";
@@ -416,7 +415,7 @@
             this.guna2Button1.FillColor = System.Drawing.Color.White;
             this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2Button1.Location = new System.Drawing.Point(436, 45);
+            this.guna2Button1.Location = new System.Drawing.Point(431, 52);
             this.guna2Button1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2Button1.Name = "guna2Button1";
             this.guna2Button1.Size = new System.Drawing.Size(120, 34);
@@ -472,22 +471,22 @@
             // 
             // dgv_taiKhoan
             // 
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_taiKhoan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_taiKhoan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_taiKhoan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_taiKhoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_taiKhoan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaDocGia,
             this.MaNV,
             this.NgayMuon});
-            this.dgv_taiKhoan.Location = new System.Drawing.Point(601, 66);
+            this.dgv_taiKhoan.Location = new System.Drawing.Point(11, 442);
             this.dgv_taiKhoan.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_taiKhoan.Name = "dgv_taiKhoan";
             this.dgv_taiKhoan.RowHeadersWidth = 51;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_taiKhoan.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_taiKhoan.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_taiKhoan.RowTemplate.Height = 24;
-            this.dgv_taiKhoan.Size = new System.Drawing.Size(551, 581);
+            this.dgv_taiKhoan.Size = new System.Drawing.Size(828, 282);
             this.dgv_taiKhoan.TabIndex = 73;
             this.dgv_taiKhoan.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_taiKhoan_CellClick);
             // 
@@ -518,7 +517,7 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Image = global::Đồ_án_mới.Properties.Resources.borrwing_45;
             this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label8.Location = new System.Drawing.Point(391, 15);
+            this.label8.Location = new System.Drawing.Point(291, 9);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(353, 40);
@@ -533,7 +532,7 @@
             this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
             this.guna2ControlBox3.IconColor = System.Drawing.Color.Red;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(1087, 11);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(781, 11);
             this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.Size = new System.Drawing.Size(26, 23);
@@ -546,7 +545,7 @@
             this.guna2ControlBox4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
             this.guna2ControlBox4.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox4.IconColor = System.Drawing.Color.Red;
-            this.guna2ControlBox4.Location = new System.Drawing.Point(1117, 11);
+            this.guna2ControlBox4.Location = new System.Drawing.Point(811, 11);
             this.guna2ControlBox4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ControlBox4.Name = "guna2ControlBox4";
             this.guna2ControlBox4.Size = new System.Drawing.Size(28, 23);
@@ -557,8 +556,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
-            this.ClientSize = new System.Drawing.Size(1156, 658);
+            this.ClientSize = new System.Drawing.Size(850, 735);
             this.Controls.Add(this.guna2ControlBox3);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.guna2ControlBox4);
             this.Controls.Add(this.bt_back_QLMTS);
             this.Controls.Add(this.guna2ControlBox2);

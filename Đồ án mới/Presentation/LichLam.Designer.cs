@@ -93,7 +93,7 @@
             this.txt_ID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_ID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_ID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_ID.Location = new System.Drawing.Point(152, 69);
+            this.txt_ID.Location = new System.Drawing.Point(147, 50);
             this.txt_ID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.PasswordChar = '\0';
@@ -108,7 +108,7 @@
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(25, 126);
+            this.label1.Location = new System.Drawing.Point(20, 107);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(82, 20);
@@ -122,7 +122,7 @@
             this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
             this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
             this.guna2ControlBox3.IconColor = System.Drawing.Color.Red;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(1075, 10);
+            this.guna2ControlBox3.Location = new System.Drawing.Point(781, 10);
             this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ControlBox3.Name = "guna2ControlBox3";
             this.guna2ControlBox3.Size = new System.Drawing.Size(26, 23);
@@ -135,7 +135,7 @@
             this.guna2ControlBox4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
             this.guna2ControlBox4.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox4.IconColor = System.Drawing.Color.Red;
-            this.guna2ControlBox4.Location = new System.Drawing.Point(1105, 10);
+            this.guna2ControlBox4.Location = new System.Drawing.Point(811, 10);
             this.guna2ControlBox4.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ControlBox4.Name = "guna2ControlBox4";
             this.guna2ControlBox4.Size = new System.Drawing.Size(28, 23);
@@ -147,7 +147,7 @@
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(25, 179);
+            this.label6.Location = new System.Drawing.Point(20, 160);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(89, 20);
@@ -170,7 +170,7 @@
             this.bt_xoa_lapphieu.FillColor = System.Drawing.Color.White;
             this.bt_xoa_lapphieu.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bt_xoa_lapphieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bt_xoa_lapphieu.Location = new System.Drawing.Point(253, 249);
+            this.bt_xoa_lapphieu.Location = new System.Drawing.Point(251, 220);
             this.bt_xoa_lapphieu.Margin = new System.Windows.Forms.Padding(2);
             this.bt_xoa_lapphieu.Name = "bt_xoa_lapphieu";
             this.bt_xoa_lapphieu.Size = new System.Drawing.Size(97, 34);
@@ -188,7 +188,7 @@
             this.guna2GroupBox1.Location = new System.Drawing.Point(9, 61);
             this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
-            this.guna2GroupBox1.Size = new System.Drawing.Size(478, 581);
+            this.guna2GroupBox1.Size = new System.Drawing.Size(830, 318);
             this.guna2GroupBox1.TabIndex = 77;
             this.guna2GroupBox1.Text = "Thông tin";
             // 
@@ -210,7 +210,7 @@
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(474, 297);
+            this.groupBox1.Size = new System.Drawing.Size(371, 265);
             this.groupBox1.TabIndex = 76;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Tạo tài khoản";
@@ -219,7 +219,7 @@
             // 
             this.cb_khungGio.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_khungGio.FormattingEnabled = true;
-            this.cb_khungGio.Location = new System.Drawing.Point(149, 176);
+            this.cb_khungGio.Location = new System.Drawing.Point(144, 157);
             this.cb_khungGio.Name = "cb_khungGio";
             this.cb_khungGio.Size = new System.Drawing.Size(188, 23);
             this.cb_khungGio.TabIndex = 89;
@@ -234,7 +234,7 @@
             this.dt_Date.FillColor = System.Drawing.Color.White;
             this.dt_Date.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dt_Date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dt_Date.Location = new System.Drawing.Point(152, 119);
+            this.dt_Date.Location = new System.Drawing.Point(147, 100);
             this.dt_Date.Margin = new System.Windows.Forms.Padding(2);
             this.dt_Date.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dt_Date.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
@@ -249,7 +249,7 @@
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(25, 76);
+            this.label5.Location = new System.Drawing.Point(20, 57);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(115, 20);
@@ -272,7 +272,7 @@
             this.btn_updateSchedule.FillColor = System.Drawing.Color.White;
             this.btn_updateSchedule.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btn_updateSchedule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_updateSchedule.Location = new System.Drawing.Point(136, 249);
+            this.btn_updateSchedule.Location = new System.Drawing.Point(134, 220);
             this.btn_updateSchedule.Margin = new System.Windows.Forms.Padding(2);
             this.btn_updateSchedule.Name = "btn_updateSchedule";
             this.btn_updateSchedule.Size = new System.Drawing.Size(97, 34);
@@ -298,7 +298,7 @@
             this.btn_addSchedule.FillColor = System.Drawing.Color.White;
             this.btn_addSchedule.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btn_addSchedule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_addSchedule.Location = new System.Drawing.Point(18, 249);
+            this.btn_addSchedule.Location = new System.Drawing.Point(16, 220);
             this.btn_addSchedule.Margin = new System.Windows.Forms.Padding(2);
             this.btn_addSchedule.Name = "btn_addSchedule";
             this.btn_addSchedule.Size = new System.Drawing.Size(97, 34);
@@ -318,11 +318,11 @@
             this.groupBox3.Controls.Add(this.txt_findID);
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 13F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))));
-            this.groupBox3.Location = new System.Drawing.Point(2, 358);
+            this.groupBox3.Location = new System.Drawing.Point(377, 45);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(456, 218);
+            this.groupBox3.Size = new System.Drawing.Size(451, 265);
             this.groupBox3.TabIndex = 84;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tra cứu";
@@ -334,7 +334,7 @@
             this.rdo_findByID.CheckedState.BorderThickness = 0;
             this.rdo_findByID.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.rdo_findByID.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdo_findByID.Location = new System.Drawing.Point(26, 49);
+            this.rdo_findByID.Location = new System.Drawing.Point(26, 61);
             this.rdo_findByID.Margin = new System.Windows.Forms.Padding(2);
             this.rdo_findByID.Name = "rdo_findByID";
             this.rdo_findByID.Size = new System.Drawing.Size(15, 16);
@@ -352,7 +352,7 @@
             this.rdo_All.CheckedState.BorderThickness = 0;
             this.rdo_All.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.rdo_All.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rdo_All.Location = new System.Drawing.Point(26, 85);
+            this.rdo_All.Location = new System.Drawing.Point(26, 97);
             this.rdo_All.Margin = new System.Windows.Forms.Padding(2);
             this.rdo_All.Name = "rdo_All";
             this.rdo_All.Size = new System.Drawing.Size(15, 16);
@@ -368,7 +368,7 @@
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(45, 85);
+            this.label14.Location = new System.Drawing.Point(45, 93);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(59, 20);
@@ -392,7 +392,7 @@
             this.bt_timkiem.FillColor = System.Drawing.Color.White;
             this.bt_timkiem.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bt_timkiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bt_timkiem.Location = new System.Drawing.Point(332, 49);
+            this.bt_timkiem.Location = new System.Drawing.Point(327, 43);
             this.bt_timkiem.Margin = new System.Windows.Forms.Padding(2);
             this.bt_timkiem.Name = "bt_timkiem";
             this.bt_timkiem.Size = new System.Drawing.Size(120, 34);
@@ -407,7 +407,7 @@
             this.label15.BackColor = System.Drawing.Color.White;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(45, 49);
+            this.label15.Location = new System.Drawing.Point(45, 57);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(115, 20);
@@ -427,7 +427,7 @@
             this.txt_findID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_findID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_findID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_findID.Location = new System.Drawing.Point(164, 49);
+            this.txt_findID.Location = new System.Drawing.Point(164, 50);
             this.txt_findID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_findID.Name = "txt_findID";
             this.txt_findID.PasswordChar = '\0';
@@ -466,7 +466,7 @@
             this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
             this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.Red;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1340, 10);
+            this.guna2ControlBox2.Location = new System.Drawing.Point(1046, 10);
             this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(28, 23);
@@ -479,7 +479,7 @@
             this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Red;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1308, 10);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1014, 10);
             this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(2);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(28, 23);
@@ -496,16 +496,17 @@
             this.Column1,
             this.MaNV,
             this.NgayMuon});
-            this.dgv_Lich.Location = new System.Drawing.Point(492, 61);
+            this.dgv_Lich.Location = new System.Drawing.Point(11, 383);
             this.dgv_Lich.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_Lich.Name = "dgv_Lich";
             this.dgv_Lich.RowHeadersWidth = 51;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dgv_Lich.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_Lich.RowTemplate.Height = 24;
-            this.dgv_Lich.Size = new System.Drawing.Size(640, 581);
+            this.dgv_Lich.Size = new System.Drawing.Size(828, 341);
             this.dgv_Lich.TabIndex = 81;
             this.dgv_Lich.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Lich_CellClick);
+            this.dgv_Lich.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_Lich_CellContentClick);
             // 
             // MaDocGia
             // 
@@ -539,7 +540,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
-            this.ClientSize = new System.Drawing.Size(1144, 651);
+            this.ClientSize = new System.Drawing.Size(850, 735);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.guna2ControlBox3);
             this.Controls.Add(this.guna2ControlBox4);

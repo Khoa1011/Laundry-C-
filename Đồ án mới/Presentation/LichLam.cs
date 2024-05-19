@@ -121,5 +121,10 @@ namespace Đồ_án_mới.Presentation
         {
             txt_ID.Text = dgv_Lich[0, dgv_Lich.CurrentRow.Index].Value.ToString();
         }
+
+        private void dgv_Lich_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
