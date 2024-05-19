@@ -45,11 +45,11 @@ namespace Đồ_án_mới.Presentation
             NHANVIEN nv = new NHANVIEN();
             TAIKHOAN tk = new TAIKHOAN();
             nv.TenNhanVien = txt_nameNV.Text;
-            nv.TuoiNhanVien = txt_ageNV.Text;
+            nv.TuoiNhanVien = int.Parse(txt_ageNV.Text);
             nv.DiaChiNhanVien = txt_addressNV.Text;
             nv.SdtNhanVien = txt_sdtNV.Text;
             tk.TenTaiKhoan = txt_userName.Text;
-            tk.MatKhau = txt_passWord.Text;
+            tk.MatKhau = PasswordHelper.HashString(txt_passWord.Text);
             nv.Taikhoan = tk;
             if (rdo_namNV.Checked)
             {
@@ -75,7 +75,7 @@ namespace Đồ_án_mới.Presentation
             NHANVIEN nv = new NHANVIEN();
             TAIKHOAN tk = new TAIKHOAN();
             nv.TenNhanVien = txt_nameNV.Text;
-            nv.TuoiNhanVien = txt_ageNV.Text;
+            nv.TuoiNhanVien = int.Parse(txt_ageNV.Text);
             nv.DiaChiNhanVien = txt_addressNV.Text;
             nv.SdtNhanVien = txt_sdtNV.Text;
             tk.TenTaiKhoan = txt_userName.Text;

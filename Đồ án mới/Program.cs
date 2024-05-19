@@ -15,9 +15,12 @@ namespace Doan
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new NhanVien());
+            
+          Application.EnableVisualStyles();
+           Application.SetCompatibleTextRenderingDefault(false);
+           //Application.Run(new NhanVien());
+            // Application.Run(new TaiKhoan());
+            Application.Run(new LichLam());
         }
     }
 }
