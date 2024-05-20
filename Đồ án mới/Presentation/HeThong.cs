@@ -54,7 +54,7 @@ namespace Doan
 
         private void btn_donhang_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new KhachHang());
+            OpenChildForm(new ChiTietHoaDon());
             lbl_title.Text = btn_donhang.Text;
         }
 
@@ -82,6 +82,11 @@ namespace Doan
         private void btn_khachhang_Click(object sender, EventArgs e)
         {
             OpenChildForm(new KhachHang());
+        }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new DichVu());
         }
     }
 }

@@ -55,35 +55,43 @@ namespace Đồ_án_mới.DAO
         }
         public bool addKH(KHACHHANG kh)
         {
-            con.Open();
-            SqlTransaction transaction = con.BeginTransaction();
-            try
+            using (SqlConnection con = ConnectionTool.GetConnection())
             {
-                string sql = "INSERT INTO KHACHHANG (TEN_KHACHHANG, TUOI_KHACHHANG, GIOITINH_KHACHHANG, DIACHI_KHACHHANG, SODT_KHACHHANG) VALUES (@Name, @Age, @Gender, @Address, @Phone)";
-                using (cmd = new SqlCommand(sql, con, transaction))
+                con.Open();
+                SqlTransaction transaction = con.BeginTransaction();
+
+                try
                 {
-                    cmd.Parameters.AddWithValue("@Name", kh.TenKhachHang);
-                    cmd.Parameters.AddWithValue("@Age", kh.TuoiKhachHang);
-                    cmd.Parameters.AddWithValue("@Gender", kh.GioiTinhKhachHang);
-                    cmd.Parameters.AddWithValue("@Address", kh.DiaChiKhachHang);
-                    cmd.Parameters.AddWithValue("@Phone", kh.SdtKhachHang);
-                    cmd.ExecuteNonQuery();
-                    transaction.Commit();
+                    string sql = "INSERT INTO KHACHHANG (TEN_KHACHHANG, TUOI_KHACHHANG, GIOITINH_KHACHHANG, DIACHI_KHACHHANG, SODT_KHACHHANG) " +
+                                 "VALUES (@Name, @Age, @Gender, @Address, @Phone); SELECT SCOPE_IDENTITY();";
+
+                    using (SqlCommand cmd = new SqlCommand(sql, con, transaction))
+                    {
+                        cmd.Parameters.AddWithValue("@Name", kh.TenKhachHang);
+                        cmd.Parameters.AddWithValue("@Age", kh.TuoiKhachHang);
+                        cmd.Parameters.AddWithValue("@Gender", kh.GioiTinhKhachHang);
+                        cmd.Parameters.AddWithValue("@Address", kh.DiaChiKhachHang);
+                        cmd.Parameters.AddWithValue("@Phone", kh.SdtKhachHang);
+
+                        // Thực thi câu lệnh INSERT và lấy mã khách hàng tự động tăng
+                        int maKhachHang = Convert.ToInt32(cmd.ExecuteScalar());
+
+                        // Gán mã khách hàng vừa thêm vào đối tượng KHACHHANG
+                        kh.MaKhachHang = maKhachHang;
+
+                        transaction.Commit();
+                        con.Close();
+                        return true; // Thêm thành công
+                    }
+                }
+                catch (Exception ex)
+                {
+                    transaction.Rollback(); // Rollback transaction nếu có lỗi
+                    Console.WriteLine("Lỗi: " + ex.Message);
                     con.Close();
-                    return true; // Thêm thành công
+                    return false; // Thêm không thành công
                 }
             }
-            catch (Exception ex)
-            {
-                // Rollback transaction nếu có lỗi
-                transaction.Rollback();
-                Console.WriteLine("Lỗi: " + ex.Message);
-                Console.WriteLine("Lỗi: " + ex.Message);
-                con.Close();
-                return false; // Thêm không thành công
-            }
-
-
         }
         public bool deleteKH(int id)
         {
@@ -95,6 +103,37 @@ namespace Đồ_án_mới.DAO
                 using (SqlCommand cmd = new SqlCommand(sqlDeleteKH, con, transaction))
                 {
                     cmd.Parameters.AddWithValue("@ID", id);
+                    cmd.ExecuteNonQuery();
+                    transaction.Commit();
+                    con.Close();
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                // Rollback transaction nếu có lỗi
+                transaction.Rollback();
+                Console.WriteLine("Lỗi: " + ex.Message);
+                Console.WriteLine("Lỗi: " + ex.Message);
+                con.Close();
+                return false;
+            }
+        }
+        public bool updateKH(KHACHHANG kh, int id)
+        {
+            con.Open();
+            SqlTransaction transaction = con.BeginTransaction();
+            try
+            {
+                string sqlUpdateKH = "update KHACHHANG set TEN_KHACHHANG = @Name, TUOI_KHACHHANG = @Age , GIOITINH_KHACHHANG = @Gender, DIACHI_KHACHHANG = @Address, SODT_KHACHHANG= @Phone where MA_KHACHHANG= @ID";
+                using (SqlCommand cmd = new SqlCommand(sqlUpdateKH, con, transaction))
+                {
+                    cmd.Parameters.AddWithValue("@ID", id);
+                    cmd.Parameters.AddWithValue("@Name", kh.TenKhachHang);
+                    cmd.Parameters.AddWithValue("@Age", kh.TuoiKhachHang);
+                    cmd.Parameters.AddWithValue("@Gender", kh.GioiTinhKhachHang);
+                    cmd.Parameters.AddWithValue("@Address", kh.DiaChiKhachHang);
+                    cmd.Parameters.AddWithValue("@Phone", kh.SdtKhachHang);
                     cmd.ExecuteNonQuery();
                     transaction.Commit();
                     con.Close();

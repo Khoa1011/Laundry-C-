@@ -120,8 +120,6 @@ namespace Đồ_án_mới.Presentation
                   
                 }else if (dgv_NV[2, dgv_NV.CurrentRow.Index].Value.ToString().Equals("Nu") || dgv_NV[2, dgv_NV.CurrentRow.Index].Value.ToString().Equals("nu"))
                     rdo_nuKH.Checked = true;
-
-
             }
         }
 

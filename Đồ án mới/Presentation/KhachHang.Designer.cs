@@ -105,7 +105,6 @@
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Cập nhật thông tin";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // groupBox2
             // 
@@ -121,7 +120,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(104, 163);
+            this.groupBox2.Size = new System.Drawing.Size(104, 164);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Giới tính";
@@ -428,7 +427,7 @@
             this.bt_deleteKH.FillColor = System.Drawing.Color.White;
             this.bt_deleteKH.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bt_deleteKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bt_deleteKH.Location = new System.Drawing.Point(670, 293);
+            this.bt_deleteKH.Location = new System.Drawing.Point(670, 285);
             this.bt_deleteKH.Margin = new System.Windows.Forms.Padding(2);
             this.bt_deleteKH.Name = "bt_deleteKH";
             this.bt_deleteKH.Size = new System.Drawing.Size(97, 34);
@@ -477,7 +476,7 @@
             this.bt_them_Đgia.FillColor = System.Drawing.Color.White;
             this.bt_them_Đgia.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bt_them_Đgia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bt_them_Đgia.Location = new System.Drawing.Point(670, 149);
+            this.bt_them_Đgia.Location = new System.Drawing.Point(670, 156);
             this.bt_them_Đgia.Margin = new System.Windows.Forms.Padding(2);
             this.bt_them_Đgia.Name = "bt_them_Đgia";
             this.bt_them_Đgia.Size = new System.Drawing.Size(97, 34);
@@ -605,6 +604,7 @@
             this.dgv_KH.RowTemplate.Height = 24;
             this.dgv_KH.Size = new System.Drawing.Size(832, 306);
             this.dgv_KH.TabIndex = 19;
+            this.dgv_KH.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_KH_CellClick);
             // 
             // MaDG
             // 

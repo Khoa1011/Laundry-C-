@@ -392,7 +392,7 @@
             this.bt_timkiem.FillColor = System.Drawing.Color.White;
             this.bt_timkiem.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bt_timkiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bt_timkiem.Location = new System.Drawing.Point(327, 43);
+            this.bt_timkiem.Location = new System.Drawing.Point(327, 61);
             this.bt_timkiem.Margin = new System.Windows.Forms.Padding(2);
             this.bt_timkiem.Name = "bt_timkiem";
             this.bt_timkiem.Size = new System.Drawing.Size(120, 34);
@@ -427,7 +427,7 @@
             this.txt_findID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_findID.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_findID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_findID.Location = new System.Drawing.Point(164, 50);
+            this.txt_findID.Location = new System.Drawing.Point(164, 61);
             this.txt_findID.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txt_findID.Name = "txt_findID";
             this.txt_findID.PasswordChar = '\0';
