@@ -42,7 +42,7 @@ namespace Doan
 
         private void bt_search_Click(object sender, EventArgs e)
         {
-            if (txt_search.Text == "" )
+            if (txt_search.Text == "")
                 MessageBox.Show("Vui lòng không để trống !!");
             if (rdo_findByName.Checked)
             {
@@ -84,14 +84,29 @@ namespace Doan
 
         private void bt_sua_Đgia_Click(object sender, EventArgs e)
         {
-
+            KHACHHANG kh = new KHACHHANG();
+            kh.TenKhachHang = txt_nameKH.Text;
+            kh.TuoiKhachHang = int.Parse(txt_ageKH.Text);
+            kh.DiaChiKhachHang = txt_anddressKH.Text;
+            kh.SdtKhachHang = txt_sdtKH.Text;
+            if (rdo_namKH.Checked)
+            {
+                kh.GioiTinhKhachHang = "Nam";
+            }
+            if (rdo_nuKH.Checked)
+            {
+                kh.GioiTinhKhachHang = "Nu";
+            }
+            int id = int.Parse(dgv_KH[0, dgv_KH.CurrentRow.Index].Value.ToString());
+            if (khDAO.updateKH(kh, id))
+            {
+                MessageBox.Show("Sửa thành công !!!");
+                load();
+            }
+            else MessageBox.Show("Sửa không thành công !");
         }
 
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
 
         private void bt_deleteKH_Click(object sender, EventArgs e)
         {
@@ -99,9 +114,24 @@ namespace Doan
             if (khDAO.deleteKH(id))
             {
                 MessageBox.Show("Xóa thành công!");
-               load();
+                load();
             }
             else MessageBox.Show("Xóa thất bại!!");
+        }
+
+        private void dgv_KH_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txt_nameKH.Text = dgv_KH[1, dgv_KH.CurrentRow.Index].Value.ToString();
+            txt_ageKH.Text = dgv_KH[2, dgv_KH.CurrentRow.Index].Value.ToString();
+            txt_anddressKH.Text = dgv_KH[4, dgv_KH.CurrentRow.Index].Value.ToString();
+            txt_sdtKH.Text = dgv_KH[5, dgv_KH.CurrentRow.Index].Value.ToString();
+            if (dgv_KH[3, dgv_KH.CurrentRow.Index].Value.ToString().Equals("Nam") || dgv_KH[3, dgv_KH.CurrentRow.Index].Value.ToString().Equals("nam"))
+            {
+                rdo_namKH.Checked = true;
+
+            }
+            else if (dgv_KH[3, dgv_KH.CurrentRow.Index].Value.ToString().Equals("Nu") || dgv_KH[3, dgv_KH.CurrentRow.Index].Value.ToString().Equals("nu"))
+                rdo_nuKH.Checked = true;
         }
     }
 }

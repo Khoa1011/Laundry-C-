@@ -10,13 +10,13 @@ namespace Đồ_án_mới.DTO
     {
         private int maDichVu;
         private string moTaDichVu;
-        private float tongTienDichVu;
+        private double tongTienDichVu;
 
         public DICHVU()
         {
         }
 
-        public DICHVU(int maDichVu, string moTaDichVu, float tongTienDichVu)
+        public DICHVU(int maDichVu, string moTaDichVu, double tongTienDichVu)
         {
             this.MaDichVu = maDichVu;
             this.MoTaDichVu = moTaDichVu;
@@ -25,6 +25,6 @@ namespace Đồ_án_mới.DTO
 
         public int MaDichVu { get => maDichVu; set => maDichVu = value; }
         public string MoTaDichVu { get => moTaDichVu; set => moTaDichVu = value; }
-        public float TongTienDichVu { get => tongTienDichVu; set => tongTienDichVu = value; }
+        public double TongTienDichVu { get => tongTienDichVu; set => tongTienDichVu = value; }
     }
 }
