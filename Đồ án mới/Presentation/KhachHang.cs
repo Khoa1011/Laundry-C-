@@ -63,19 +63,19 @@ namespace Doan
                 KHACHHANG kh = new KHACHHANG();
                 if (txt_nameKH.Text != "" || txt_anddressKH.Text != "" || txt_sdtKH.Text != "")
                 {
-                    kh.TuoiKhachHang = int.Parse(txt_ageKH.Text);
-                    kh.TenKhachHang = txt_nameKH.Text;
-                    kh.DiaChiKhachHang = txt_anddressKH.Text;
-                    kh.SdtKhachHang = txt_sdtKH.Text;
+                    kh.Tuoi = int.Parse(txt_ageKH.Text);
+                    kh.Ten = txt_nameKH.Text;
+                    kh.DiaChi = txt_anddressKH.Text;
+                    kh.SoDienThoai = txt_sdtKH.Text;
                     if (rdo_namKH.Checked)
                     {
-                        kh.GioiTinhKhachHang = "Nam";
+                        kh.GioiTinh = "Nam";
                     }
                     if (rdo_nuKH.Checked)
                     {
-                        kh.GioiTinhKhachHang = "Nu";
+                        kh.GioiTinh = "Nu";
                     }
-                    if (khDAO.addKH(kh))
+                    if (khDAO.add(kh))
                     {
                         MessageBox.Show("Thêm thành công!!!");
                     }
@@ -100,20 +100,20 @@ namespace Doan
                 KHACHHANG kh = new KHACHHANG();
                 if (txt_nameKH.Text != "" || txt_anddressKH.Text != "" || txt_sdtKH.Text != "")
                 {
-                    kh.TenKhachHang = txt_nameKH.Text;
-                    kh.TuoiKhachHang = int.Parse(txt_ageKH.Text);
-                    kh.DiaChiKhachHang = txt_anddressKH.Text;
-                    kh.SdtKhachHang = txt_sdtKH.Text;
+                    kh.Ten = txt_nameKH.Text;
+                    kh.Tuoi = int.Parse(txt_ageKH.Text);
+                    kh.DiaChi = txt_anddressKH.Text;
+                    kh.SoDienThoai = txt_sdtKH.Text;
                     if (rdo_namKH.Checked)
                     {
-                        kh.GioiTinhKhachHang = "Nam";
+                        kh.GioiTinh = "Nam";
                     }
                     if (rdo_nuKH.Checked)
                     {
-                        kh.GioiTinhKhachHang = "Nu";
+                        kh.GioiTinh = "Nu";
                     }
                     int id = int.Parse(dgv_KH[0, dgv_KH.CurrentRow.Index].Value.ToString());
-                    if (khDAO.updateKH(kh, id))
+                    if (khDAO.update(kh, id))
                     {
                         MessageBox.Show("Sửa thành công !!!");
                         load();
@@ -133,7 +133,7 @@ namespace Doan
         private void bt_deleteKH_Click(object sender, EventArgs e)
         {
             int id = int.Parse(dgv_KH[0, dgv_KH.CurrentRow.Index].Value.ToString());
-            if (khDAO.deleteKH(id))
+            if (khDAO.delete(id))
             {
                 MessageBox.Show("Xóa thành công!");
                 load();

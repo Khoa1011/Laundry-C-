@@ -40,7 +40,7 @@ namespace Đồ_án_mới.Presentation
                 {
                     dv.MoTaDichVu = txt_nameDV.Text;
                     dv.TongTienDichVu = double.Parse(txt_price.Text);
-                    if (dvDAO.addDV(dv))
+                    if (dvDAO.add(dv))
                     {
                         MessageBox.Show("Thêm thành công!!!");
                         load();
@@ -59,7 +59,7 @@ namespace Đồ_án_mới.Presentation
         private void bt_deleteDV_Click(object sender, EventArgs e)
         {
             int id = int.Parse(dgv_DV[0, dgv_DV.CurrentRow.Index].Value.ToString());
-            if (dvDAO.deleteDV(id))
+            if (dvDAO.delete(id))
             {
                 MessageBox.Show("Xóa thành công!!!");
                 load();
@@ -77,7 +77,7 @@ namespace Đồ_án_mới.Presentation
                     dv.MoTaDichVu = txt_nameDV.Text;
                     dv.TongTienDichVu = double.Parse(txt_price.Text);
                     int id = int.Parse(dgv_DV[0, dgv_DV.CurrentRow.Index].Value.ToString());
-                    if (dvDAO.updateDV(dv, id))
+                    if (dvDAO.update(dv, id))
                     {
                         MessageBox.Show("Sửa thành công!!!");
                         load();

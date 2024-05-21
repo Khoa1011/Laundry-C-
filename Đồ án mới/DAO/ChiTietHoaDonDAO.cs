@@ -48,7 +48,7 @@ namespace Đồ_án_mới.DAO
                 con.Open();
                 KhachHangDAO khDAO = new KhachHangDAO();
 
-                if (khDAO.addKH(kh))
+                if (khDAO.add(kh))
                 {
                     SqlTransaction transaction = con.BeginTransaction();
 

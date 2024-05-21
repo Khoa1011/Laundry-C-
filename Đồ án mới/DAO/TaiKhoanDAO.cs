@@ -9,7 +9,7 @@ using Đồ_án_mới.DTO;
 
 namespace Đồ_án_mới.DAO
 {
-    class TaiKhoanDAO
+    class TaiKhoanDAO : interfaceDAO<TAIKHOAN>
     {
         static SqlCommand cmd;
         static SqlDataAdapter adapter;
@@ -128,6 +128,16 @@ namespace Đồ_án_mới.DAO
                 con.Close();
                 return false;
             }
+        }
+
+        public bool add(TAIKHOAN enity)
+        {
+            throw new NotImplementedException();
+        }
+
+        public bool update(TAIKHOAN enity, int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

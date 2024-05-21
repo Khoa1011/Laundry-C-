@@ -72,17 +72,17 @@ namespace Đồ_án_mới.Presentation
                 //Khach hang
                 if (txt_nameKH.Text != "" || txt_anddressKH.Text != "" || txt_anddressKH.Text != "")
                 {
-                    kh.TenKhachHang = txt_nameKH.Text;
-                    kh.TuoiKhachHang = int.Parse(txt_ageKH.Text);
-                    kh.DiaChiKhachHang = txt_anddressKH.Text;
-                    kh.SdtKhachHang = txt_sdtKH.Text;
+                    kh.Ten = txt_nameKH.Text;
+                    kh.Tuoi = int.Parse(txt_ageKH.Text);
+                    kh.DiaChi = txt_anddressKH.Text;
+                    kh.SoDienThoai = txt_sdtKH.Text;
                     if (rdo_namKH.Checked)
                     {
-                        kh.GioiTinhKhachHang = "Nam";
+                        kh.GioiTinh = "Nam";
                     }
                     if (rdo_nuKH.Checked)
                     {
-                        kh.GioiTinhKhachHang = "Nu";
+                        kh.GioiTinh = "Nu";
                     }
                     //Hoa Don 
                     int idDV = int.Parse(cb_hdDV.SelectedValue.ToString());

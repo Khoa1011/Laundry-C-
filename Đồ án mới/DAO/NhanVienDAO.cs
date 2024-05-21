@@ -9,7 +9,7 @@ using System.Data;
 
 namespace Đồ_án_mới.DAO
 {
-    class NhanVienDAO
+    class NhanVienDAO : interfaceDAO<NHANVIEN>
     {
         static SqlCommand cmd;
         static SqlDataAdapter adapter;
@@ -54,7 +54,7 @@ namespace Đồ_án_mới.DAO
             con.Close();
             return dt;
         }
-        public Boolean AddNV(NHANVIEN nv)
+        public bool add(NHANVIEN nv)
         {
             con.Open();
             SqlTransaction transaction = con.BeginTransaction();
@@ -68,11 +68,11 @@ namespace Đồ_án_mới.DAO
 
                 using (SqlCommand cmdNhanVien = new SqlCommand(sqlNhanVien, con, transaction))
                 {
-                    cmdNhanVien.Parameters.AddWithValue("@Name", nv.TenNhanVien);
-                    cmdNhanVien.Parameters.AddWithValue("@Gender", nv.GioiTinhNhanVien);
-                    cmdNhanVien.Parameters.AddWithValue("@Age", nv.TuoiNhanVien);
-                    cmdNhanVien.Parameters.AddWithValue("@Address", nv.DiaChiNhanVien);
-                    cmdNhanVien.Parameters.AddWithValue("@sdt", nv.SdtNhanVien);
+                    cmdNhanVien.Parameters.AddWithValue("@Name", nv.Ten);
+                    cmdNhanVien.Parameters.AddWithValue("@Gender", nv.GioiTinh);
+                    cmdNhanVien.Parameters.AddWithValue("@Age", nv.Tuoi);
+                    cmdNhanVien.Parameters.AddWithValue("@Address", nv.DiaChi);
+                    cmdNhanVien.Parameters.AddWithValue("@sdt", nv.SoDienThoai);
 
                     // Lấy ID của nhân viên vừa được chèn vào
                     int nhanVienId = Convert.ToInt32(cmdNhanVien.ExecuteScalar());
@@ -84,8 +84,8 @@ namespace Đồ_án_mới.DAO
                     using (SqlCommand cmdTaiKhoan = new SqlCommand(sqlTaiKhoan, con, transaction))
                     {
                         cmdTaiKhoan.Parameters.AddWithValue("@IDNhanVien", nhanVienId);
-                        cmdTaiKhoan.Parameters.AddWithValue("@TenTaiKhoan", nv.Taikhoan.TenTaiKhoan);
-                        cmdTaiKhoan.Parameters.AddWithValue("@MatKhau", nv.Taikhoan.MatKhau);
+                        cmdTaiKhoan.Parameters.AddWithValue("@TenTaiKhoan", nv.TaiKhoan.TenTaiKhoan);
+                        cmdTaiKhoan.Parameters.AddWithValue("@MatKhau", nv.TaiKhoan.MatKhau);
 
                         cmdTaiKhoan.ExecuteNonQuery();
                     }
@@ -107,7 +107,7 @@ namespace Đồ_án_mới.DAO
             }
 
         }
-        public Boolean Update(int id, NHANVIEN nv)
+        public bool update( NHANVIEN nv,int id )
         {
             con.Open();
             SqlTransaction transaction = con.BeginTransaction();
@@ -116,11 +116,11 @@ namespace Đồ_án_mới.DAO
                 String sqlUpdate = "Update nhanvien SET Ten = @Name,GioiTinh = @Gender,Tuoi = @Age,DiaChi = @Address,SoDienThoai = @Phone WHERE ID = @EmployeeID";
                 using (SqlCommand cmd = new SqlCommand(@sqlUpdate, con, transaction))
                 {
-                    cmd.Parameters.AddWithValue("@Name", nv.TenNhanVien);
-                    cmd.Parameters.AddWithValue("@Gender", nv.GioiTinhNhanVien);
-                    cmd.Parameters.AddWithValue("@Age", nv.TuoiNhanVien);
-                    cmd.Parameters.AddWithValue("@Address", nv.DiaChiNhanVien);
-                    cmd.Parameters.AddWithValue("@Phone", nv.SdtNhanVien);
+                    cmd.Parameters.AddWithValue("@Name", nv.Ten);
+                    cmd.Parameters.AddWithValue("@Gender", nv.GioiTinh);
+                    cmd.Parameters.AddWithValue("@Age", nv.Tuoi);
+                    cmd.Parameters.AddWithValue("@Address", nv.DiaChi);
+                    cmd.Parameters.AddWithValue("@Phone", nv.SoDienThoai);
                     cmd.Parameters.AddWithValue("@EmployeeID", id);
                     cmd.ExecuteNonQuery();
                     transaction.Commit();
@@ -138,7 +138,7 @@ namespace Đồ_án_mới.DAO
                 return false;
             }
         }
-        public Boolean Delete(int id)
+        public bool delete(int id)
         {
             con.Open();
             SqlTransaction transaction = con.BeginTransaction();
@@ -146,6 +146,12 @@ namespace Đồ_án_mới.DAO
             {
                 string sqlDeleteTaiKhoan = "DELETE FROM taikhoan WHERE IDNhanVien = @EmployeeID";
                 using (SqlCommand cmd = new SqlCommand(sqlDeleteTaiKhoan, con, transaction))
+                {
+                    cmd.Parameters.AddWithValue("@EmployeeID", id);
+                    cmd.ExecuteNonQuery();
+                }
+                string sqlDeleteLichLam = "DELETE FROM lichlamviec WHERE IDNhanVien = @EmployeeID";
+                using (SqlCommand cmd = new SqlCommand(sqlDeleteLichLam, con, transaction))
                 {
                     cmd.Parameters.AddWithValue("@EmployeeID", id);
                     cmd.ExecuteNonQuery();
@@ -170,7 +176,124 @@ namespace Đồ_án_mới.DAO
                 con.Close();
                 return false;
             }
-
         }
+        //public Boolean AddNV(NHANVIEN nv)
+        //{
+        //    con.Open();
+        //    SqlTransaction transaction = con.BeginTransaction();
+
+        //    try
+        //    {
+        //        // Tạo câu lệnh INSERT vào bảng nhanvien
+        //        string sqlNhanVien = "INSERT INTO nhanvien (Ten, GioiTinh, Tuoi, DiaChi, SoDienThoai) " +
+        //                             "VALUES (@Name, @Gender, @Age, @Address, @sdt); " +
+        //                             "SELECT SCOPE_IDENTITY();";
+
+        //        using (SqlCommand cmdNhanVien = new SqlCommand(sqlNhanVien, con, transaction))
+        //        {
+        //            cmdNhanVien.Parameters.AddWithValue("@Name", nv.TenNhanVien);
+        //            cmdNhanVien.Parameters.AddWithValue("@Gender", nv.GioiTinhNhanVien);
+        //            cmdNhanVien.Parameters.AddWithValue("@Age", nv.TuoiNhanVien);
+        //            cmdNhanVien.Parameters.AddWithValue("@Address", nv.DiaChiNhanVien);
+        //            cmdNhanVien.Parameters.AddWithValue("@sdt", nv.SdtNhanVien);
+
+        //            // Lấy ID của nhân viên vừa được chèn vào
+        //            int nhanVienId = Convert.ToInt32(cmdNhanVien.ExecuteScalar());
+
+        //            // Tạo câu lệnh INSERT vào bảng taikhoans
+        //            string sqlTaiKhoan = "INSERT INTO taikhoan (IDNhanVien, TenTaiKhoan, MatKhau) " +
+        //                                 "VALUES (@IDNhanVien, @TenTaiKhoan, @MatKhau)";
+
+        //            using (SqlCommand cmdTaiKhoan = new SqlCommand(sqlTaiKhoan, con, transaction))
+        //            {
+        //                cmdTaiKhoan.Parameters.AddWithValue("@IDNhanVien", nhanVienId);
+        //                cmdTaiKhoan.Parameters.AddWithValue("@TenTaiKhoan", nv.Taikhoan.TenTaiKhoan);
+        //                cmdTaiKhoan.Parameters.AddWithValue("@MatKhau", nv.Taikhoan.MatKhau);
+
+        //                cmdTaiKhoan.ExecuteNonQuery();
+        //            }
+        //        }
+
+        //        // Commit transaction
+        //        transaction.Commit();
+        //        con.Close();
+        //        return true; // Thêm thành công
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        // Rollback transaction nếu có lỗi
+        //        transaction.Rollback();
+        //        Console.WriteLine("Lỗi: " + ex.Message);
+        //        Console.WriteLine("Lỗi: " + ex.Message);
+        //        con.Close();
+        //        return false; // Thêm không thành công
+        //    }
+
+        //}
+        //public Boolean Update(int id, NHANVIEN nv)
+        //{
+        //    con.Open();
+        //    SqlTransaction transaction = con.BeginTransaction();
+        //    try
+        //    {
+        //        String sqlUpdate = "Update nhanvien SET Ten = @Name,GioiTinh = @Gender,Tuoi = @Age,DiaChi = @Address,SoDienThoai = @Phone WHERE ID = @EmployeeID";
+        //        using (SqlCommand cmd = new SqlCommand(@sqlUpdate, con, transaction))
+        //        {
+        //            cmd.Parameters.AddWithValue("@Name", nv.TenNhanVien);
+        //            cmd.Parameters.AddWithValue("@Gender", nv.GioiTinhNhanVien);
+        //            cmd.Parameters.AddWithValue("@Age", nv.TuoiNhanVien);
+        //            cmd.Parameters.AddWithValue("@Address", nv.DiaChiNhanVien);
+        //            cmd.Parameters.AddWithValue("@Phone", nv.SdtNhanVien);
+        //            cmd.Parameters.AddWithValue("@EmployeeID", id);
+        //            cmd.ExecuteNonQuery();
+        //            transaction.Commit();
+        //            con.Close();
+        //            return true;
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        // Rollback transaction nếu có lỗi
+        //        transaction.Rollback();
+        //        Console.WriteLine("Lỗi: " + ex.Message);
+        //        Console.WriteLine("Lỗi: " + ex.Message);
+        //        con.Close();
+        //        return false;
+        //    }
+        //}
+        //public Boolean Delete(int id)
+        //{
+        //    con.Open();
+        //    SqlTransaction transaction = con.BeginTransaction();
+        //    try
+        //    {
+        //        string sqlDeleteTaiKhoan = "DELETE FROM taikhoan WHERE IDNhanVien = @EmployeeID";
+        //        using (SqlCommand cmd = new SqlCommand(sqlDeleteTaiKhoan, con, transaction))
+        //        {
+        //            cmd.Parameters.AddWithValue("@EmployeeID", id);
+        //            cmd.ExecuteNonQuery();
+        //        }
+        //        string sqlDeleteNhanVien = "DELETE FROM nhanvien WHERE ID = @EmployeeID";
+        //        using (SqlCommand cmd = new SqlCommand(sqlDeleteNhanVien, con, transaction))
+        //        {
+        //            cmd.Parameters.AddWithValue("@EmployeeID", id);
+        //            cmd.ExecuteNonQuery();
+
+        //        }
+        //        transaction.Commit();
+        //        con.Close();
+        //        return true;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        // Rollback transaction nếu có lỗi
+        //        transaction.Rollback();
+        //        Console.WriteLine("Lỗi: " + ex.Message);
+        //        Console.WriteLine("Lỗi: " + ex.Message);
+        //        con.Close();
+        //        return false;
+        //    }
+
+        //}
     }
 }
