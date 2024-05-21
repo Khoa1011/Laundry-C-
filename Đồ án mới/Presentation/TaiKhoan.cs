@@ -27,13 +27,26 @@ namespace Đồ_án_mới.Presentation
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             if (rdo_ID.Checked)
-            {              
-                dgv_taiKhoan.DataSource = tkDAO.findByID(int.Parse(txt_findTK.Text));
+            {
+                try
+                {
+                    dgv_taiKhoan.DataSource = tkDAO.findByID(int.Parse(txt_findTK.Text));
+                }
+                catch 
+                {
+                    MessageBox.Show("Không được để trống!!");
+                }
+
             }
             else if (rdo_Name.Checked)
             {
-                dgv_taiKhoan.DataSource = tkDAO.findByName(txt_findTK.Text);
-            }   
+                if (txt_findTK.Text == "")
+                {
+                    MessageBox.Show("Không được để trống!!");
+                }
+                else
+                    dgv_taiKhoan.DataSource = tkDAO.findByName(txt_findTK.Text);
+            }
             else load();
         }
 
@@ -44,8 +57,8 @@ namespace Đồ_án_mới.Presentation
                 MessageBox.Show("Xóa thành công!!!");
             }
             else MessageBox.Show("Xóa thất bại !!!");
-                
-          
+
+
         }
 
         private void dgv_taiKhoan_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -59,24 +72,33 @@ namespace Đồ_án_mới.Presentation
             string oldPassword = PasswordHelper.HashString(txt_oldPass.Text);
             string newPassword = PasswordHelper.HashString(txt_newPass.Text);
             string confirmPassword = PasswordHelper.HashString(txt_confirmPass.Text);
-            
-
-            if (tkDAO.findUser(userName) == false)
-                MessageBox.Show("Sai tài khoản!!!");
-            else
+            if (txt_oldPass.Text == "" || txt_nameTK.Text == "" || txt_newPass.Text == "" || txt_confirmPass.Text == "")
             {
-                if (tkDAO.checkOldPassword(userName, oldPassword))
+                MessageBox.Show("Không được để trống!!");
+            }else
+            {
+                if (tkDAO.findUser(userName) == false)
+                    MessageBox.Show("Sai tài khoản!!!");
+                else
                 {
-                    if (newPassword == confirmPassword )
+                    if (tkDAO.checkOldPassword(userName, oldPassword))
                     {
-                        tkDAO.changePass(userName, newPassword);
-                        load();
-                        MessageBox.Show("Đổi mật khẩu thành công !!");
+                        if (newPassword == confirmPassword)
+                        {
+                            tkDAO.changePass(userName, newPassword);
+                            load();
+                            MessageBox.Show("Đổi mật khẩu thành công !!");
+                        }
+                        else MessageBox.Show("Mật khẩu không khớp!!!");
                     }
-                    else MessageBox.Show("Mật khẩu không khớp!!!");
+                    else MessageBox.Show("Sai mật khẩu!!!");
                 }
-                else MessageBox.Show("Sai mật khẩu!!!");
             }
+        }
+
+        private void bt_back_QLMTS_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 }

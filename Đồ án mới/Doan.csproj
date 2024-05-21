@@ -71,6 +71,7 @@
     <Compile Include="DAO\ConnectionTool.cs" />
     <Compile Include="DAO\DangNhapDAO.cs" />
     <Compile Include="DAO\DichVuDAO.cs" />
+    <Compile Include="DAO\interfaceDAO.cs" />
     <Compile Include="DAO\KhachHangDAO.cs" />
     <Compile Include="DAO\LichLamDAO.cs" />
     <Compile Include="DAO\NhanVienDAO.cs" />
@@ -82,6 +83,7 @@
     <Compile Include="DTO\KHACHHANG.cs" />
     <Compile Include="DTO\LICHLAMVIEC.cs" />
     <Compile Include="DTO\NHANVIEN.cs" />
+    <Compile Include="DTO\PERSON.cs" />
     <Compile Include="DTO\TAIKHOAN.cs" />
     <Compile Include="Presentation\DangKy.cs">
       <SubType>Form</SubType>

@@ -19,7 +19,7 @@ namespace Đồ_án_mới.DAO
         {
             con.Open(); // mở 
             //câu lệnh truy vấn
-            string sql = "select NGAY_HOADON, hd.MA_KHACHHANG, kh.TEN_KHACHHANG, dv.MOTA_DICHVU, hd.SOLUONG_DICHVU,hd.TONGTIEN_HOADON from CHITIETHOADON hd right join KHACHHANG kh on hd.MA_KHACHHANG = kh.MA_KHACHHANG right join DICHVU dv on hd.MA_DICHVU = dv.MA_DICHVU";
+            string sql = "select NGAY_HOADON, hd.MA_KHACHHANG, kh.TEN_KHACHHANG, dv.MOTA_DICHVU, hd.SOLUONG_DICHVU,hd.TONGTIEN_HOADON from CHITIETHOADON hd right join KHACHHANG kh on hd.MA_KHACHHANG = kh.MA_KHACHHANG  join DICHVU dv on hd.MA_DICHVU = dv.MA_DICHVU";
             cmd = new SqlCommand(sql, con); //thực hiện câu lệnh kết nối, với "con"
             //Lấy dữ liệu từ database
             adapter = new SqlDataAdapter(cmd);
@@ -48,7 +48,7 @@ namespace Đồ_án_mới.DAO
                 con.Open();
                 KhachHangDAO khDAO = new KhachHangDAO();
 
-                if (khDAO.addKH(kh))
+                if (khDAO.add(kh))
                 {
                     SqlTransaction transaction = con.BeginTransaction();
 

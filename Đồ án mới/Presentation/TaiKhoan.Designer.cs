@@ -484,6 +484,7 @@
             this.label8.Image = global::Đồ_án_mới.Properties.Resources.borrwing_45;
             this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.label8.Location = new System.Drawing.Point(388, 11);
+
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(471, 49);
             this.label8.TabIndex = 68;
@@ -495,8 +496,10 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
+
             this.ClientSize = new System.Drawing.Size(1133, 905);
             this.Controls.Add(this.groupBox1);
+
             this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.label8);

@@ -717,6 +717,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
             this.ClientSize = new System.Drawing.Size(1133, 905);
             this.Controls.Add(this.dgv_NV);
+
             this.Controls.Add(this.label8);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

@@ -82,7 +82,6 @@ namespace Doan
         {
             OpenChildForm(new KhachHang());
             lbl_title.Text = btn_khachhang.Text;
-
         }
 
         private void btn_dichvu_Click(object sender, EventArgs e)

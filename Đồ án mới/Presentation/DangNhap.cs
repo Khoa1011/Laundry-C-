@@ -50,7 +50,7 @@ namespace Doan
         private void bt_login_Click(object sender, EventArgs e)
         {
             String lblUser = txt_user.Text;
-            String lblPassword = txt_password.Text;
+            String lblPassword = PasswordHelper.HashString( txt_password.Text);
             if(txt_user.Text == "" && txt_password.Text == "")
             {
                 MessageBox.Show("Tài khoản mật khẩu không được bỏ trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
