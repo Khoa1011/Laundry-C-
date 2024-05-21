@@ -29,13 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txt_countDV = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btn_eHD = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -44,6 +43,7 @@
             this.rdo_nuKH = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.rdo_namKH = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btn_eHD = new Guna.UI2.WinForms.Guna2Button();
             this.bt_timkiem = new Guna.UI2.WinForms.Guna2Button();
             this.label15 = new System.Windows.Forms.Label();
             this.txt_findSDT = new Guna.UI2.WinForms.Guna2TextBox();
@@ -148,31 +148,6 @@
             this.txt_countDV.SelectedText = "";
             this.txt_countDV.Size = new System.Drawing.Size(189, 27);
             this.txt_countDV.TabIndex = 100;
-            // 
-            // btn_eHD
-            // 
-            this.btn_eHD.Animated = true;
-            this.btn_eHD.AutoRoundedCorners = true;
-            this.btn_eHD.BackColor = System.Drawing.Color.White;
-            this.btn_eHD.BorderRadius = 16;
-            this.btn_eHD.BorderThickness = 2;
-            this.btn_eHD.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_eHD.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
-            this.btn_eHD.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btn_eHD.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btn_eHD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btn_eHD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_eHD.FillColor = System.Drawing.Color.White;
-            this.btn_eHD.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.btn_eHD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_eHD.Location = new System.Drawing.Point(564, 52);
-            this.btn_eHD.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_eHD.Name = "btn_eHD";
-            this.btn_eHD.Size = new System.Drawing.Size(88, 34);
-            this.btn_eHD.TabIndex = 69;
-            this.btn_eHD.Text = "Xuất HĐ";
-            this.btn_eHD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.btn_eHD.Click += new System.EventHandler(this.btn_eHD_Click);
             // 
             // groupBox2
             // 
@@ -293,6 +268,31 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tra cứu";
             // 
+            // btn_eHD
+            // 
+            this.btn_eHD.Animated = true;
+            this.btn_eHD.AutoRoundedCorners = true;
+            this.btn_eHD.BackColor = System.Drawing.Color.White;
+            this.btn_eHD.BorderRadius = 16;
+            this.btn_eHD.BorderThickness = 2;
+            this.btn_eHD.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_eHD.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
+            this.btn_eHD.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_eHD.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_eHD.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_eHD.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_eHD.FillColor = System.Drawing.Color.White;
+            this.btn_eHD.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.btn_eHD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_eHD.Location = new System.Drawing.Point(564, 52);
+            this.btn_eHD.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_eHD.Name = "btn_eHD";
+            this.btn_eHD.Size = new System.Drawing.Size(88, 34);
+            this.btn_eHD.TabIndex = 69;
+            this.btn_eHD.Text = "Xuất HĐ";
+            this.btn_eHD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btn_eHD.Click += new System.EventHandler(this.btn_eHD_Click);
+            // 
             // bt_timkiem
             // 
             this.bt_timkiem.Animated = true;
@@ -328,9 +328,9 @@
             this.label15.Location = new System.Drawing.Point(106, 26);
             this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(131, 20);
+            this.label15.Size = new System.Drawing.Size(142, 20);
             this.label15.TabIndex = 78;
-            this.label15.Text = "Mã khách hàng";
+            this.label15.Text = "SDT khách hàng";
             // 
             // txt_findSDT
             // 
@@ -523,7 +523,7 @@
             this.dt_dateHD.Checked = true;
             this.dt_dateHD.Cursor = System.Windows.Forms.Cursors.Default;
             this.dt_dateHD.CustomFormat = "dd/MM/yyyy";
-            this.dt_dateHD.FillColor = System.Drawing.Color.Transparent;
+            this.dt_dateHD.FillColor = System.Drawing.Color.White;
             this.dt_dateHD.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dt_dateHD.ForeColor = System.Drawing.Color.Black;
             this.dt_dateHD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -535,6 +535,7 @@
             this.dt_dateHD.Size = new System.Drawing.Size(189, 27);
             this.dt_dateHD.TabIndex = 60;
             this.dt_dateHD.Value = new System.DateTime(2024, 5, 20, 15, 0, 29, 0);
+            this.dt_dateHD.ValueChanged += new System.EventHandler(this.dt_dateHD_ValueChanged);
             // 
             // bt_addHD
             // 
@@ -621,7 +622,7 @@
             this.bt_back_QLMTS.FillColor = System.Drawing.Color.White;
             this.bt_back_QLMTS.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bt_back_QLMTS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bt_back_QLMTS.Location = new System.Drawing.Point(9, 10);
+            this.bt_back_QLMTS.Location = new System.Drawing.Point(11, 15);
             this.bt_back_QLMTS.Margin = new System.Windows.Forms.Padding(2);
             this.bt_back_QLMTS.Name = "bt_back_QLMTS";
             this.bt_back_QLMTS.Size = new System.Drawing.Size(109, 34);
@@ -632,8 +633,8 @@
             // 
             // dgv_HD
             // 
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_HD.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_HD.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgv_HD.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_HD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_HD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -647,8 +648,8 @@
             this.dgv_HD.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_HD.Name = "dgv_HD";
             this.dgv_HD.RowHeadersWidth = 51;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_HD.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_HD.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.dgv_HD.RowTemplate.Height = 24;
             this.dgv_HD.Size = new System.Drawing.Size(830, 244);
             this.dgv_HD.TabIndex = 67;
@@ -709,7 +710,7 @@
             this.label8.Location = new System.Drawing.Point(264, 9);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(342, 40);
+            this.label8.Size = new System.Drawing.Size(320, 40);
             this.label8.TabIndex = 28;
             this.label8.Text = "CHI TIẾT HÓA ĐƠN";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;

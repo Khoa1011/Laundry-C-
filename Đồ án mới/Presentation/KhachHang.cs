@@ -58,52 +58,74 @@ namespace Doan
 
         private void bt_them_Đgia_Click(object sender, EventArgs e)
         {
-            KHACHHANG kh = new KHACHHANG();
-            kh.TenKhachHang = txt_nameKH.Text;
-            kh.TuoiKhachHang = int.Parse(txt_ageKH.Text);
-            kh.DiaChiKhachHang = txt_anddressKH.Text;
-            kh.SdtKhachHang = txt_sdtKH.Text;
-            if (rdo_namKH.Checked)
+            try
             {
-                kh.GioiTinhKhachHang = "Nam";
+                KHACHHANG kh = new KHACHHANG();
+                if (txt_nameKH.Text != "" || txt_anddressKH.Text != "" || txt_sdtKH.Text != "")
+                {
+                    kh.TuoiKhachHang = int.Parse(txt_ageKH.Text);
+                    kh.TenKhachHang = txt_nameKH.Text;
+                    kh.DiaChiKhachHang = txt_anddressKH.Text;
+                    kh.SdtKhachHang = txt_sdtKH.Text;
+                    if (rdo_namKH.Checked)
+                    {
+                        kh.GioiTinhKhachHang = "Nam";
+                    }
+                    if (rdo_nuKH.Checked)
+                    {
+                        kh.GioiTinhKhachHang = "Nu";
+                    }
+                    if (khDAO.addKH(kh))
+                    {
+                        MessageBox.Show("Thêm thành công!!!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Không thêm được!!!");
+                    }
+                    load();
+                }
+                else MessageBox.Show("Vui lòng không để trống");
             }
-            if (rdo_nuKH.Checked)
+            catch
             {
-                kh.GioiTinhKhachHang = "Nu";
+                MessageBox.Show("Vui lòng không để trống");
             }
-            if (khDAO.addKH(kh))
-            {
-                MessageBox.Show("Thêm thành công!!!");
-            }
-            else
-            {
-                MessageBox.Show("Không thêm được!!!");
-            }
-            load();
         }
 
         private void bt_sua_Đgia_Click(object sender, EventArgs e)
         {
-            KHACHHANG kh = new KHACHHANG();
-            kh.TenKhachHang = txt_nameKH.Text;
-            kh.TuoiKhachHang = int.Parse(txt_ageKH.Text);
-            kh.DiaChiKhachHang = txt_anddressKH.Text;
-            kh.SdtKhachHang = txt_sdtKH.Text;
-            if (rdo_namKH.Checked)
+            try
             {
-                kh.GioiTinhKhachHang = "Nam";
+                KHACHHANG kh = new KHACHHANG();
+                if (txt_nameKH.Text != "" || txt_anddressKH.Text != "" || txt_sdtKH.Text != "")
+                {
+                    kh.TenKhachHang = txt_nameKH.Text;
+                    kh.TuoiKhachHang = int.Parse(txt_ageKH.Text);
+                    kh.DiaChiKhachHang = txt_anddressKH.Text;
+                    kh.SdtKhachHang = txt_sdtKH.Text;
+                    if (rdo_namKH.Checked)
+                    {
+                        kh.GioiTinhKhachHang = "Nam";
+                    }
+                    if (rdo_nuKH.Checked)
+                    {
+                        kh.GioiTinhKhachHang = "Nu";
+                    }
+                    int id = int.Parse(dgv_KH[0, dgv_KH.CurrentRow.Index].Value.ToString());
+                    if (khDAO.updateKH(kh, id))
+                    {
+                        MessageBox.Show("Sửa thành công !!!");
+                        load();
+                    }
+                    else MessageBox.Show("Sửa không thành công !");
+                }
+                else MessageBox.Show("Vui lòng không để trống");
             }
-            if (rdo_nuKH.Checked)
+            catch
             {
-                kh.GioiTinhKhachHang = "Nu";
+                MessageBox.Show("Vui lòng không để trống");
             }
-            int id = int.Parse(dgv_KH[0, dgv_KH.CurrentRow.Index].Value.ToString());
-            if (khDAO.updateKH(kh, id))
-            {
-                MessageBox.Show("Sửa thành công !!!");
-                load();
-            }
-            else MessageBox.Show("Sửa không thành công !");
         }
 
 

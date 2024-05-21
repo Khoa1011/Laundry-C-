@@ -573,7 +573,7 @@
             this.bt_back_Đgia.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.bt_back_Đgia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.bt_back_Đgia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bt_back_Đgia.FillColor = System.Drawing.Color.White;
+            this.bt_back_Đgia.FillColor = System.Drawing.Color.Transparent;
             this.bt_back_Đgia.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bt_back_Đgia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bt_back_Đgia.Location = new System.Drawing.Point(9, 10);

@@ -283,7 +283,7 @@
             this.bt_back_QLMTS.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.bt_back_QLMTS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.bt_back_QLMTS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bt_back_QLMTS.FillColor = System.Drawing.Color.White;
+            this.bt_back_QLMTS.FillColor = System.Drawing.Color.Transparent;
             this.bt_back_QLMTS.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bt_back_QLMTS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bt_back_QLMTS.Location = new System.Drawing.Point(12, 15);
@@ -293,6 +293,7 @@
             this.bt_back_QLMTS.TabIndex = 80;
             this.bt_back_QLMTS.Text = "Quay lại";
             this.bt_back_QLMTS.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.bt_back_QLMTS.Click += new System.EventHandler(this.bt_back_QLMTS_Click);
             // 
             // dgv_DV
             // 

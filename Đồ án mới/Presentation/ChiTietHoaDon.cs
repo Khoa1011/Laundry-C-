@@ -45,8 +45,6 @@ namespace Đồ_án_mới.Presentation
         }
         private void bt_back_QLMTS_Click(object sender, EventArgs e)
         {
-            HeThong ht = new HeThong();
-            ht.Show();
             this.Hide();
         }
 
@@ -66,33 +64,44 @@ namespace Đồ_án_mới.Presentation
 
         private void bt_addHD_Click(object sender, EventArgs e)
         {
-            KHACHHANG kh = new KHACHHANG();
-            CHITIETHOADON hd = new CHITIETHOADON();
+            try
+            {
+                KHACHHANG kh = new KHACHHANG();
+                CHITIETHOADON hd = new CHITIETHOADON();
 
-            //Khach hang
-            kh.TenKhachHang = txt_nameKH.Text;
-            kh.TuoiKhachHang = int.Parse(txt_ageKH.Text);
-            kh.DiaChiKhachHang = txt_anddressKH.Text;
-            kh.SdtKhachHang = txt_sdtKH.Text;
-            if (rdo_namKH.Checked)
-            {
-                kh.GioiTinhKhachHang = "Nam";
+                //Khach hang
+                if (txt_nameKH.Text != "" || txt_anddressKH.Text != "" || txt_anddressKH.Text != "")
+                {
+                    kh.TenKhachHang = txt_nameKH.Text;
+                    kh.TuoiKhachHang = int.Parse(txt_ageKH.Text);
+                    kh.DiaChiKhachHang = txt_anddressKH.Text;
+                    kh.SdtKhachHang = txt_sdtKH.Text;
+                    if (rdo_namKH.Checked)
+                    {
+                        kh.GioiTinhKhachHang = "Nam";
+                    }
+                    if (rdo_nuKH.Checked)
+                    {
+                        kh.GioiTinhKhachHang = "Nu";
+                    }
+                    //Hoa Don 
+                    int idDV = int.Parse(cb_hdDV.SelectedValue.ToString());
+                    hd.NgayHoaDon = dt_dateHD.Value.Date;
+                    hd.SoLuongDichVu = int.Parse(txt_countDV.Text);
+                    hd.TongTienHoaDon = totalPrice(int.Parse(txt_countDV.Text), dvDAO.getPrice(idDV));
+                    if (hdDAO.addHD(hd, kh, idDV))
+                    {
+                        MessageBox.Show("Tạo hóa đơn thành công");
+                        load();
+                    }
+                    else MessageBox.Show("Không thể tạo hóa đơn!");
+                }
+                else MessageBox.Show("Vui lòng không để trống");
             }
-            if (rdo_nuKH.Checked)
+            catch
             {
-                kh.GioiTinhKhachHang = "Nu";
+                MessageBox.Show("Vui lòng không để trống");
             }
-            //Hoa Don 
-            int idDV = int.Parse(cb_hdDV.SelectedValue.ToString());
-            hd.NgayHoaDon = dt_dateHD.Value.Date;
-            hd.SoLuongDichVu = int.Parse(txt_countDV.Text);
-            hd.TongTienHoaDon = totalPrice(int.Parse(txt_countDV.Text),dvDAO.getPrice(idDV));
-            if (hdDAO.addHD(hd, kh, idDV))
-            {
-                MessageBox.Show("Tạo hóa đơn thành công");
-                load();
-            }
-            else MessageBox.Show("Không thể tạo hóa đơn!");
         }
 
         private void dgv_HD_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -131,6 +140,15 @@ namespace Đồ_án_mới.Presentation
                 dgv_HD.DataSource = dt;
             }
             else MessageBox.Show("Không tìm thấy");
+        }
+
+        private void dt_dateHD_ValueChanged(object sender, EventArgs e)
+        {
+            try { }
+            catch
+            {
+                MessageBox.Show("Không tìm thấy");
+            }
         }
     }
 }

@@ -61,17 +61,20 @@ namespace Doan
         private void btn_nhanvien_Click(object sender, EventArgs e)
         {
             OpenChildForm(new NhanVien());
+            lbl_title.Text = btn_nhanvien.Text;
 
         }
 
         private void btn_schedule_Click(object sender, EventArgs e)
         {
             OpenChildForm(new LichLam());
+            lbl_title.Text = btn_schedule.Text;
         }
 
         private void btn_account_Click(object sender, EventArgs e)
         {
             OpenChildForm(new TaiKhoan());
+            lbl_title.Text = btn_account.Text;
         }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
@@ -82,11 +85,18 @@ namespace Doan
         private void btn_khachhang_Click(object sender, EventArgs e)
         {
             OpenChildForm(new KhachHang());
+            lbl_title.Text = btn_khachhang.Text;
         }
 
         private void guna2GradientButton1_Click(object sender, EventArgs e)
         {
             OpenChildForm(new DichVu());
+            lbl_title.Text = btn_DV.Text;
+        }
+
+        private void guna2ControlBox1_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
