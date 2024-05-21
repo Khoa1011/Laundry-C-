@@ -21,7 +21,7 @@ namespace Doan
             //Application.Run(new NhanVien());
             // Application.Run(new TaiKhoan());
             //Application.Run(new LichLam());
-            Application.Run(new DangNhap());
+            Application.Run(new HeThong());
         }
     }
 }
