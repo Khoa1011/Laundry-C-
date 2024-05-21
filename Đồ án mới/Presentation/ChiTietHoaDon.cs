@@ -43,10 +43,6 @@ namespace Đồ_án_mới.Presentation
             total = price * sl ;
             return total;
         }
-        private void bt_back_QLMTS_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-        }
 
         private void guna2ControlBox2_Click(object sender, EventArgs e)
         {
@@ -55,11 +51,18 @@ namespace Đồ_án_mới.Presentation
 
         private void btn_eHD_Click(object sender, EventArgs e)
         {
-            DateTime dt = DateTime.Parse(dgv_HD[0, dgv_HD.CurrentRow.Index].Value.ToString());
-            int idKH = int.Parse(dgv_HD[1, dgv_HD.CurrentRow.Index].Value.ToString());
-            XuatHD xuatHD = new XuatHD();
-            xuatHD.LoadData(idKH, dt);
-            xuatHD.ShowDialog(); 
+            try
+            {
+                DateTime dt = DateTime.Parse(dgv_HD[0, dgv_HD.CurrentRow.Index].Value.ToString());
+                int idKH = int.Parse(dgv_HD[1, dgv_HD.CurrentRow.Index].Value.ToString());
+                XuatHD xuatHD = new XuatHD();
+                xuatHD.LoadData(idKH, dt);
+                xuatHD.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Không có hóa đơn","Thông báo",MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
         }
 
         private void bt_addHD_Click(object sender, EventArgs e)

@@ -73,6 +73,16 @@ namespace Đồ_án_mới.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _301 {
+            get {
+                object obj = ResourceManager.GetObject("301", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap add {
             get {
                 object obj = ResourceManager.GetObject("add", resourceCulture);
@@ -323,6 +333,16 @@ namespace Đồ_án_mới.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_back_501 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-back-501", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_book_51 {
             get {
                 object obj = ResourceManager.GetObject("icons8-book-51", resourceCulture);
@@ -336,6 +356,16 @@ namespace Đồ_án_mới.Properties {
         internal static System.Drawing.Bitmap icons8_book_51__1_ {
             get {
                 object obj = ResourceManager.GetObject("icons8-book-51 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_book_511 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-book-511", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -783,6 +813,26 @@ namespace Đồ_án_mới.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Logo1 {
+            get {
+                object obj = ResourceManager.GetObject("Logo1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo2 {
+            get {
+                object obj = ResourceManager.GetObject("Logo2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap male {
             get {
                 object obj = ResourceManager.GetObject("male", resourceCulture);
@@ -806,16 +856,6 @@ namespace Đồ_án_mới.Properties {
         internal static System.Drawing.Bitmap return_40 {
             get {
                 object obj = ResourceManager.GetObject("return 40", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap signup {
-            get {
-                object obj = ResourceManager.GetObject("signup", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

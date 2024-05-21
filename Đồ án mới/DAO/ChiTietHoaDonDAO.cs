@@ -15,6 +15,35 @@ namespace Đồ_án_mới.DAO
         static SqlDataAdapter adapter;
         static DataTable dt;
         static SqlConnection con = ConnectionTool.GetConnection();
+
+
+
+        public List<CHITIETHOADON> getListDetails()
+        {
+            con.Open();
+            List<CHITIETHOADON> list = new List<CHITIETHOADON>();
+            String sql = "select TONGTIEN_HOADON from CHITIETHOADON";
+            cmd = new SqlCommand(sql, con);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                double totalDetails = reader.GetDouble(0);
+                CHITIETHOADON tempCus = new CHITIETHOADON(totalDetails);
+                list.Add(tempCus);
+            }
+            con.Close();
+            return list;
+        }
+
+        public double getTotal()
+        {
+            double total = 0;
+            List<CHITIETHOADON> list = getListDetails();
+            foreach (CHITIETHOADON item in list)
+                total += item.TongTienHoaDon;
+            return total;
+        }
+
         public DataTable findALL()
         {
             con.Open(); // mở 

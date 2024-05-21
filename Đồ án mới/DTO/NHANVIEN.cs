@@ -8,8 +8,13 @@ namespace Đồ_án_mới.DTO
 {
     internal class NHANVIEN : PERSON
     {
+        private int maNhanVien;
         private TAIKHOAN taiKhoan;
 
+        public NHANVIEN(int ma)
+        {
+            this.maNhanVien = ma;
+        }
         public NHANVIEN()
         {
         }

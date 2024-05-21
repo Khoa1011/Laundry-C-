@@ -15,6 +15,34 @@ namespace Đồ_án_mới.DAO
         static SqlDataAdapter adapter;
         static DataTable dt;
         static SqlConnection con = ConnectionTool.GetConnection();
+
+
+        public List<KHACHHANG> getListCus()
+        {
+            con.Open();
+            List<KHACHHANG> list = new List<KHACHHANG>();
+            String sql = "select MA_KHACHHANG from KHACHHANG";
+            cmd = new SqlCommand(sql, con);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                int id = reader.GetInt32(0);
+                KHACHHANG tempCus = new KHACHHANG(id);
+                list.Add(tempCus);
+            }
+            con.Close();
+            return list;
+        }
+
+        public int getCountCus()
+        {
+            int count = 0;
+            List<KHACHHANG> list = getListCus();
+            foreach (KHACHHANG tempCus in list)
+                count++;
+            return count;
+        }
+
         public DataTable findALL()
         {
             con.Open(); // mở 

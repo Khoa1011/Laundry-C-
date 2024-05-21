@@ -14,6 +14,11 @@ namespace Đồ_án_mới.DTO
         //private KHACHHANG khachhang;
         //private DICHVU dichvu;
 
+        public CHITIETHOADON(double tong)
+        {
+            this.tongTienHoaDon = tong;
+        }
+
         public CHITIETHOADON()
         {
         }

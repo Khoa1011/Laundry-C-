@@ -58,7 +58,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txt_anddressKH = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_nameKH = new Guna.UI2.WinForms.Guna2TextBox();
-            this.bt_back_Đgia = new Guna.UI2.WinForms.Guna2Button();
             this.dgv_KH = new System.Windows.Forms.DataGridView();
             this.MaDG = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenDG = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,8 +65,8 @@
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label1 = new System.Windows.Forms.Label();
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -98,9 +97,9 @@
             this.groupBox1.Controls.Add(this.txt_nameKH);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(9, 73);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Size = new System.Drawing.Size(835, 652);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
@@ -117,9 +116,9 @@
             this.groupBox2.Controls.Add(this.rdo_namKH);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(548, 156);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Size = new System.Drawing.Size(104, 164);
             this.groupBox2.TabIndex = 22;
             this.groupBox2.TabStop = false;
@@ -130,7 +129,7 @@
             this.guna2PictureBox2.Image = global::Đồ_án_mới.Properties.Resources.female;
             this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.Location = new System.Drawing.Point(66, 85);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.Size = new System.Drawing.Size(27, 22);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -142,7 +141,7 @@
             this.guna2PictureBox1.Image = global::Đồ_án_mới.Properties.Resources.male;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(69, 51);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(27, 22);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -179,7 +178,7 @@
             this.rdo_nuKH.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.rdo_nuKH.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rdo_nuKH.Location = new System.Drawing.Point(9, 84);
-            this.rdo_nuKH.Margin = new System.Windows.Forms.Padding(2);
+            this.rdo_nuKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdo_nuKH.Name = "rdo_nuKH";
             this.rdo_nuKH.Size = new System.Drawing.Size(15, 16);
             this.rdo_nuKH.TabIndex = 23;
@@ -197,7 +196,7 @@
             this.rdo_namKH.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.rdo_namKH.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rdo_namKH.Location = new System.Drawing.Point(9, 54);
-            this.rdo_namKH.Margin = new System.Windows.Forms.Padding(2);
+            this.rdo_namKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdo_namKH.Name = "rdo_namKH";
             this.rdo_namKH.Size = new System.Drawing.Size(15, 16);
             this.rdo_namKH.TabIndex = 22;
@@ -239,9 +238,9 @@
             this.groupBox3.Controls.Add(this.txt_search);
             this.groupBox3.Controls.Add(this.label8);
             this.groupBox3.Location = new System.Drawing.Point(74, 29);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Size = new System.Drawing.Size(634, 107);
             this.groupBox3.TabIndex = 25;
             this.groupBox3.TabStop = false;
@@ -255,7 +254,7 @@
             this.rdo_findAll.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.rdo_findAll.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rdo_findAll.Location = new System.Drawing.Point(13, 70);
-            this.rdo_findAll.Margin = new System.Windows.Forms.Padding(2);
+            this.rdo_findAll.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdo_findAll.Name = "rdo_findAll";
             this.rdo_findAll.Size = new System.Drawing.Size(15, 16);
             this.rdo_findAll.TabIndex = 32;
@@ -284,7 +283,7 @@
             this.rdo_findBySDT.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.rdo_findBySDT.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rdo_findBySDT.Location = new System.Drawing.Point(13, 26);
-            this.rdo_findBySDT.Margin = new System.Windows.Forms.Padding(2);
+            this.rdo_findBySDT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdo_findBySDT.Name = "rdo_findBySDT";
             this.rdo_findBySDT.Size = new System.Drawing.Size(15, 16);
             this.rdo_findBySDT.TabIndex = 30;
@@ -302,7 +301,7 @@
             this.rdo_findByName.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.rdo_findByName.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rdo_findByName.Location = new System.Drawing.Point(13, 48);
-            this.rdo_findByName.Margin = new System.Windows.Forms.Padding(2);
+            this.rdo_findByName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdo_findByName.Name = "rdo_findByName";
             this.rdo_findByName.Size = new System.Drawing.Size(15, 16);
             this.rdo_findByName.TabIndex = 29;
@@ -329,7 +328,7 @@
             this.bt_search.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bt_search.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bt_search.Location = new System.Drawing.Point(458, 34);
-            this.bt_search.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_search.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_search.Name = "bt_search";
             this.bt_search.Size = new System.Drawing.Size(120, 34);
             this.bt_search.TabIndex = 28;
@@ -428,7 +427,7 @@
             this.bt_deleteKH.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bt_deleteKH.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bt_deleteKH.Location = new System.Drawing.Point(670, 285);
-            this.bt_deleteKH.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_deleteKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_deleteKH.Name = "bt_deleteKH";
             this.bt_deleteKH.Size = new System.Drawing.Size(97, 34);
             this.bt_deleteKH.TabIndex = 16;
@@ -452,7 +451,7 @@
             this.bt_sua_Đgia.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bt_sua_Đgia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bt_sua_Đgia.Location = new System.Drawing.Point(670, 219);
-            this.bt_sua_Đgia.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_sua_Đgia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_sua_Đgia.Name = "bt_sua_Đgia";
             this.bt_sua_Đgia.Size = new System.Drawing.Size(97, 34);
             this.bt_sua_Đgia.TabIndex = 15;
@@ -477,7 +476,7 @@
             this.bt_them_Đgia.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bt_them_Đgia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bt_them_Đgia.Location = new System.Drawing.Point(670, 156);
-            this.bt_them_Đgia.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_them_Đgia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_them_Đgia.Name = "bt_them_Đgia";
             this.bt_them_Đgia.Size = new System.Drawing.Size(97, 34);
             this.bt_them_Đgia.TabIndex = 14;
@@ -560,31 +559,6 @@
             this.txt_nameKH.Size = new System.Drawing.Size(347, 27);
             this.txt_nameKH.TabIndex = 2;
             // 
-            // bt_back_Đgia
-            // 
-            this.bt_back_Đgia.Animated = true;
-            this.bt_back_Đgia.AutoRoundedCorners = true;
-            this.bt_back_Đgia.BorderRadius = 16;
-            this.bt_back_Đgia.BorderThickness = 2;
-            this.bt_back_Đgia.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.icons8_u_turn_to_left_1001;
-            this.bt_back_Đgia.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bt_back_Đgia.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
-            this.bt_back_Đgia.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.bt_back_Đgia.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.bt_back_Đgia.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.bt_back_Đgia.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bt_back_Đgia.FillColor = System.Drawing.Color.Transparent;
-            this.bt_back_Đgia.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.bt_back_Đgia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bt_back_Đgia.Location = new System.Drawing.Point(9, 10);
-            this.bt_back_Đgia.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_back_Đgia.Name = "bt_back_Đgia";
-            this.bt_back_Đgia.Size = new System.Drawing.Size(109, 34);
-            this.bt_back_Đgia.TabIndex = 18;
-            this.bt_back_Đgia.Text = "Quay lại";
-            this.bt_back_Đgia.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.bt_back_Đgia.Click += new System.EventHandler(this.bt_back_Click);
-            // 
             // dgv_KH
             // 
             this.dgv_KH.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
@@ -597,7 +571,7 @@
             this.Column6,
             this.Column5});
             this.dgv_KH.Location = new System.Drawing.Point(9, 415);
-            this.dgv_KH.Margin = new System.Windows.Forms.Padding(2);
+            this.dgv_KH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_KH.Name = "dgv_KH";
             this.dgv_KH.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dgv_KH.RowHeadersWidth = 51;
@@ -631,6 +605,7 @@
             // 
             this.Column1.DataPropertyName = "GIOITINH_KHACHHANG";
             this.Column1.HeaderText = "Giới tính";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             // 
             // Column6
@@ -669,11 +644,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
             this.ClientSize = new System.Drawing.Size(850, 735);
             this.Controls.Add(this.dgv_KH);
-            this.Controls.Add(this.bt_back_Đgia);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "KhachHang";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DocGia";
@@ -693,7 +667,6 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBox1;
         private Guna.UI2.WinForms.Guna2TextBox txt_anddressKH;
         private Guna.UI2.WinForms.Guna2TextBox txt_nameKH;
@@ -701,7 +674,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private Guna.UI2.WinForms.Guna2Button bt_them_Đgia;
-        private Guna.UI2.WinForms.Guna2Button bt_back_Đgia;
         private Guna.UI2.WinForms.Guna2Button bt_deleteKH;
         private Guna.UI2.WinForms.Guna2Button bt_sua_Đgia;
         private System.Windows.Forms.DataGridView dgv_KH;
@@ -731,5 +703,6 @@
         private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2CustomRadioButton rdo_nuKH;
         private Guna.UI2.WinForms.Guna2CustomRadioButton rdo_namKH;
+        private System.Windows.Forms.Label label1;
     }
 }

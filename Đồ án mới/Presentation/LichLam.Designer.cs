@@ -51,7 +51,6 @@
             this.bt_timkiem = new Guna.UI2.WinForms.Guna2Button();
             this.label15 = new System.Windows.Forms.Label();
             this.txt_findID = new Guna.UI2.WinForms.Guna2TextBox();
-            this.bt_back_QLMTS = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.dgv_Lich = new System.Windows.Forms.DataGridView();
@@ -71,7 +70,7 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Image = global::Đồ_án_mới.Properties.Resources.borrwing_45;
             this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label8.Location = new System.Drawing.Point(274, 10);
+            this.label8.Location = new System.Drawing.Point(262, 9);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(272, 40);
@@ -143,7 +142,7 @@
             this.bt_xoa_lapphieu.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bt_xoa_lapphieu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bt_xoa_lapphieu.Location = new System.Drawing.Point(251, 220);
-            this.bt_xoa_lapphieu.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_xoa_lapphieu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_xoa_lapphieu.Name = "bt_xoa_lapphieu";
             this.bt_xoa_lapphieu.Size = new System.Drawing.Size(97, 34);
             this.bt_xoa_lapphieu.TabIndex = 65;
@@ -158,7 +157,7 @@
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2GroupBox1.Location = new System.Drawing.Point(9, 61);
-            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.Size = new System.Drawing.Size(830, 318);
             this.guna2GroupBox1.TabIndex = 77;
@@ -179,9 +178,9 @@
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 13F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))));
             this.groupBox1.Location = new System.Drawing.Point(2, 45);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Size = new System.Drawing.Size(371, 265);
             this.groupBox1.TabIndex = 76;
             this.groupBox1.TabStop = false;
@@ -207,7 +206,7 @@
             this.dt_Date.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dt_Date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dt_Date.Location = new System.Drawing.Point(147, 100);
-            this.dt_Date.Margin = new System.Windows.Forms.Padding(2);
+            this.dt_Date.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dt_Date.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dt_Date.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dt_Date.Name = "dt_Date";
@@ -245,7 +244,7 @@
             this.btn_updateSchedule.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btn_updateSchedule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_updateSchedule.Location = new System.Drawing.Point(134, 220);
-            this.btn_updateSchedule.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_updateSchedule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_updateSchedule.Name = "btn_updateSchedule";
             this.btn_updateSchedule.Size = new System.Drawing.Size(97, 34);
             this.btn_updateSchedule.TabIndex = 64;
@@ -271,7 +270,7 @@
             this.btn_addSchedule.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btn_addSchedule.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btn_addSchedule.Location = new System.Drawing.Point(16, 220);
-            this.btn_addSchedule.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_addSchedule.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_addSchedule.Name = "btn_addSchedule";
             this.btn_addSchedule.Size = new System.Drawing.Size(97, 34);
             this.btn_addSchedule.TabIndex = 63;
@@ -291,9 +290,9 @@
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 13F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))));
             this.groupBox3.Location = new System.Drawing.Point(377, 45);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Size = new System.Drawing.Size(451, 265);
             this.groupBox3.TabIndex = 84;
             this.groupBox3.TabStop = false;
@@ -307,7 +306,7 @@
             this.rdo_findByID.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.rdo_findByID.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rdo_findByID.Location = new System.Drawing.Point(26, 61);
-            this.rdo_findByID.Margin = new System.Windows.Forms.Padding(2);
+            this.rdo_findByID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdo_findByID.Name = "rdo_findByID";
             this.rdo_findByID.Size = new System.Drawing.Size(15, 16);
             this.rdo_findByID.TabIndex = 82;
@@ -325,7 +324,7 @@
             this.rdo_All.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.rdo_All.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rdo_All.Location = new System.Drawing.Point(26, 97);
-            this.rdo_All.Margin = new System.Windows.Forms.Padding(2);
+            this.rdo_All.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdo_All.Name = "rdo_All";
             this.rdo_All.Size = new System.Drawing.Size(15, 16);
             this.rdo_All.TabIndex = 81;
@@ -365,7 +364,7 @@
             this.bt_timkiem.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bt_timkiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bt_timkiem.Location = new System.Drawing.Point(327, 61);
-            this.bt_timkiem.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_timkiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_timkiem.Name = "bt_timkiem";
             this.bt_timkiem.Size = new System.Drawing.Size(120, 34);
             this.bt_timkiem.TabIndex = 69;
@@ -408,31 +407,6 @@
             this.txt_findID.Size = new System.Drawing.Size(148, 27);
             this.txt_findID.TabIndex = 79;
             // 
-            // bt_back_QLMTS
-            // 
-            this.bt_back_QLMTS.Animated = true;
-            this.bt_back_QLMTS.AutoRoundedCorners = true;
-            this.bt_back_QLMTS.BorderRadius = 16;
-            this.bt_back_QLMTS.BorderThickness = 2;
-            this.bt_back_QLMTS.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.icons8_u_turn_to_left_1005;
-            this.bt_back_QLMTS.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bt_back_QLMTS.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
-            this.bt_back_QLMTS.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.bt_back_QLMTS.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.bt_back_QLMTS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.bt_back_QLMTS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bt_back_QLMTS.FillColor = System.Drawing.Color.Transparent;
-            this.bt_back_QLMTS.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.bt_back_QLMTS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bt_back_QLMTS.Location = new System.Drawing.Point(11, 16);
-            this.bt_back_QLMTS.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_back_QLMTS.Name = "bt_back_QLMTS";
-            this.bt_back_QLMTS.Size = new System.Drawing.Size(109, 34);
-            this.bt_back_QLMTS.TabIndex = 80;
-            this.bt_back_QLMTS.Text = "Quay lại";
-            this.bt_back_QLMTS.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.bt_back_QLMTS.Click += new System.EventHandler(this.bt_back_QLMTS_Click);
-            // 
             // guna2ControlBox2
             // 
             this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -440,7 +414,7 @@
             this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox2.IconColor = System.Drawing.Color.Red;
             this.guna2ControlBox2.Location = new System.Drawing.Point(1046, 10);
-            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ControlBox2.Name = "guna2ControlBox2";
             this.guna2ControlBox2.Size = new System.Drawing.Size(28, 23);
             this.guna2ControlBox2.TabIndex = 79;
@@ -453,7 +427,7 @@
             this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.Red;
             this.guna2ControlBox1.Location = new System.Drawing.Point(1014, 10);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.Size = new System.Drawing.Size(28, 23);
             this.guna2ControlBox1.TabIndex = 78;
@@ -470,7 +444,7 @@
             this.MaNV,
             this.NgayMuon});
             this.dgv_Lich.Location = new System.Drawing.Point(11, 383);
-            this.dgv_Lich.Margin = new System.Windows.Forms.Padding(2);
+            this.dgv_Lich.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_Lich.Name = "dgv_Lich";
             this.dgv_Lich.RowHeadersWidth = 51;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -492,6 +466,7 @@
             // 
             this.Column1.DataPropertyName = "Ten";
             this.Column1.HeaderText = "Tên nhân viên";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             // 
             // MaNV
@@ -516,7 +491,6 @@
             this.ClientSize = new System.Drawing.Size(850, 735);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.guna2GroupBox1);
-            this.Controls.Add(this.bt_back_QLMTS);
             this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.dgv_Lich);
@@ -550,7 +524,6 @@
         private Guna.UI2.WinForms.Guna2Button bt_timkiem;
         private System.Windows.Forms.Label label15;
         private Guna.UI2.WinForms.Guna2TextBox txt_findID;
-        private Guna.UI2.WinForms.Guna2Button bt_back_QLMTS;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private System.Windows.Forms.DataGridView dgv_Lich;

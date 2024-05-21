@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -62,7 +62,6 @@
             this.txt_nameKH = new Guna.UI2.WinForms.Guna2TextBox();
             this.cb_hdDV = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.bt_back_QLMTS = new Guna.UI2.WinForms.Guna2Button();
             this.dgv_HD = new System.Windows.Forms.DataGridView();
             this.NgayMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MaDocGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -90,7 +89,7 @@
             this.guna2GroupBox1.Font = new System.Drawing.Font("Segoe UI", 13F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.guna2GroupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
             this.guna2GroupBox1.Location = new System.Drawing.Point(9, 61);
-            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2GroupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2GroupBox1.Name = "guna2GroupBox1";
             this.guna2GroupBox1.Size = new System.Drawing.Size(830, 415);
             this.guna2GroupBox1.TabIndex = 29;
@@ -120,9 +119,9 @@
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 13F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))));
             this.groupBox1.Location = new System.Drawing.Point(2, 45);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Size = new System.Drawing.Size(826, 362);
             this.groupBox1.TabIndex = 76;
             this.groupBox1.TabStop = false;
@@ -160,9 +159,9 @@
             this.groupBox2.Controls.Add(this.rdo_namKH);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(401, 163);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox2.Size = new System.Drawing.Size(104, 91);
             this.groupBox2.TabIndex = 97;
             this.groupBox2.TabStop = false;
@@ -173,7 +172,7 @@
             this.guna2PictureBox2.Image = global::Đồ_án_mới.Properties.Resources.female;
             this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.Location = new System.Drawing.Point(67, 59);
-            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2PictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.Size = new System.Drawing.Size(27, 22);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -185,7 +184,7 @@
             this.guna2PictureBox1.Image = global::Đồ_án_mới.Properties.Resources.male;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(70, 25);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.Size = new System.Drawing.Size(27, 22);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -222,7 +221,7 @@
             this.rdo_nuKH.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.rdo_nuKH.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rdo_nuKH.Location = new System.Drawing.Point(10, 58);
-            this.rdo_nuKH.Margin = new System.Windows.Forms.Padding(2);
+            this.rdo_nuKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdo_nuKH.Name = "rdo_nuKH";
             this.rdo_nuKH.Size = new System.Drawing.Size(15, 16);
             this.rdo_nuKH.TabIndex = 23;
@@ -240,7 +239,7 @@
             this.rdo_namKH.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.rdo_namKH.CheckedState.InnerColor = System.Drawing.Color.White;
             this.rdo_namKH.Location = new System.Drawing.Point(10, 28);
-            this.rdo_namKH.Margin = new System.Windows.Forms.Padding(2);
+            this.rdo_namKH.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.rdo_namKH.Name = "rdo_namKH";
             this.rdo_namKH.Size = new System.Drawing.Size(15, 16);
             this.rdo_namKH.TabIndex = 22;
@@ -260,9 +259,9 @@
             this.groupBox3.Font = new System.Drawing.Font("Segoe UI", 13F, ((System.Drawing.FontStyle)(((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic) 
                 | System.Drawing.FontStyle.Underline))));
             this.groupBox3.Location = new System.Drawing.Point(18, 248);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox3.Size = new System.Drawing.Size(800, 110);
             this.groupBox3.TabIndex = 84;
             this.groupBox3.TabStop = false;
@@ -284,10 +283,10 @@
             this.btn_eHD.FillColor = System.Drawing.Color.White;
             this.btn_eHD.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.btn_eHD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btn_eHD.Location = new System.Drawing.Point(564, 52);
+            this.btn_eHD.Location = new System.Drawing.Point(552, 52);
             this.btn_eHD.Margin = new System.Windows.Forms.Padding(2);
             this.btn_eHD.Name = "btn_eHD";
-            this.btn_eHD.Size = new System.Drawing.Size(88, 34);
+            this.btn_eHD.Size = new System.Drawing.Size(90, 34);
             this.btn_eHD.TabIndex = 69;
             this.btn_eHD.Text = "Xuất HĐ";
             this.btn_eHD.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -310,8 +309,8 @@
             this.bt_timkiem.FillColor = System.Drawing.Color.White;
             this.bt_timkiem.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bt_timkiem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bt_timkiem.Location = new System.Drawing.Point(424, 52);
-            this.bt_timkiem.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_timkiem.Location = new System.Drawing.Point(413, 52);
+            this.bt_timkiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_timkiem.Name = "bt_timkiem";
             this.bt_timkiem.Size = new System.Drawing.Size(120, 34);
             this.bt_timkiem.TabIndex = 69;
@@ -474,7 +473,7 @@
             this.bt_deleteHD.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bt_deleteHD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bt_deleteHD.Location = new System.Drawing.Point(701, 99);
-            this.bt_deleteHD.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_deleteHD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_deleteHD.Name = "bt_deleteHD";
             this.bt_deleteHD.Size = new System.Drawing.Size(97, 34);
             this.bt_deleteHD.TabIndex = 65;
@@ -528,7 +527,7 @@
             this.dt_dateHD.ForeColor = System.Drawing.Color.Black;
             this.dt_dateHD.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dt_dateHD.Location = new System.Drawing.Point(481, 85);
-            this.dt_dateHD.Margin = new System.Windows.Forms.Padding(2);
+            this.dt_dateHD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dt_dateHD.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dt_dateHD.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dt_dateHD.Name = "dt_dateHD";
@@ -555,7 +554,7 @@
             this.bt_addHD.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bt_addHD.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bt_addHD.Location = new System.Drawing.Point(701, 46);
-            this.bt_addHD.Margin = new System.Windows.Forms.Padding(2);
+            this.bt_addHD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.bt_addHD.Name = "bt_addHD";
             this.bt_addHD.Size = new System.Drawing.Size(97, 34);
             this.bt_addHD.TabIndex = 63;
@@ -606,35 +605,10 @@
             this.label1.TabIndex = 85;
             this.label1.Text = "Dịch vụ";
             // 
-            // bt_back_QLMTS
-            // 
-            this.bt_back_QLMTS.Animated = true;
-            this.bt_back_QLMTS.AutoRoundedCorners = true;
-            this.bt_back_QLMTS.BorderRadius = 16;
-            this.bt_back_QLMTS.BorderThickness = 2;
-            this.bt_back_QLMTS.CustomImages.Image = global::Đồ_án_mới.Properties.Resources.icons8_u_turn_to_left_1005;
-            this.bt_back_QLMTS.CustomImages.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bt_back_QLMTS.CustomImages.ImageSize = new System.Drawing.Size(30, 30);
-            this.bt_back_QLMTS.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.bt_back_QLMTS.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.bt_back_QLMTS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.bt_back_QLMTS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bt_back_QLMTS.FillColor = System.Drawing.Color.White;
-            this.bt_back_QLMTS.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.bt_back_QLMTS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bt_back_QLMTS.Location = new System.Drawing.Point(11, 15);
-            this.bt_back_QLMTS.Margin = new System.Windows.Forms.Padding(2);
-            this.bt_back_QLMTS.Name = "bt_back_QLMTS";
-            this.bt_back_QLMTS.Size = new System.Drawing.Size(109, 34);
-            this.bt_back_QLMTS.TabIndex = 34;
-            this.bt_back_QLMTS.Text = "Quay lại";
-            this.bt_back_QLMTS.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.bt_back_QLMTS.Click += new System.EventHandler(this.bt_back_QLMTS_Click);
-            // 
             // dgv_HD
             // 
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_HD.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_HD.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_HD.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_HD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_HD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -645,11 +619,11 @@
             this.Sach,
             this.Column1});
             this.dgv_HD.Location = new System.Drawing.Point(9, 480);
-            this.dgv_HD.Margin = new System.Windows.Forms.Padding(2);
+            this.dgv_HD.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgv_HD.Name = "dgv_HD";
             this.dgv_HD.RowHeadersWidth = 51;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_HD.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_HD.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_HD.RowTemplate.Height = 24;
             this.dgv_HD.Size = new System.Drawing.Size(830, 244);
             this.dgv_HD.TabIndex = 67;
@@ -676,6 +650,7 @@
             this.Column2.DataPropertyName = "TEN_KHACHHANG";
             this.Column2.FillWeight = 138.4569F;
             this.Column2.HeaderText = "Tên khách hàng";
+            this.Column2.MinimumWidth = 6;
             this.Column2.Name = "Column2";
             // 
             // MaNV
@@ -699,6 +674,7 @@
             this.Column1.DataPropertyName = "TONGTIEN_HOADON";
             this.Column1.FillWeight = 60.91371F;
             this.Column1.HeaderText = "Tổng tiền";
+            this.Column1.MinimumWidth = 6;
             this.Column1.Name = "Column1";
             // 
             // label8
@@ -707,10 +683,10 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Image = global::Đồ_án_mới.Properties.Resources.borrwing_45;
             this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label8.Location = new System.Drawing.Point(264, 9);
+            this.label8.Location = new System.Drawing.Point(252, 9);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(320, 40);
+            this.label8.Size = new System.Drawing.Size(333, 32);
             this.label8.TabIndex = 28;
             this.label8.Text = "CHI TIẾT HÓA ĐƠN";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -722,11 +698,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
             this.ClientSize = new System.Drawing.Size(850, 735);
             this.Controls.Add(this.dgv_HD);
-            this.Controls.Add(this.bt_back_QLMTS);
             this.Controls.Add(this.guna2GroupBox1);
             this.Controls.Add(this.label8);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ChiTietHoaDon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PhieuThuVien";
@@ -758,7 +733,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.GroupBox groupBox3;
         private Guna.UI2.WinForms.Guna2Button bt_timkiem;
-        private Guna.UI2.WinForms.Guna2Button bt_back_QLMTS;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridView dgv_HD;
         private System.Windows.Forms.Label label1;

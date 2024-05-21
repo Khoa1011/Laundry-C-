@@ -17,32 +17,18 @@ namespace Doan
     {
         private String user = "admin";
         private String pass = "1";
+        private DangNhapDAO dao = new DangNhapDAO();
         public DangNhap()
         {
             InitializeComponent();
-        }
-
-        private void guna2Panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-        private void bt_login_Click(object sender, EventArgs e)
-        {
-           
-        }
-        bool Kiemtradangnhap (string tentaikhoan,string matkhau)
-        {
-            if (tentaikhoan == user && matkhau == pass)
-                return true;      
-            return false;
         }
 
         private void sw_remember_CheckedChanged(object sender, EventArgs e)
         {
             if(sw_remember.Checked == true)
             {
-                txt_user.Text = user;
-                txt_password.Text = pass;
+                txt_user.Text = "admin";
+                txt_password.Text = "1";
             }
             else
             {
@@ -61,6 +47,21 @@ namespace Doan
             Application.Exit();
         }
 
-
+        private void bt_login_Click(object sender, EventArgs e)
+        {
+            String lblUser = txt_user.Text;
+            String lblPassword = PasswordHelper.HashString( txt_password.Text);
+            if(txt_user.Text == "" && txt_password.Text == "")
+            {
+                MessageBox.Show("Tài khoản mật khẩu không được bỏ trống!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            if(dao.checkLogin(lblUser,lblPassword) == true)
+            {
+                HeThong ht = new HeThong();
+                ht.Show();
+                MessageBox.Show("Đăng nhập thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.None);
+                this.Hide();
+            }
+        }
     }
 }
