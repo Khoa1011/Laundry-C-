@@ -15,6 +15,33 @@ namespace Đồ_án_mới.DAO
         static SqlDataAdapter adapter;
         static DataTable dt;
         static SqlConnection con = ConnectionTool.GetConnection();
+
+
+        public List<NHANVIEN> getListEm()
+        {
+            con.Open();
+            List<NHANVIEN> list = new List<NHANVIEN>();
+            String sql = "select ID from nhanvien";
+            cmd = new SqlCommand(sql, con);
+            SqlDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                int id = reader.GetInt32(0);
+                NHANVIEN tempEmm = new NHANVIEN(id);
+                list.Add(tempEmm);
+            }
+            con.Close();
+            return list;
+        }
+
+        public int getCountEm()
+        {
+            int count = 0;
+            List<NHANVIEN> list = getListEm();
+            foreach (NHANVIEN tempCus in list)
+                count++;
+            return count;
+        }
         public DataTable findALL()
         {
             con.Open(); // mở 

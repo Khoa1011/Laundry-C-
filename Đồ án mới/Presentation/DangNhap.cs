@@ -27,8 +27,8 @@ namespace Doan
         {
             if(sw_remember.Checked == true)
             {
-                txt_user.Text = user;
-                txt_password.Text = pass;
+                txt_user.Text = "admin";
+                txt_password.Text = "1";
             }
             else
             {

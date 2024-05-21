@@ -10,6 +10,10 @@ namespace Đồ_án_mới.DTO
     {
         private int maKhachHang;
 
+        public KHACHHANG(int ma)
+        {
+            this.maKhachHang = ma;
+        }
         public KHACHHANG()
         {
         }

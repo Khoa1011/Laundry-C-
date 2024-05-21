@@ -50,18 +50,18 @@
             this.panelBody = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GradientPanel3 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2PictureBox4 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl_khachhang = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl_nhanvien = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbl_doanhthu = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2PictureBox5 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.lbl_title = new System.Windows.Forms.Label();
+            this.lb_tittle = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel2.SuspendLayout();
@@ -328,7 +328,7 @@
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.PowderBlue;
-            this.guna2Panel2.Controls.Add(this.lbl_title);
+            this.guna2Panel2.Controls.Add(this.lb_tittle);
             this.guna2Panel2.Controls.Add(this.guna2ControlBox2);
             this.guna2Panel2.Controls.Add(this.guna2ControlBox1);
             this.guna2Panel2.Location = new System.Drawing.Point(285, 4);
@@ -356,7 +356,7 @@
             this.guna2GradientPanel3.BackColor = System.Drawing.Color.White;
             this.guna2GradientPanel3.BorderRadius = 15;
             this.guna2GradientPanel3.Controls.Add(this.guna2PictureBox4);
-            this.guna2GradientPanel3.Controls.Add(this.guna2HtmlLabel6);
+            this.guna2GradientPanel3.Controls.Add(this.lbl_khachhang);
             this.guna2GradientPanel3.Controls.Add(this.guna2HtmlLabel7);
             this.guna2GradientPanel3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(211)))), ((int)(((byte)(237)))));
             this.guna2GradientPanel3.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
@@ -377,15 +377,15 @@
             this.guna2PictureBox4.TabIndex = 3;
             this.guna2PictureBox4.TabStop = false;
             // 
-            // guna2HtmlLabel6
+            // lbl_khachhang
             // 
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(284, 32);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(29, 28);
-            this.guna2HtmlLabel6.TabIndex = 1;
-            this.guna2HtmlLabel6.Text = "52";
+            this.lbl_khachhang.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_khachhang.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_khachhang.Location = new System.Drawing.Point(284, 32);
+            this.lbl_khachhang.Name = "lbl_khachhang";
+            this.lbl_khachhang.Size = new System.Drawing.Size(29, 28);
+            this.lbl_khachhang.TabIndex = 1;
+            this.lbl_khachhang.Text = "52";
             // 
             // guna2HtmlLabel7
             // 
@@ -402,7 +402,7 @@
             this.guna2GradientPanel2.BackColor = System.Drawing.Color.White;
             this.guna2GradientPanel2.BorderRadius = 15;
             this.guna2GradientPanel2.Controls.Add(this.guna2PictureBox3);
-            this.guna2GradientPanel2.Controls.Add(this.guna2HtmlLabel4);
+            this.guna2GradientPanel2.Controls.Add(this.lbl_nhanvien);
             this.guna2GradientPanel2.Controls.Add(this.guna2HtmlLabel5);
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(211)))), ((int)(((byte)(237)))));
             this.guna2GradientPanel2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
@@ -424,15 +424,15 @@
             this.guna2PictureBox3.TabIndex = 3;
             this.guna2PictureBox3.TabStop = false;
             // 
-            // guna2HtmlLabel4
+            // lbl_nhanvien
             // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(284, 32);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(29, 28);
-            this.guna2HtmlLabel4.TabIndex = 1;
-            this.guna2HtmlLabel4.Text = "52";
+            this.lbl_nhanvien.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_nhanvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_nhanvien.Location = new System.Drawing.Point(284, 32);
+            this.lbl_nhanvien.Name = "lbl_nhanvien";
+            this.lbl_nhanvien.Size = new System.Drawing.Size(29, 28);
+            this.lbl_nhanvien.TabIndex = 1;
+            this.lbl_nhanvien.Text = "52";
             // 
             // guna2HtmlLabel5
             // 
@@ -449,7 +449,7 @@
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.White;
             this.guna2GradientPanel1.BorderRadius = 15;
             this.guna2GradientPanel1.Controls.Add(this.guna2PictureBox2);
-            this.guna2GradientPanel1.Controls.Add(this.guna2HtmlLabel3);
+            this.guna2GradientPanel1.Controls.Add(this.lbl_doanhthu);
             this.guna2GradientPanel1.Controls.Add(this.guna2HtmlLabel2);
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(211)))), ((int)(((byte)(237)))));
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(1)))));
@@ -469,15 +469,15 @@
             this.guna2PictureBox2.TabIndex = 2;
             this.guna2PictureBox2.TabStop = false;
             // 
-            // guna2HtmlLabel3
+            // lbl_doanhthu
             // 
-            this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.guna2HtmlLabel3.Location = new System.Drawing.Point(284, 32);
-            this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(165, 28);
-            this.guna2HtmlLabel3.TabIndex = 1;
-            this.guna2HtmlLabel3.Text = "1.525.000 VNĐ";
+            this.lbl_doanhthu.BackColor = System.Drawing.Color.Transparent;
+            this.lbl_doanhthu.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.lbl_doanhthu.Location = new System.Drawing.Point(284, 32);
+            this.lbl_doanhthu.Name = "lbl_doanhthu";
+            this.lbl_doanhthu.Size = new System.Drawing.Size(165, 28);
+            this.lbl_doanhthu.TabIndex = 1;
+            this.lbl_doanhthu.Text = "1.525.000 VNĐ";
             // 
             // guna2HtmlLabel2
             // 
@@ -500,14 +500,20 @@
             this.guna2PictureBox5.TabIndex = 5;
             this.guna2PictureBox5.TabStop = false;
             // 
-            // lbl_title
+            // lb_tittle
             // 
-            this.lbl_title.AutoSize = true;
-            this.lbl_title.Location = new System.Drawing.Point(54, 19);
-            this.lbl_title.Name = "lbl_title";
-            this.lbl_title.Size = new System.Drawing.Size(41, 13);
-            this.lbl_title.TabIndex = 15;
-            this.lbl_title.Text = "label2";
+            this.lb_tittle.BackColor = System.Drawing.Color.Gainsboro;
+            this.lb_tittle.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lb_tittle.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lb_tittle.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lb_tittle.Location = new System.Drawing.Point(23, 5);
+            this.lb_tittle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lb_tittle.Name = "lb_tittle";
+            this.lb_tittle.Size = new System.Drawing.Size(173, 41);
+            this.lb_tittle.TabIndex = 15;
+            this.lb_tittle.Text = "Trang chủ";
+            this.lb_tittle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lb_tittle.Click += new System.EventHandler(this.lb_tittle_Click);
             // 
             // HeThong
             // 
@@ -523,13 +529,11 @@
             this.Name = "HeThong";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HeThong";
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.HeThong_FormClosing);
             this.Load += new System.EventHandler(this.HeThong_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
-            this.guna2Panel2.PerformLayout();
             this.panelBody.ResumeLayout(false);
             this.guna2GradientPanel3.ResumeLayout(false);
             this.guna2GradientPanel3.PerformLayout();
@@ -566,19 +570,19 @@
         private Guna.UI2.WinForms.Guna2Panel panelBody;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_doanhthu;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2GradientButton btn_dichvu;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_khachhang;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbl_nhanvien;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox4;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox5;
         private Guna.UI2.WinForms.Guna2Button btn_DangXuat;
-        private System.Windows.Forms.Label lbl_title;
+        private System.Windows.Forms.Label lb_tittle;
     }
 }
