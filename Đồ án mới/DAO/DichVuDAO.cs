@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using System.Data;
 namespace Đồ_án_mới.DAO
 {
-     class DichVuDAO
+     class DichVuDAO : interfaceDAO<DICHVU>
     {
         static SqlCommand cmd;
         static SqlDataAdapter adapter;
@@ -27,87 +27,6 @@ namespace Đồ_án_mới.DAO
             adapter.Fill(dt);
             con.Close();
             return dt;
-        }
-        public Boolean addDV(DICHVU dv)
-        {
-            con.Open();
-            SqlTransaction transaction = con.BeginTransaction();
-            try
-            {
-                string sql = "INSERT INTO DICHVU (MOTA_DICHVU, TONGTIEN_DICHVU) VALUES (@Name, @Price)";
-                using (cmd = new SqlCommand(sql, con, transaction))
-                {
-                    cmd.Parameters.AddWithValue("@Name", dv.MoTaDichVu);
-                    cmd.Parameters.AddWithValue("@Price", dv.TongTienDichVu);
-                    cmd.ExecuteNonQuery();
-                    transaction.Commit();
-                    con.Close();
-                    return true; // Thêm thành công
-                }
-            }
-            catch (Exception ex)
-            {
-                // Rollback transaction nếu có lỗi
-                transaction.Rollback();
-                Console.WriteLine("Lỗi: " + ex.Message);
-                Console.WriteLine("Lỗi: " + ex.Message);
-                con.Close();
-                return false; // Thêm không thành công
-            }
-        }
-        public Boolean deleteDV(int id)
-        {
-            con.Open();
-            SqlTransaction transaction = con.BeginTransaction();
-            try
-            {
-                string sqlDeleteDV = "delete from DICHVU where MA_DICHVU = @ID";
-                using (SqlCommand cmd = new SqlCommand(sqlDeleteDV, con, transaction))
-                {
-                    cmd.Parameters.AddWithValue("@ID", id);
-                    cmd.ExecuteNonQuery();
-                    transaction.Commit();
-                    con.Close();
-                    return true;
-                }
-            }
-            catch (Exception ex)
-            {
-                // Rollback transaction nếu có lỗi
-                transaction.Rollback();
-                Console.WriteLine("Lỗi: " + ex.Message);
-                Console.WriteLine("Lỗi: " + ex.Message);
-                con.Close();
-                return false;
-            }
-        }
-        public Boolean updateDV(DICHVU dv, int id)
-        {
-            con.Open();
-            SqlTransaction transaction = con.BeginTransaction();
-            try
-            {
-                string sqlUpdateDV = "update DICHVU set MOTA_DICHVU = @Name, TONGTIEN_DICHVU = @Price where MA_DICHVU = @ID";
-                using (SqlCommand cmd = new SqlCommand(sqlUpdateDV, con, transaction))
-                {
-                    cmd.Parameters.AddWithValue("@ID", id);
-                    cmd.Parameters.AddWithValue("@Name", dv.MoTaDichVu);
-                    cmd.Parameters.AddWithValue("@Price", dv.TongTienDichVu);
-                    cmd.ExecuteNonQuery();
-                    transaction.Commit();
-                    con.Close();
-                    return true;
-                }
-            }
-            catch (Exception ex)
-            {
-                // Rollback transaction nếu có lỗi
-                transaction.Rollback();
-                Console.WriteLine("Lỗi: " + ex.Message);
-                Console.WriteLine("Lỗi: " + ex.Message);
-                con.Close();
-                return false;
-            }
         }
         public double getPrice(int id)
         {
@@ -128,5 +47,180 @@ namespace Đồ_án_mới.DAO
             //Lấy dữ liệu từ database
             return price;
         }
+
+        public bool add(DICHVU dv)
+        {
+
+            {
+                con.Open();
+                SqlTransaction transaction = con.BeginTransaction();
+                try
+                {
+                    string sql = "INSERT INTO DICHVU (MOTA_DICHVU, TONGTIEN_DICHVU) VALUES (@Name, @Price)";
+                    using (cmd = new SqlCommand(sql, con, transaction))
+                    {
+                        cmd.Parameters.AddWithValue("@Name", dv.MoTaDichVu);
+                        cmd.Parameters.AddWithValue("@Price", dv.TongTienDichVu);
+                        cmd.ExecuteNonQuery();
+                        transaction.Commit();
+                        con.Close();
+                        return true; // Thêm thành công
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Rollback transaction nếu có lỗi
+                    transaction.Rollback();
+                    Console.WriteLine("Lỗi: " + ex.Message);
+                    Console.WriteLine("Lỗi: " + ex.Message);
+                    con.Close();
+                    return false; // Thêm không thành công
+                }
+            }
+        }
+
+        public bool update(DICHVU dv, int id)
+        {
+
+            {
+                con.Open();
+                SqlTransaction transaction = con.BeginTransaction();
+                try
+                {
+                    string sqlUpdateDV = "update DICHVU set MOTA_DICHVU = @Name, TONGTIEN_DICHVU = @Price where MA_DICHVU = @ID";
+                    using (SqlCommand cmd = new SqlCommand(sqlUpdateDV, con, transaction))
+                    {
+                        cmd.Parameters.AddWithValue("@ID", id);
+                        cmd.Parameters.AddWithValue("@Name", dv.MoTaDichVu);
+                        cmd.Parameters.AddWithValue("@Price", dv.TongTienDichVu);
+                        cmd.ExecuteNonQuery();
+                        transaction.Commit();
+                        con.Close();
+                        return true;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Rollback transaction nếu có lỗi
+                    transaction.Rollback();
+                    Console.WriteLine("Lỗi: " + ex.Message);
+                    Console.WriteLine("Lỗi: " + ex.Message);
+                    con.Close();
+                    return false;
+                }
+            }
+        }
+
+        public bool delete(int id)
+        {
+
+            {
+                con.Open();
+                SqlTransaction transaction = con.BeginTransaction();
+                try
+                {
+                    string sqlDeleteDV = "delete from DICHVU where MA_DICHVU = @ID";
+                    using (SqlCommand cmd = new SqlCommand(sqlDeleteDV, con, transaction))
+                    {
+                        cmd.Parameters.AddWithValue("@ID", id);
+                        cmd.ExecuteNonQuery();
+                        transaction.Commit();
+                        con.Close();
+                        return true;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Rollback transaction nếu có lỗi
+                    transaction.Rollback();
+                    Console.WriteLine("Lỗi: " + ex.Message);
+                    Console.WriteLine("Lỗi: " + ex.Message);
+                    con.Close();
+                    return false;
+                }
+            }
+        }
+
+    //    public Boolean addDV(DICHVU dv)
+    //    {
+    //        con.Open();
+    //        SqlTransaction transaction = con.BeginTransaction();
+    //        try
+    //        {
+    //            string sql = "INSERT INTO DICHVU (MOTA_DICHVU, TONGTIEN_DICHVU) VALUES (@Name, @Price)";
+    //            using (cmd = new SqlCommand(sql, con, transaction))
+    //            {
+    //                cmd.Parameters.AddWithValue("@Name", dv.MoTaDichVu);
+    //                cmd.Parameters.AddWithValue("@Price", dv.TongTienDichVu);
+    //                cmd.ExecuteNonQuery();
+    //                transaction.Commit();
+    //                con.Close();
+    //                return true; // Thêm thành công
+    //            }
+    //        }
+    //        catch (Exception ex)
+    //        {
+    //            // Rollback transaction nếu có lỗi
+    //            transaction.Rollback();
+    //            Console.WriteLine("Lỗi: " + ex.Message);
+    //            Console.WriteLine("Lỗi: " + ex.Message);
+    //            con.Close();
+    //            return false; // Thêm không thành công
+    //        }
+    //    }
+    //    public Boolean deleteDV(int id)
+    //    {
+    //        con.Open();
+    //        SqlTransaction transaction = con.BeginTransaction();
+    //        try
+    //        {
+    //            string sqlDeleteDV = "delete from DICHVU where MA_DICHVU = @ID";
+    //            using (SqlCommand cmd = new SqlCommand(sqlDeleteDV, con, transaction))
+    //            {
+    //                cmd.Parameters.AddWithValue("@ID", id);
+    //                cmd.ExecuteNonQuery();
+    //                transaction.Commit();
+    //                con.Close();
+    //                return true;
+    //            }
+    //        }
+    //        catch (Exception ex)
+    //        {
+    //            // Rollback transaction nếu có lỗi
+    //            transaction.Rollback();
+    //            Console.WriteLine("Lỗi: " + ex.Message);
+    //            Console.WriteLine("Lỗi: " + ex.Message);
+    //            con.Close();
+    //            return false;
+    //        }
+    //    }
+    //    public Boolean updateDV(DICHVU dv, int id)
+    //    {
+    //        con.Open();
+    //        SqlTransaction transaction = con.BeginTransaction();
+    //        try
+    //        {
+    //            string sqlUpdateDV = "update DICHVU set MOTA_DICHVU = @Name, TONGTIEN_DICHVU = @Price where MA_DICHVU = @ID";
+    //            using (SqlCommand cmd = new SqlCommand(sqlUpdateDV, con, transaction))
+    //            {
+    //                cmd.Parameters.AddWithValue("@ID", id);
+    //                cmd.Parameters.AddWithValue("@Name", dv.MoTaDichVu);
+    //                cmd.Parameters.AddWithValue("@Price", dv.TongTienDichVu);
+    //                cmd.ExecuteNonQuery();
+    //                transaction.Commit();
+    //                con.Close();
+    //                return true;
+    //            }
+    //        }
+    //        catch (Exception ex)
+    //        {
+    //            // Rollback transaction nếu có lỗi
+    //            transaction.Rollback();
+    //            Console.WriteLine("Lỗi: " + ex.Message);
+    //            Console.WriteLine("Lỗi: " + ex.Message);
+    //            con.Close();
+    //            return false;
+    //        }
+    //    }
     }
 }

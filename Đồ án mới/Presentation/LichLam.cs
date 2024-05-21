@@ -36,10 +36,17 @@ namespace Đồ_án_mới.Presentation
         }
         private void bt_timkiem_Click(object sender, EventArgs e)
         {
-            if (rdo_findByID.Checked)
-                dgv_Lich.DataSource = llDAO.findByID(int.Parse(txt_findID.Text));
-            if (rdo_All.Checked)
-                load();
+            try
+            {
+                if (rdo_findByID.Checked)
+                    dgv_Lich.DataSource = llDAO.findByID(int.Parse(txt_findID.Text));
+                if (rdo_All.Checked)
+                    load();
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng không để trống!");
+            }
         }
 
         private void btn_addSchedule_Click(object sender, EventArgs e)
@@ -80,24 +87,31 @@ namespace Đồ_án_mới.Presentation
 
         private void bt_xoa_lapphieu_Click(object sender, EventArgs e)
         {
-            DateTime dt = DateTime.Parse(dgv_Lich[2, dgv_Lich.CurrentRow.Index].Value.ToString());
-            int id = int.Parse(dgv_Lich[0, dgv_Lich.CurrentRow.Index].Value.ToString());
-            string time = dgv_Lich[3, dgv_Lich.CurrentRow.Index].Value.ToString();
-
-            if (llDAO.deleteSchedule(dt, id, time))
+            try
             {
-                load();
-                MessageBox.Show("Xóa thành công!!");
+                DateTime dt = DateTime.Parse(dgv_Lich[2, dgv_Lich.CurrentRow.Index].Value.ToString());
+                int id = int.Parse(dgv_Lich[0, dgv_Lich.CurrentRow.Index].Value.ToString());
+                string time = dgv_Lich[3, dgv_Lich.CurrentRow.Index].Value.ToString();
+                {
+                    if (llDAO.deleteSchedule(dt, id, time))
+                    {
+                        load();
+                        MessageBox.Show("Xóa thành công!!");
+                    }
+                    else MessageBox.Show("Không Xóa được !!");
+                }
             }
-            else MessageBox.Show("Không Xóa được !!" + dt + id);
-
+            catch
+            {
+                MessageBox.Show("Vui lòng chọn lại!!");
+            }
         }
 
         private void btn_updateSchedule_Click(object sender, EventArgs e)
         {
             LICHLAMVIEC ll = new LICHLAMVIEC();
             ll.LichLamViec = dt_Date.Value.Date;
-            DateTime lichLamViecCu =DateTime.Parse( dgv_Lich[2, dgv_Lich.CurrentRow.Index].Value.ToString());
+            DateTime lichLamViecCu = DateTime.Parse(dgv_Lich[2, dgv_Lich.CurrentRow.Index].Value.ToString());
             String khungGioCu = dgv_Lich[3, dgv_Lich.CurrentRow.Index].Value.ToString();
             if (cb_khungGio.SelectedItem != null)
             {
@@ -108,13 +122,18 @@ namespace Đồ_án_mới.Presentation
                 MessageBox.Show("Vui lòng chọn một khung giờ từ ComboBox.");
                 return; // Thoát khỏi phương thức nếu không có mục nào được chọn
             }
-            int id = int.Parse(txt_ID.Text);
-            if (llDAO.updateSchedule(ll, id,lichLamViecCu,khungGioCu))
+
+            if (txt_ID.Text != "")
             {
-                load();
-                MessageBox.Show("Sửa thành công!!");
+                int id = int.Parse(txt_ID.Text);
+                if (llDAO.updateSchedule(ll, id, lichLamViecCu, khungGioCu))
+                {
+                    load();
+                    MessageBox.Show("Sửa thành công!!");
+                }
+                else MessageBox.Show("Sửa không thành công!!");
             }
-            else MessageBox.Show("Sửa không thành công!!");
+            else MessageBox.Show("Không được để trống!!");
         }
 
         private void dgv_Lich_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -127,6 +146,9 @@ namespace Đồ_án_mới.Presentation
 
         }
 
-
+        private void bt_back_QLMTS_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
     }
 }

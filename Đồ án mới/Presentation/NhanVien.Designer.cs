@@ -32,13 +32,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.bt_back_NV = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.bt_xoa_NV = new Guna.UI2.WinForms.Guna2Button();
             this.bt_sua_NV = new Guna.UI2.WinForms.Guna2Button();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_sdtNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_addressNV = new Guna.UI2.WinForms.Guna2TextBox();
@@ -101,28 +99,17 @@
             this.bt_back_NV.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.bt_back_NV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.bt_back_NV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bt_back_NV.FillColor = System.Drawing.Color.White;
+            this.bt_back_NV.FillColor = System.Drawing.Color.Transparent;
             this.bt_back_NV.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bt_back_NV.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bt_back_NV.Location = new System.Drawing.Point(10, 10);
+            this.bt_back_NV.Location = new System.Drawing.Point(11, 17);
             this.bt_back_NV.Margin = new System.Windows.Forms.Padding(2);
             this.bt_back_NV.Name = "bt_back_NV";
             this.bt_back_NV.Size = new System.Drawing.Size(109, 34);
             this.bt_back_NV.TabIndex = 25;
             this.bt_back_NV.Text = "Quay lại";
             this.bt_back_NV.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // guna2ControlBox2
-            // 
-            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
-            this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.Red;
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.Red;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(815, 10);
-            this.guna2ControlBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(28, 23);
-            this.guna2ControlBox2.TabIndex = 24;
+            this.bt_back_NV.Click += new System.EventHandler(this.bt_back_NV_Click);
             // 
             // bt_xoa_NV
             // 
@@ -214,19 +201,6 @@
             this.label1.Size = new System.Drawing.Size(115, 20);
             this.label1.TabIndex = 22;
             this.label1.Text = "Số điện thoại";
-            // 
-            // guna2ControlBox1
-            // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
-            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Red;
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.Red;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(783, 10);
-            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(28, 23);
-            this.guna2ControlBox1.TabIndex = 23;
             // 
             // label5
             // 
@@ -780,9 +754,7 @@
             this.ClientSize = new System.Drawing.Size(850, 735);
             this.Controls.Add(this.dgv_NV);
             this.Controls.Add(this.bt_back_NV);
-            this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -806,9 +778,7 @@
 
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2Button bt_back_NV;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
         private System.Windows.Forms.Label label8;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
         private System.Windows.Forms.GroupBox groupBox1;
         private Guna.UI2.WinForms.Guna2TextBox txt_sdtNV;
         private System.Windows.Forms.Label label1;

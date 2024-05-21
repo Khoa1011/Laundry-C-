@@ -34,8 +34,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txt_ID = new Guna.UI2.WinForms.Guna2TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox4 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.label6 = new System.Windows.Forms.Label();
             this.bt_xoa_lapphieu = new Guna.UI2.WinForms.Guna2Button();
@@ -73,7 +71,7 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Image = global::Đồ_án_mới.Properties.Resources.borrwing_45;
             this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label8.Location = new System.Drawing.Point(384, 10);
+            this.label8.Location = new System.Drawing.Point(274, 10);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(272, 40);
@@ -114,32 +112,6 @@
             this.label1.Size = new System.Drawing.Size(82, 20);
             this.label1.TabIndex = 85;
             this.label1.Text = "Ngày làm";
-            // 
-            // guna2ControlBox3
-            // 
-            this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
-            this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
-            this.guna2ControlBox3.IconColor = System.Drawing.Color.Red;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(781, 10);
-            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2ControlBox3.Name = "guna2ControlBox3";
-            this.guna2ControlBox3.Size = new System.Drawing.Size(26, 23);
-            this.guna2ControlBox3.TabIndex = 83;
-            // 
-            // guna2ControlBox4
-            // 
-            this.guna2ControlBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
-            this.guna2ControlBox4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
-            this.guna2ControlBox4.HoverState.FillColor = System.Drawing.Color.Red;
-            this.guna2ControlBox4.IconColor = System.Drawing.Color.Red;
-            this.guna2ControlBox4.Location = new System.Drawing.Point(811, 10);
-            this.guna2ControlBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2ControlBox4.Name = "guna2ControlBox4";
-            this.guna2ControlBox4.Size = new System.Drawing.Size(28, 23);
-            this.guna2ControlBox4.TabIndex = 82;
             // 
             // label6
             // 
@@ -449,16 +421,17 @@
             this.bt_back_QLMTS.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.bt_back_QLMTS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.bt_back_QLMTS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bt_back_QLMTS.FillColor = System.Drawing.Color.White;
+            this.bt_back_QLMTS.FillColor = System.Drawing.Color.Transparent;
             this.bt_back_QLMTS.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bt_back_QLMTS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.bt_back_QLMTS.Location = new System.Drawing.Point(9, 10);
+            this.bt_back_QLMTS.Location = new System.Drawing.Point(11, 16);
             this.bt_back_QLMTS.Margin = new System.Windows.Forms.Padding(2);
             this.bt_back_QLMTS.Name = "bt_back_QLMTS";
             this.bt_back_QLMTS.Size = new System.Drawing.Size(109, 34);
             this.bt_back_QLMTS.TabIndex = 80;
             this.bt_back_QLMTS.Text = "Quay lại";
             this.bt_back_QLMTS.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.bt_back_QLMTS.Click += new System.EventHandler(this.bt_back_QLMTS_Click);
             // 
             // guna2ControlBox2
             // 
@@ -542,8 +515,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
             this.ClientSize = new System.Drawing.Size(850, 735);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.guna2ControlBox3);
-            this.Controls.Add(this.guna2ControlBox4);
             this.Controls.Add(this.guna2GroupBox1);
             this.Controls.Add(this.bt_back_QLMTS);
             this.Controls.Add(this.guna2ControlBox2);
@@ -567,8 +538,6 @@
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2TextBox txt_ID;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox4;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2Button bt_xoa_lapphieu;

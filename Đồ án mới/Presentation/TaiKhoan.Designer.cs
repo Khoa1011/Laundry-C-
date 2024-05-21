@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.bt_back_QLMTS = new Guna.UI2.WinForms.Guna2Button();
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -60,8 +60,6 @@
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayMuon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label8 = new System.Windows.Forms.Label();
-            this.guna2ControlBox3 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox4 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.groupBox1.SuspendLayout();
             this.guna2GroupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -94,7 +92,7 @@
             this.bt_back_QLMTS.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.bt_back_QLMTS.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.bt_back_QLMTS.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.bt_back_QLMTS.FillColor = System.Drawing.Color.White;
+            this.bt_back_QLMTS.FillColor = System.Drawing.Color.Transparent;
             this.bt_back_QLMTS.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.bt_back_QLMTS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.bt_back_QLMTS.Location = new System.Drawing.Point(20, 15);
@@ -104,6 +102,7 @@
             this.bt_back_QLMTS.TabIndex = 72;
             this.bt_back_QLMTS.Text = "Quay lại";
             this.bt_back_QLMTS.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.bt_back_QLMTS.Click += new System.EventHandler(this.bt_back_QLMTS_Click);
             // 
             // guna2ControlBox2
             // 
@@ -471,8 +470,8 @@
             // 
             // dgv_taiKhoan
             // 
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_taiKhoan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_taiKhoan.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_taiKhoan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_taiKhoan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_taiKhoan.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -483,8 +482,8 @@
             this.dgv_taiKhoan.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_taiKhoan.Name = "dgv_taiKhoan";
             this.dgv_taiKhoan.RowHeadersWidth = 51;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dgv_taiKhoan.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dgv_taiKhoan.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_taiKhoan.RowTemplate.Height = 24;
             this.dgv_taiKhoan.Size = new System.Drawing.Size(828, 282);
             this.dgv_taiKhoan.TabIndex = 73;
@@ -517,7 +516,7 @@
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Image = global::Đồ_án_mới.Properties.Resources.borrwing_45;
             this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label8.Location = new System.Drawing.Point(291, 9);
+            this.label8.Location = new System.Drawing.Point(274, 11);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(353, 40);
@@ -525,41 +524,13 @@
             this.label8.Text = "QUẢN LÝ TÀI KHOẢN";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // guna2ControlBox3
-            // 
-            this.guna2ControlBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
-            this.guna2ControlBox3.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
-            this.guna2ControlBox3.IconColor = System.Drawing.Color.Red;
-            this.guna2ControlBox3.Location = new System.Drawing.Point(781, 11);
-            this.guna2ControlBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2ControlBox3.Name = "guna2ControlBox3";
-            this.guna2ControlBox3.Size = new System.Drawing.Size(26, 23);
-            this.guna2ControlBox3.TabIndex = 75;
-            // 
-            // guna2ControlBox4
-            // 
-            this.guna2ControlBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
-            this.guna2ControlBox4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
-            this.guna2ControlBox4.HoverState.FillColor = System.Drawing.Color.Red;
-            this.guna2ControlBox4.IconColor = System.Drawing.Color.Red;
-            this.guna2ControlBox4.Location = new System.Drawing.Point(811, 11);
-            this.guna2ControlBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.guna2ControlBox4.Name = "guna2ControlBox4";
-            this.guna2ControlBox4.Size = new System.Drawing.Size(28, 23);
-            this.guna2ControlBox4.TabIndex = 74;
-            // 
             // TaiKhoan
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(188)))), ((int)(((byte)(183)))));
             this.ClientSize = new System.Drawing.Size(850, 735);
-            this.Controls.Add(this.guna2ControlBox3);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.guna2ControlBox4);
             this.Controls.Add(this.bt_back_QLMTS);
             this.Controls.Add(this.guna2ControlBox2);
             this.Controls.Add(this.guna2ControlBox1);
@@ -591,8 +562,6 @@
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.DataGridView dgv_taiKhoan;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox3;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox4;
         private Guna.UI2.WinForms.Guna2TextBox txt_nameTK;
         private Guna.UI2.WinForms.Guna2TextBox txt_newPass;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaDocGia;
