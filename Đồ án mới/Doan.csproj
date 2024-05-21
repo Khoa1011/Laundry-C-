@@ -69,6 +69,7 @@
   <ItemGroup>
     <Compile Include="DAO\ChiTietHoaDonDAO.cs" />
     <Compile Include="DAO\ConnectionTool.cs" />
+    <Compile Include="DAO\DangNhapDAO.cs" />
     <Compile Include="DAO\DichVuDAO.cs" />
     <Compile Include="DAO\KhachHangDAO.cs" />
     <Compile Include="DAO\LichLamDAO.cs" />
@@ -443,6 +444,20 @@
   <ItemGroup>
     <None Include="Resources\bill1.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\301.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-book-511.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-back-501.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

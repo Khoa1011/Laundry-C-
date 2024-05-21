@@ -43,12 +43,7 @@ namespace Đồ_án_mới.Presentation
             total = price * sl ;
             return total;
         }
-        private void bt_back_QLMTS_Click(object sender, EventArgs e)
-        {
-            HeThong ht = new HeThong();
-            ht.Show();
-            this.Hide();
-        }
+
 
         private void guna2ControlBox2_Click(object sender, EventArgs e)
         {
